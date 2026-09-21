@@ -17,11 +17,24 @@ function TeamLogo({ src }) {
   )
 }
 
+// Teamnaam staat altijd aan de buitenkant, het logo altijd naast de
+// uitslag/"vs" in het midden: thuis = naam - logo, uit = logo - naam.
 function TeamCol({ name, logo, align, own }) {
+  const naam = <span>{name}</span>
+  const logoEl = <TeamLogo src={logo} />
   return (
     <div className={`site-match-team site-match-team-${align}${own ? ' is-own' : ''}`}>
-      <TeamLogo src={logo} />
-      <span>{name}</span>
+      {align === 'home' ? (
+        <>
+          {naam}
+          {logoEl}
+        </>
+      ) : (
+        <>
+          {logoEl}
+          {naam}
+        </>
+      )}
     </div>
   )
 }
