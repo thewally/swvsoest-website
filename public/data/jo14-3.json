@@ -25,11 +25,11 @@
       "thuisteam": "ST SO Soest/VVZ'49 O14-3",
       "thuisteamclubrelatiecode": "BBBZ168",
       "thuisteamid": 304982,
-      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790021195&sig=1f70d119c709b970c52dc25ad9347d7f57a68b4f",
+      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790021598&sig=b8218c7908c7fea9e079f527d0c474f04febea62",
       "uitteam": "Hees O14-1",
       "uitteamclubrelatiecode": "BBCC58G",
       "uitteamid": 327590,
-      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/AF5EE77CE56A5B959A260F35BFA198C9?expires=1790021195&sig=2116032cb05919bc36d62dbf47aedd6b33d473cc",
+      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/AF5EE77CE56A5B959A260F35BFA198C9?expires=1790021598&sig=c8a2af1147d73a1205072a2bdae1f3170ece46cc",
       "veld": "veld 3-SO Soest",
       "vertrektijd": "",
       "verzameltijd": "",
@@ -63,11 +63,11 @@
       "thuisteam": "ST SO Soest/VVZ'49 O14-3",
       "thuisteamclubrelatiecode": "BBBZ168",
       "thuisteamid": 304982,
-      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790021195&sig=1f70d119c709b970c52dc25ad9347d7f57a68b4f",
+      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790021598&sig=b8218c7908c7fea9e079f527d0c474f04febea62",
       "uitteam": "Sporting '70 O14-3",
       "uitteamclubrelatiecode": "BBBZ179",
       "uitteamid": 350142,
-      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/F24051DDD56D9D1448203D80D00E20A2?expires=1790021195&sig=fac8496d4e506edf7d5e825bf91817ae6604ae56",
+      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/F24051DDD56D9D1448203D80D00E20A2?expires=1790021598&sig=55cd769f993a9295d53151d0d95b4bb4ed6ac3ca",
       "veld": "veld 3-SO Soest",
       "vertrektijd": "",
       "verzameltijd": "",
@@ -111,5 +111,5 @@
       "wedstrijdnummer": 32426
     }
   ],
-  "updated_at": "2026-09-21T14:06:29.836614+02:00"
+  "updated_at": "2026-09-21T14:13:09.179145+02:00"
 }

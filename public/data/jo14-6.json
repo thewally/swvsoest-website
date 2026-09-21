@@ -95,7 +95,7 @@
       "thuisteam": "ST SO Soest/VVZ'49 O14-6",
       "thuisteamclubrelatiecode": "BBBZ168",
       "thuisteamid": "304987",
-      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790021198&sig=e8f0f875b26b3d1673299b4497bb3fdb6a9c96b6",
+      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790021606&sig=190c75d0ad5358c8bc55f4d07a4d6a9c54bf7249",
       "uitslag": "7 - 0",
       "uitslag-nv": null,
       "uitslag-regulier": "7 - 0",
@@ -103,7 +103,7 @@
       "uitteam": "Kampong O14-5",
       "uitteamclubrelatiecode": "BBBZ68P",
       "uitteamid": "310164",
-      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/5552296FCD1A2EEBCAD5B5ECD1927EF5?expires=1790021198&sig=41bd71fa460e199474751d2c22013c53265abb84",
+      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/5552296FCD1A2EEBCAD5B5ECD1927EF5?expires=1790021606&sig=5f84dc11a329f9291928f5755d4d819cb2e47e20",
       "verenigingswedstrijd": "Nee",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-6 - Kampong O14-5",
       "wedstrijdcode": 20859765,
@@ -111,5 +111,5 @@
       "wedstrijdnummer": 41197
     }
   ],
-  "updated_at": "2026-09-21T14:06:29.836614+02:00"
+  "updated_at": "2026-09-21T14:13:09.179145+02:00"
 }

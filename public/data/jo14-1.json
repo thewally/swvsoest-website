@@ -133,7 +133,7 @@
       "thuisteam": "GVVV O14-1",
       "thuisteamclubrelatiecode": "BBCB01J",
       "thuisteamid": "331909",
-      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/F3E59A770BBDC1A430DCCB87F78AF9FB?expires=1790021192&sig=f7dcecbf4920b54ca666093dff13d4e7a4039787",
+      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/F3E59A770BBDC1A430DCCB87F78AF9FB?expires=1790021591&sig=b52da6be9554141a14a6f54e25d4324113409296",
       "uitslag": "1 - 9",
       "uitslag-nv": null,
       "uitslag-regulier": "1 - 9",
@@ -141,7 +141,7 @@
       "uitteam": "ST SO Soest/VVZ'49 O14-1",
       "uitteamclubrelatiecode": "BBBZ168",
       "uitteamid": "289917",
-      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790021192&sig=e47a154343bce6fb2581699795a7b59b6afbf661",
+      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790021591&sig=f9e074e619f66e92aa49a386cef057225959c7ca",
       "verenigingswedstrijd": "Nee",
       "wedstrijd": "GVVV O14-1 - ST SO Soest/VVZ'49 O14-1",
       "wedstrijdcode": 20855121,
@@ -149,5 +149,5 @@
       "wedstrijdnummer": 36553
     }
   ],
-  "updated_at": "2026-09-21T14:06:29.836614+02:00"
+  "updated_at": "2026-09-21T14:13:09.179145+02:00"
 }
