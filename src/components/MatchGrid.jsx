@@ -72,7 +72,10 @@ export default function MatchGrid({ wedstrijden, gespeeld = false, leegTekst = '
                     {status === 'afgelast' ? (
                       <Badge tone="danger">Afgelast</Badge>
                     ) : status === 'gespeeld' ? (
-                      <Badge tone="neutral">Uitslag</Badge>
+                      <>
+                        <Badge tone="neutral">Uitslag</Badge>
+                        <span className="site-match-clock site-match-clock-sub">{w.aanvangstijd || '--:--'}</span>
+                      </>
                     ) : (
                       <span className="site-match-clock">{w.aanvangstijd || '--:--'}</span>
                     )}
@@ -80,7 +83,7 @@ export default function MatchGrid({ wedstrijden, gespeeld = false, leegTekst = '
                   <TeamCol name={w.thuisteam} logo={w.thuisteamlogo} align="home" own={w.thuisteam === w.team?.sportlinkNaam} />
                   <div className="site-match-mid">
                     {status === 'gespeeld' && score ? (
-                      <span className="site-match-score">{`${score[0]} – ${score[1]}`}</span>
+                      <span className="site-match-score">{`${score[0]} – ${score[1]}`}</span>
                     ) : (
                       <span className="svs-meta">vs</span>
                     )}
