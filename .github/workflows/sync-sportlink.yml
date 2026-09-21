@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 # Voorkomt dat een geplande run en een push-run tegelijk willen pushen.
 concurrency:
@@ -33,10 +34,25 @@ jobs:
           SPORTLINK_CLIENT_ID: ${{ secrets.SPORTLINK_CLIENT_ID }}
 
       - name: Commit als er wijzigingen zijn
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data public/agenda data/state
-          git diff --cached --quiet || git commit -m "Bijwerken programma, uitslagen en agenda"
-          git pull --rebase
-          git push
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Bijwerken programma, uitslagen en agenda"
+            git pull --rebase
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Een commit van deze Action (met het standaard GITHUB_TOKEN) triggert
+      # zelf geen andere workflows -- de deploy-workflow moet dus expliciet
+      # aangestoten worden zodat nieuwe data ook echt gepubliceerd wordt.
+      - name: Deploy triggeren
+        if: steps.commit.outputs.changed == 'true'
+        run: gh workflow run deploy.yml --repo "$GITHUB_REPOSITORY"
+        env:
+          GH_TOKEN: ${{ github.token }}
