@@ -1,0 +1,21 @@
+{
+  "name": "swvsoest-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/build-news.mjs && vite",
+    "build": "node scripts/build-news.mjs && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "marked": "^14.1.2",
+    "vite": "^5.4.21"
+  }
+}

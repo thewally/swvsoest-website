@@ -1,0 +1,143 @@
+/* Layout- en paginastijlen die bovenop de huisstijl (tokens.css + svs.css) komen.
+   Gebruikt uitsluitend de bestaande design tokens, geen los kleurenpalet. */
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { min-height: 100vh; display: flex; flex-direction: column; }
+#root { display: flex; flex-direction: column; min-height: 100vh; }
+img { max-width: 100%; }
+a { color: inherit; }
+
+.site-main { flex: 1; }
+
+.site-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.site-section { padding: var(--space-16) 0; }
+.site-section-tight { padding: var(--space-8) 0; }
+.site-section-alt { background: var(--surface-alt); }
+
+.site-stack { display: flex; flex-direction: column; gap: var(--space-6); }
+.site-stack-sm { display: flex; flex-direction: column; gap: var(--space-3); }
+
+.site-day-heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin: 0 0 var(--space-4);
+}
+.site-day-heading span { white-space: nowrap; }
+.site-day-heading::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.site-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-6);
+}
+
+.site-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+.site-pill {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 14px;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink-muted);
+  cursor: pointer;
+}
+.site-pill.is-active {
+  background: var(--groen-actie);
+  border-color: var(--groen-actie);
+  color: var(--on-groen-actie);
+}
+
+.site-empty {
+  color: var(--ink-muted);
+  font-size: 15px;
+  padding: var(--space-6) 0;
+}
+
+.site-team-card {
+  display: block;
+  background: var(--surface-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-6);
+  text-decoration: none;
+  color: var(--ink);
+}
+.site-team-card h3 { margin: 0 0 var(--space-2); font-size: 20px; }
+.site-team-card p { margin: 0; color: var(--ink-muted); font-size: 14px; }
+
+.site-subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.site-loading, .site-error {
+  padding: var(--space-16) 0;
+  text-align: center;
+  color: var(--ink-muted);
+}
+
+/* Mobiel menu: het huisstijl-header verbergt `.svs-header-nav` vanaf 720px,
+   deze knop en het uitklappaneel vullen dat zelf aan. */
+.site-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  padding: var(--space-2);
+  cursor: pointer;
+  color: var(--ink);
+}
+.site-mobile-nav {
+  display: none;
+  flex-direction: column;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+.site-mobile-nav a {
+  padding: var(--space-4) var(--space-6);
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+.site-mobile-nav a.is-active { color: var(--groen-actie); }
+@media (max-width: 720px) {
+  .site-menu-btn { display: inline-flex; margin-left: auto; }
+  .site-mobile-nav.is-open { display: flex; }
+}
+
+/* Nieuwsartikel: markdown-inhoud die uit content/nieuws/*.md gerenderd is */
+.site-article {
+  font-size: 17px;
+  line-height: 28px;
+  color: var(--ink);
+}
+.site-article h2 { font-family: var(--font-sans); font-size: 24px; font-weight: 800; margin: var(--space-8) 0 var(--space-3); }
+.site-article h3 { font-size: 20px; font-weight: 700; margin: var(--space-6) 0 var(--space-2); }
+.site-article p { margin: 0 0 var(--space-4); }
+.site-article ul, .site-article ol { margin: 0 0 var(--space-4); padding-left: var(--space-6); }
+.site-article a { color: var(--blauw-actie); text-decoration: underline; }
+.site-article img { border-radius: var(--radius-lg); margin: var(--space-4) 0; }
+
+.site-hero-mark-fallback { background: linear-gradient(90deg, var(--vvz-groen) 0 50%, var(--so-blauw) 50% 100%); }

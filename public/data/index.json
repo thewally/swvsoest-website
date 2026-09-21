@@ -1,0 +1,35 @@
+{
+  "teams": [
+    {
+      "slug": "jo14-1",
+      "teamcode": 289917,
+      "teamnaam": "ST SO Soest/VVZ'49 O14-1"
+    },
+    {
+      "slug": "jo14-2",
+      "teamcode": 304979,
+      "teamnaam": "ST SO Soest/VVZ'49 O14-2"
+    },
+    {
+      "slug": "jo14-3",
+      "teamcode": 304982,
+      "teamnaam": "ST SO Soest/VVZ'49 O14-3"
+    },
+    {
+      "slug": "jo14-4",
+      "teamcode": 304984,
+      "teamnaam": "ST SO Soest/VVZ'49 O14-4"
+    },
+    {
+      "slug": "jo14-5",
+      "teamcode": 304986,
+      "teamnaam": "ST SO Soest/VVZ'49 O14-5"
+    },
+    {
+      "slug": "jo14-6",
+      "teamcode": 304987,
+      "teamnaam": "ST SO Soest/VVZ'49 O14-6"
+    }
+  ],
+  "updated_at": "2026-09-21T14:06:29.836614+02:00"
+}

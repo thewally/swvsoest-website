@@ -1,0 +1,42 @@
+name: Sync SportLink data
+
+on:
+  schedule:
+    # 05:00 en 17:00 UTC = 06/07:00 en 18/19:00 NL-tijd.
+    - cron: "0 5,17 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - scripts/sportlink_sync.py
+
+permissions:
+  contents: write
+
+# Voorkomt dat een geplande run en een push-run tegelijk willen pushen.
+concurrency:
+  group: sync-sportlink
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: python3 scripts/sportlink_sync.py
+        env:
+          SPORTLINK_CLIENT_ID: ${{ secrets.SPORTLINK_CLIENT_ID }}
+
+      - name: Commit als er wijzigingen zijn
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data public/agenda data/state
+          git diff --cached --quiet || git commit -m "Bijwerken programma, uitslagen en agenda"
+          git pull --rebase
+          git push

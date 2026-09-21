@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%logo-svs.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Programma, uitslagen en nieuws van de JO14-teams van Samenwerking Voetbalverenigingen Soest (VVZ'49 en So Soest)." />
+    <title>SWV Soest — JO14</title>
+    <script>
+      // GitHub Pages SPA: recover path from 404-redirect query string (?p=/path&q=query)
+      (function (l) {
+        var params = new URLSearchParams(l.search)
+        var p = params.get('p')
+        if (p) {
+          var q = params.get('q')
+          window.history.replaceState(
+            null,
+            null,
+            '/swvsoest-website' + p.replace(/~and~/g, '&') + (q ? '?' + q.replace(/~and~/g, '&') : '') + l.hash
+          )
+        }
+      })(window.location)
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

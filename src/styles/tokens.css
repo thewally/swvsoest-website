@@ -1,0 +1,120 @@
+/* Samenwerking Voetbalverenigingen Soest: design tokens. Gegenereerd uit tokens.json. */
+
+@font-face {
+  font-family: "Archivo Black";
+  src: url("../fonts/ArchivoBlack-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url("../fonts/Archivo-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root, [data-theme="light"] {
+  --vvz-groen: #35A044;
+  --so-blauw: #1B4F91;
+  --navy: #0B2A52;
+  --surface: #FFFFFF;
+  --surface-alt: #F4F5F3;
+  --surface-raised: #FFFFFF;
+  --ink: #0B2A52;
+  --ink-muted: #4A5A6E;
+  --line: #D0D7DE;
+  --line-strong: #7A8898;
+  --groen-actie: #1F7A34;
+  --on-groen-actie: #FFFFFF;
+  --blauw-actie: #1B4F91;
+  --on-blauw-actie: #FFFFFF;
+  --groen-zacht: #E4F3E6;
+  --blauw-zacht: #E6EEF8;
+  --focus-ring: #1B4F91;
+  --danger: #B42318;
+  --warning: #B54708;
+  --success: var(--groen-actie);
+  --shadow-card: 0 1px 2px rgba(11,42,82,0.08), 0 4px 16px rgba(11,42,82,0.06);
+  --shadow-raised: 0 8px 32px rgba(11,42,82,0.14);
+}
+
+[data-theme="dark"] {
+  --vvz-groen: #35A044;
+  --so-blauw: #1B4F91;
+  --navy: #0B2A52;
+  --surface: #0A1A33;
+  --surface-alt: #0F2342;
+  --surface-raised: #12284A;
+  --ink: #EEF2F7;
+  --ink-muted: #A9B6C8;
+  --line: #2A4063;
+  --line-strong: #6A83A3;
+  --groen-actie: #6CCB78;
+  --on-groen-actie: #0A1A33;
+  --blauw-actie: #8DB3E8;
+  --on-blauw-actie: #0A1A33;
+  --groen-zacht: #12351F;
+  --blauw-zacht: #16305A;
+  --focus-ring: #F5B971;
+  --danger: #FF8A80;
+  --warning: #F5B971;
+  --success: var(--groen-actie);
+  --shadow-card: 0 1px 2px rgba(0,0,0,0.4);
+  --shadow-raised: 0 8px 32px rgba(0,0,0,0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --surface: #0A1A33;
+    --surface-alt: #0F2342;
+    --surface-raised: #12284A;
+    --ink: #EEF2F7;
+    --ink-muted: #A9B6C8;
+    --line: #2A4063;
+    --line-strong: #6A83A3;
+    --groen-actie: #6CCB78;
+    --on-groen-actie: #0A1A33;
+    --blauw-actie: #8DB3E8;
+    --on-blauw-actie: #0A1A33;
+    --groen-zacht: #12351F;
+    --blauw-zacht: #16305A;
+    --focus-ring: #F5B971;
+    --danger: #FF8A80;
+    --warning: #F5B971;
+    --shadow-card: 0 1px 2px rgba(0,0,0,0.4);
+    --shadow-raised: 0 8px 32px rgba(0,0,0,0.5);
+  }
+}
+
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 999px;
+  --container-max: 1200px;
+  --header-height: 72px;
+  --font-display: "Archivo Black", "Arial Black", sans-serif;
+  --font-sans: Archivo, "Helvetica Neue", Arial, sans-serif;
+}
+
+.display { font-family: var(--font-display); font-size: 56px; line-height: 60px; font-weight: 400; letter-spacing: -0.01em; }
+.h1 { font-family: var(--font-display); font-size: 40px; line-height: 44px; font-weight: 400; }
+.score { font-family: var(--font-display); font-size: 48px; line-height: 48px; font-weight: 400; }
+.h2 { font-family: var(--font-sans); font-size: 28px; line-height: 34px; font-weight: 800; }
+.h3 { font-family: var(--font-sans); font-size: 20px; line-height: 28px; font-weight: 700; }
+.body { font-family: var(--font-sans); font-size: 17px; line-height: 28px; font-weight: 400; }
+.body-sm { font-family: var(--font-sans); font-size: 15px; line-height: 24px; font-weight: 400; }
+.label { font-family: var(--font-sans); font-size: 13px; line-height: 16px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.caption { font-family: var(--font-sans); font-size: 13px; line-height: 18px; font-weight: 500; }

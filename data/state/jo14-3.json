@@ -1,0 +1,38 @@
+{
+  "20827561": {
+    "accommodatie": "Sportpark Bosstraat-Oost",
+    "adresplaats": "3766AE SOEST",
+    "eigenteam": "ST SO Soest/VVZ'49 O14-3",
+    "first_seen": "2026-09-21T14:06:29.836614+02:00",
+    "last_seen": "2026-09-21T14:06:29.836614+02:00",
+    "plaats": "SOEST",
+    "scheidsrechter": "",
+    "status": "Te spelen",
+    "straat": "Bosstraat 137",
+    "thuisteam": "ST SO Soest/VVZ'49 O14-3",
+    "uitteam": "Sporting '70 O14-3",
+    "veld": "veld 3-SO Soest",
+    "vertrektijd": "",
+    "verzameltijd": "",
+    "wedstrijddatum": "2026-10-03T11:15:00+0200",
+    "wedstrijdnummer": 8993
+  },
+  "20841308": {
+    "accommodatie": "Sportpark Bosstraat-Oost",
+    "adresplaats": "3766AE SOEST",
+    "eigenteam": "ST SO Soest/VVZ'49 O14-3",
+    "first_seen": "2026-09-21T14:06:29.836614+02:00",
+    "last_seen": "2026-09-21T14:06:29.836614+02:00",
+    "plaats": "SOEST",
+    "scheidsrechter": "",
+    "status": "Te spelen",
+    "straat": "Bosstraat 137",
+    "thuisteam": "ST SO Soest/VVZ'49 O14-3",
+    "uitteam": "Hees O14-1",
+    "veld": "veld 3-SO Soest",
+    "vertrektijd": "",
+    "verzameltijd": "",
+    "wedstrijddatum": "2026-09-26T13:00:00+0200",
+    "wedstrijdnummer": 22740
+  }
+}
