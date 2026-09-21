@@ -50,7 +50,7 @@
   "slug": "jo14-5",
   "stand": [
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/0B203FE1E8998F0FCA0C082FBC52650B?expires=1790032934&sig=872bedee1b7aea089d8eb3287e7a56638b235136",
+      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/0B203FE1E8998F0FCA0C082FBC52650B?expires=1790033028&sig=929e173a782d25ad539d3d911557b438f8846295",
       "clubrelatiecode": "BBCC08V",
       "doelpuntentegen": 1,
       "doelpuntenvoor": 14,
@@ -66,7 +66,7 @@
       "verloren": 0
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/C6875A6D391E4AE28983CE221085F3E6?expires=1790032934&sig=a8d9a741f17e11d5dfd24bc300d06d0fdd9471b9",
+      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/C6875A6D391E4AE28983CE221085F3E6?expires=1790033028&sig=1d25bf58ad0cc470669809d1834ee8fee92b8cc0",
       "clubrelatiecode": "BBCC83K",
       "doelpuntentegen": 5,
       "doelpuntenvoor": 6,
@@ -82,7 +82,7 @@
       "verloren": 0
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790032934&sig=7198bd7c4a61750cf68a2c2a688f6a2e610fee61",
+      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790033028&sig=831b2e6444f61494dafc861b6f5a4178e17074d3",
       "clubrelatiecode": "BBBZ168",
       "doelpuntentegen": 16,
       "doelpuntenvoor": 6,
@@ -98,7 +98,7 @@
       "verloren": 2
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/4CF03A40AD7B7160C3D86267ACD0C85F?expires=1790032934&sig=3ed7fa99fac5ea791cd3ea0e6dc74973b97f06f0",
+      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/4CF03A40AD7B7160C3D86267ACD0C85F?expires=1790033028&sig=f45cdfe298f19e8ed4eb82880d9af6e0445ba693",
       "clubrelatiecode": "BBCC40F",
       "doelpuntentegen": 7,
       "doelpuntenvoor": 7,
@@ -114,7 +114,7 @@
       "verloren": 0
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/F8948725BEF7E49215251457E65F88FA?expires=1790032934&sig=accba0ee0b26ca93a6c2ba447ff56083958e729c",
+      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/F8948725BEF7E49215251457E65F88FA?expires=1790033028&sig=5fe2bbfd666fd1ece693b57ddf65c3948bcde80b",
       "clubrelatiecode": "BBBZ69Q",
       "doelpuntentegen": 12,
       "doelpuntenvoor": 8,
@@ -142,7 +142,7 @@
       "datumopgemaakt": "19 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-21T14:48:53.877318+02:00",
-      "last_seen": "2026-09-21T17:22:06.213454+02:00",
+      "last_seen": "2026-09-21T17:23:32.289487+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20868534&teamcode=304986&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -165,5 +165,5 @@
       "wedstrijdnummer": 49966
     }
   ],
-  "updated_at": "2026-09-21T17:22:06.213454+02:00"
+  "updated_at": "2026-09-21T17:23:32.289487+02:00"
 }

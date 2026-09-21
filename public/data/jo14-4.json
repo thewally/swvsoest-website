@@ -33,11 +33,11 @@
       "thuisteam": "ST SO Soest/VVZ'49 O14-4",
       "thuisteamclubrelatiecode": "BBBZ168",
       "thuisteamid": 304984,
-      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790032932&sig=557c0ab99f928865b16dda46ffed55a8b91785bc",
+      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790033024&sig=65f4a8c9bae3c909c3fd256a774121a6552743ee",
       "uitteam": "Cobu Boys O14-1",
       "uitteamclubrelatiecode": "BBBZ77R",
       "uitteamid": 322031,
-      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/C750DC52C2310FE2429577F3F6575820?expires=1790032932&sig=32343fae2251177cde7ef38d77a5acc3429f24ae",
+      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/C750DC52C2310FE2429577F3F6575820?expires=1790033024&sig=ba6483e5ca64e573bb38841cab5f525823aabc9b",
       "veld": "veld 1-SEC",
       "vertrektijd": "",
       "verzameltijd": "",
@@ -71,11 +71,11 @@
       "thuisteam": "ST SO Soest/VVZ'49 O14-4",
       "thuisteamclubrelatiecode": "BBBZ168",
       "thuisteamid": 304984,
-      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790032932&sig=557c0ab99f928865b16dda46ffed55a8b91785bc",
+      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790033024&sig=65f4a8c9bae3c909c3fd256a774121a6552743ee",
       "uitteam": "AFC Quick 1890 O14-3",
       "uitteamclubrelatiecode": "BBCC74I",
       "uitteamid": 308837,
-      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/D73341AFB080D0245EABCC2EC0B00069?expires=1790032932&sig=b4f3a47b11c44b578bb588fec098e347fb158955",
+      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/D73341AFB080D0245EABCC2EC0B00069?expires=1790033024&sig=283e3881c4f90de222456edadda5deddf006c9cf",
       "veld": "veld 1-SEC",
       "vertrektijd": "",
       "verzameltijd": "",
@@ -196,7 +196,7 @@
       "datumopgemaakt": "19 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-21T14:48:53.877318+02:00",
-      "last_seen": "2026-09-21T17:22:06.213454+02:00",
+      "last_seen": "2026-09-21T17:23:32.289487+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20867057&teamcode=304984&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -219,5 +219,5 @@
       "wedstrijdnummer": 48489
     }
   ],
-  "updated_at": "2026-09-21T17:22:06.213454+02:00"
+  "updated_at": "2026-09-21T17:23:32.289487+02:00"
 }
