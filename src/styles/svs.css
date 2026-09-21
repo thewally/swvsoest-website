@@ -32,7 +32,7 @@ body { margin: 0; font-family: var(--font-sans); background: var(--surface); col
 /* Hero: the split field of the crest. The mark sits on the green half, all text on the blue half (white on so-blauw 8.2:1). */
 .svs-hero { background: linear-gradient(90deg, var(--vvz-groen) 0 50%, var(--so-blauw) 50% 100%); color: #FFFFFF; }
 .svs-hero-inner { max-width: var(--container-max); margin: 0 auto; padding: var(--space-16) var(--space-6); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; }
-.svs-hero-mark { grid-column: 1; grid-row: 1; justify-self: center; width: 200px; height: 200px; border-radius: var(--radius-full); box-shadow: 0 0 0 6px var(--navy); background: #FFFFFF; }
+.svs-hero-mark { grid-column: 1; grid-row: 1; justify-self: center; width: 200px; height: 200px; border-radius: var(--radius-full); box-shadow: 0 0 0 6px var(--navy); background: #FFFFFF; object-fit: contain; }
 .svs-hero-text { grid-column: 2; grid-row: 1; padding-left: var(--space-12); max-width: 520px; }
 .svs-hero-label { margin-bottom: var(--space-3); }
 .svs-hero-title { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 56px; line-height: 60px; letter-spacing: -.01em; }
