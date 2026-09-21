@@ -109,7 +109,7 @@ export default function HomePage() {
 
       <section className="site-section">
         <div className="site-container">
-          <SectionHeading label="Teams" title="Onze zes JO14-teams" />
+          <SectionHeading label="Teams" title="Onze teams" />
           <div className="site-grid">
             {TEAMS.map(team => {
               const foto = teamsData?.find(t => t.team.slug === team.slug)?.data?.foto

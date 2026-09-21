@@ -1,23 +1,23 @@
 # SWV Soest — JO14
 
 Website van Samenwerking Voetbalverenigingen Soest (VVZ'49 x So Soest) voor de
-zes JO14-teams (JO14-1 t/m JO14-6): programma, uitslagen, teampagina's met
-agenda-abonnement, en nieuws.
+zes JO14-teams (JO14-1 t/m JO14-6): programma, uitslagen, teampagina's en nieuws.
 
 - **Huisstijl**: [swvsoest-huisstijl](https://github.com/thewally/swvsoest-huisstijl) (logo, design tokens, componenten), lokaal geport naar React in `src/components/svs/`.
 - **Menu/opzet**: geïnspireerd op [vvz-toolbox](https://github.com/thewally/vvz-toolbox) (React + Vite + React Router, GitHub Pages).
-- **Wedstrijddata**: rechtstreeks van de publieke SportLink Club widget-API (`data.sportlink.com`), net als [vvz49-jo14-6-agenda](https://github.com/thewally/vvz49-jo14-6-agenda).
-- **Geen database**: alle data staat als statische JSON/ICS-bestanden in de repo, bijgewerkt door een geplande GitHub Action.
+- **Wedstrijddata**: rechtstreeks van de publieke SportLink Club widget-API (`data.sportlink.com`).
+- **Agenda's (.ics)**: elk team heeft een eigen los repo (`vvz49-jo14-1-agenda` t/m `vvz49-jo14-6-agenda`), zelfde opzet als [vvz49-jo14-6-agenda](https://github.com/thewally/vvz49-jo14-6-agenda). Deze site linkt er alleen naartoe (zie `src/lib/teams.js`, veld `agendaUrl`); de feed zelf wordt niet hier gegenereerd.
+- **Geen database**: alle data staat als statische JSON-bestanden in de repo, bijgewerkt door een geplande GitHub Action.
 
 ## Architectuur
 
 ```
 content/nieuws/*.md        Nieuwsartikelen (frontmatter + markdown)
 scripts/build-news.mjs     Zet content/nieuws/*.md om naar public/data/nieuws.json (bij elke build)
-scripts/sportlink_sync.py  Haalt programma/uitslagen op bij SportLink, schrijft:
-                              public/data/<team>.json   (programma + uitslagen)
-                              public/agenda/<team>.ics  (agenda-feed)
-                              data/state/<team>.json    (geheugen voor stabiele ICS-uid's)
+scripts/sportlink_sync.py  Haalt programma/uitslagen/stand/teamfoto op bij SportLink, schrijft:
+                              public/data/<team>.json        (programma + uitslagen + stand + foto-pad)
+                              public/data/photos/<team>.jpg  (teamfoto, indien aanwezig)
+                              data/state/results/<team>.json (archief van alle ooit geziene uitslagen)
 src/                        React-app (Vite), leest de public/data/*.json bestanden
 ```
 
@@ -60,7 +60,7 @@ Committen naar `main` (bv. rechtstreeks op GitHub) triggert automatisch een nieu
 
 De zes teamnamen staan op twee plekken (moeten synchroon blijven):
 
-- `src/lib/teams.js` (frontend)
+- `src/lib/teams.js` (frontend, incl. `agendaUrl` per team)
 - `scripts/sportlink_sync.py` → `TEAMS` (data-sync)
 
 ## Lokaal ontwikkelen
@@ -72,10 +72,10 @@ npm run dev
 ```
 
 ```bash
-python3 scripts/sportlink_sync.py   # ververst public/data/*.json en public/agenda/*.ics
+python3 scripts/sportlink_sync.py   # ververst public/data/*.json en public/data/photos/*.jpg
 ```
 
 ## Live
 
 - **Website**: https://thewally.github.io/swvsoest-website/
-- **Agenda-feeds**: `https://thewally.github.io/swvsoest-website/agenda/jo14-1.ics` (t/m `jo14-6.ics`)
+- **Agenda's**: https://github.com/thewally/vvz49-jo14-1-agenda t/m `-6-agenda` (elk met eigen `matches.ics` en instructiepagina)

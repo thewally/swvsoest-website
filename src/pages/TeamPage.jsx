@@ -29,11 +29,6 @@ export default function TeamPage() {
 
   if (!team) return <NotFoundPage />
 
-  const base = import.meta.env.BASE_URL
-  const icsPath = `${base}agenda/${team.slug}.ics`
-  const icsUrl = new URL(icsPath, window.location.href).href
-  const webcalUrl = icsUrl.replace(/^https?:\/\//, 'webcal://')
-
   const vandaag = datumSleutel(new Date().toISOString())
   const programma = data
     ? sorteerOplopend((data.programma || []).map(w => ({ ...w, team })).filter(w => datumSleutel(w.wedstrijddatum) >= vandaag))
@@ -49,17 +44,13 @@ export default function TeamPage() {
           <h2 className="svs-sechead-title" style={{ fontSize: 20, marginBottom: 12 }}>
             Abonneer op de agenda
           </h2>
-          <div className="site-subscribe">
-            <a className="svs-btn svs-btn-quiet svs-btn-sm" href={webcalUrl}>
-              Apple / Outlook
-            </a>
-            <a className="svs-btn svs-btn-quiet svs-btn-sm" href={icsUrl} target="_blank" rel="noreferrer">
-              Google Agenda / .ics-link
-            </a>
-            <a className="svs-btn svs-btn-quiet svs-btn-sm" href={icsUrl} download>
-              Download .ics
-            </a>
-          </div>
+          <p className="svs-meta" style={{ marginBottom: 12 }}>
+            Elke wedstrijd van {team.kort} staat in een agenda-feed, inclusief verzameltijd en locatie. Op de
+            agendapagina staat een stap-voor-stap uitleg voor Google Calendar, Outlook en Apple Agenda.
+          </p>
+          <a className="svs-btn svs-btn-primary svs-btn-sm" href={team.agendaUrl} target="_blank" rel="noreferrer">
+            Open agenda &amp; instructies
+          </a>
         </section>
 
         {error && <p className="site-error">Kon gegevens niet laden: {error}</p>}

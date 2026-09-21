@@ -204,13 +204,6 @@ a { color: inherit; }
 }
 .site-team-photo-placeholder svg { width: 30%; height: 30%; }
 
-.site-subscribe {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3);
-  align-items: center;
-}
-
 .site-loading, .site-error {
   padding: var(--space-16) 0;
   text-align: center;

@@ -7,29 +7,30 @@ Geen account of database nodig.
 
 Voor elk team wordt geschreven:
   - public/data/<slug>.json        -- programma + uitslagen + stand + foto-pad, voor de website
-  - public/agenda/<slug>.ics       -- agenda-feed om te abonneren
   - public/data/photos/<slug>.jpg  -- teamfoto (indien SportLink er een heeft), gedecodeerd uit base64
+
+De agenda-feeds (.ics) worden NIET meer hier gegenereerd -- elk team heeft
+een eigen los repo (vvz49-jo14-<n>-agenda, zelfde opzet als
+github.com/thewally/vvz49-jo14-6-agenda) dat dat zelf doet en host. Deze
+site linkt er alleen naartoe (zie src/lib/teams.js, veld `agendaUrl`).
 
 De client_id staat in de GitHub Actions repository secret
 SPORTLINK_CLIENT_ID (lokaal: zet 'm in de omgevingsvariabele met
 dezelfde naam).
 
 We zoeken elke run opnieuw de teamcode op via de teamnaam (stabieler dan
-poulecode, die halverwege het seizoen kan wisselen). Voor de ICS-feed
-houden we per team een state-bestand (data/state/<slug>.json) bij zodat
-al geziene wedstrijden niet verdwijnen uit de agenda als een fase/poule
-wisselt -- zie vvz49-jo14-6-agenda voor dezelfde aanpak op een los team.
+poulecode, die halverwege het seizoen kan wisselen).
 
 Belangrijke beperking van de publieke `uitslagen`-article: die geeft altijd
 alleen de laatst gespeelde speelronde terug, ongeacht `aantaldagen` of
 andere parameters (uitgeprobeerd; geen van de aannemelijke parameternamen
 had effect) -- er is geen manier om er in één keer de hele seizoenshistorie
 uit te halen. Daarom bouwen we zelf een archief op: elke run wordt de net
-opgehaalde speelronde gemerged in data/state/results/<slug>.json (net als
-de ICS-state, op wedstrijdcode). De site's "uitslagen" komen uit dat
-archief, dat na verloop van weken vanzelf het hele seizoen bevat. Wedstrijden
-van vóór de allereerste keer dat dit script draaide, kunnen niet met
-terugwerkende kracht opgehaald worden.
+opgehaalde speelronde gemerged in data/state/results/<slug>.json (op
+wedstrijdcode). De site's "uitslagen" komen uit dat archief, dat na verloop
+van weken vanzelf het hele seizoen bevat. Wedstrijden van vóór de
+allereerste keer dat dit script draaide, kunnen niet met terugwerkende
+kracht opgehaald worden.
 """
 import base64
 import json
@@ -38,7 +39,7 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timedelta, timezone
+from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -54,24 +55,10 @@ TEAMS = {
     "jo14-6": "ST SO Soest/VVZ'49 O14-6",
 }
 
-UID_NAMESPACE = "swvsoest-website"
-
-# VVZ'49's eigen accommodatie (Sportpark Zonnegloren) -- thuisbasis van de
-# combinatieteams. De KNVB noemt de accommodatie "Sportpark Zonnegloren",
-# maar Google Maps/Calendar herkent de plek (met foto/kaartje) pas onder de
-# officiele clubnaam en het exacte adres.
-THUIS_ACCOMMODATIE_KNVB = "Sportpark Zonnegloren"
-THUIS_CLUBNAAM = "Sportvereniging Vrienden van Zonnegloren"
-THUIS_STRAAT = "Eemweg 2D"
-THUIS_PLAATS = "3764 DG Soest"
-THUIS_ADRES_VOLLEDIG = f"{THUIS_CLUBNAAM} {THUIS_STRAAT}, {THUIS_PLAATS}, Nederland"
-
 TZ_AMS = ZoneInfo("Europe/Amsterdam")
 
 ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "public" / "data"
-AGENDA_DIR = ROOT / "public" / "agenda"
-STATE_DIR = ROOT / "data" / "state"
 RESULTS_STATE_DIR = ROOT / "data" / "state" / "results"
 PHOTOS_DIR = ROOT / "public" / "data" / "photos"
 
@@ -157,28 +144,6 @@ def fetch_poulestand(poulecode: int) -> list[dict]:
     return api_get("poulestand", poulecode=poulecode)
 
 
-def fetch_accommodatie(wedstrijdcode: int) -> dict:
-    try:
-        info = api_get("wedstrijd-informatie", wedstrijdcode=wedstrijdcode)
-        return info.get("accommodatie") or {}
-    except (urllib.error.URLError, KeyError, ValueError):
-        return {}
-
-
-def display_accommodatie(naam: str) -> str:
-    return THUIS_CLUBNAAM if naam == THUIS_ACCOMMODATIE_KNVB else naam
-
-
-def maps_url(naam: str, straat: str, plaats: str) -> str:
-    query = ", ".join(p for p in [straat, plaats] if p) or naam
-    if not query:
-        return ""
-    return "https://www.google.com/maps/search/?api=1&query=" + urllib.parse.quote(query)
-
-
-THUIS_MAPS_URL = maps_url(THUIS_CLUBNAAM, THUIS_STRAAT, THUIS_PLAATS)
-
-
 def load_json(pad: Path) -> dict:
     if pad.exists():
         return json.loads(pad.read_text())
@@ -188,38 +153,6 @@ def load_json(pad: Path) -> dict:
 def save_json(pad: Path, data) -> None:
     pad.parent.mkdir(parents=True, exist_ok=True)
     pad.write_text(json.dumps(data, indent=2, ensure_ascii=False, sort_keys=True) + "\n")
-
-
-def merge_state(state: dict, matches: list[dict], now_iso: str, teamnaam: str) -> dict:
-    """Houdt per wedstrijdcode de laatst bekende gegevens bij, zodat een
-    wedstrijd niet uit de agenda verdwijnt als hij (tijdelijk) buiten het
-    programma-venster valt, bv. bij een fase/poulewissel."""
-    for m in matches:
-        uid = str(m["wedstrijdcode"])
-        accommodatie = fetch_accommodatie(m["wedstrijdcode"])
-        entry = state.get(uid, {})
-        entry.update(
-            {
-                "wedstrijddatum": m["wedstrijddatum"],
-                "thuisteam": m["thuisteam"],
-                "uitteam": m["uitteam"],
-                "accommodatie": m.get("accommodatie") or "",
-                "veld": m.get("veld") or "",
-                "plaats": m.get("plaats") or "",
-                "straat": accommodatie.get("straat") or "",
-                "adresplaats": accommodatie.get("plaats") or "",
-                "status": m.get("status") or "",
-                "wedstrijdnummer": m.get("wedstrijdnummer") or "",
-                "verzameltijd": m.get("verzameltijd") or "",
-                "vertrektijd": m.get("vertrektijd") or "",
-                "scheidsrechter": m.get("scheidsrechter") or "",
-                "eigenteam": teamnaam,
-            }
-        )
-        entry["last_seen"] = now_iso
-        entry.setdefault("first_seen", now_iso)
-        state[uid] = entry
-    return state
 
 
 def merge_results(results_state: dict, uitslagen: list[dict], now_iso: str) -> dict:
@@ -235,110 +168,6 @@ def merge_results(results_state: dict, uitslagen: list[dict], now_iso: str) -> d
         entry.setdefault("first_seen", now_iso)
         results_state[uid] = entry
     return results_state
-
-
-def ics_escape(s: str) -> str:
-    return s.replace("\\", "\\\\").replace(",", "\\,").replace(";", "\\;").replace("\n", "\\n")
-
-
-def ics_moment(prop: str, value: datetime) -> str:
-    return f"{prop}:{value.astimezone(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}"
-
-
-def vevent(uid: str, dtstamp: str, start: datetime, end: datetime, summary: str, location: str = "",
-           description: str = "", url: str = "", cancelled: bool = False) -> list[str]:
-    lines = [
-        "BEGIN:VEVENT",
-        f"UID:{uid}",
-        f"DTSTAMP:{dtstamp}",
-        ics_moment("DTSTART", start),
-        ics_moment("DTEND", end),
-        f"SUMMARY:{ics_escape(summary)}",
-    ]
-    if location:
-        lines.append(f"LOCATION:{ics_escape(location)}")
-    if description:
-        lines.append(f"DESCRIPTION:{ics_escape(description)}")
-    if url:
-        lines.append(f"URL:{url}")
-    if cancelled:
-        lines.append("STATUS:CANCELLED")
-    lines.append("END:VEVENT")
-    return lines
-
-
-def build_ics(slug: str, teamnaam: str, state: dict, now: datetime) -> str:
-    cutoff = (now - timedelta(days=60)).date()
-    dtstamp = now.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    lines = [
-        "BEGIN:VCALENDAR",
-        "VERSION:2.0",
-        f"PRODID:-//swvsoest-website//{slug}//NL",
-        "CALSCALE:GREGORIAN",
-        f"X-WR-CALNAME:{teamnaam}",
-    ]
-    for uid, entry in sorted(state.items(), key=lambda kv: kv[1]["wedstrijddatum"]):
-        kickoff = datetime.fromisoformat(entry["wedstrijddatum"]).astimezone(TZ_AMS)
-        if kickoff.date() < cutoff:
-            continue
-
-        cancelled = bool(entry["status"]) and "afgelast" in entry["status"].lower()
-        accommodatie_display = display_accommodatie(entry["accommodatie"])
-        is_thuis_accommodatie = accommodatie_display == THUIS_CLUBNAAM
-        if is_thuis_accommodatie:
-            location = THUIS_ADRES_VOLLEDIG
-            match_maps_url = THUIS_MAPS_URL
-        else:
-            location = accommodatie_display
-            match_maps_url = maps_url(accommodatie_display, entry["straat"], entry["adresplaats"])
-
-        is_thuis = entry["thuisteam"] == teamnaam
-        richting = "THUIS" if is_thuis else "UIT"
-        tegenstander = entry["uitteam"] if is_thuis else entry["thuisteam"]
-        summary = f"[{richting}] {tegenstander}"
-        if cancelled:
-            summary = f"AFGELAST: {summary}"
-
-        desc_parts = [
-            f"Status: {entry['status']}" if entry["status"] else "",
-            f"Veld: {entry['veld']}" if entry["veld"] else "",
-            f"Plaats: {entry['plaats']}" if entry["plaats"] else "",
-            f"Scheidsrechter: {entry['scheidsrechter']}" if entry["scheidsrechter"] else "",
-            f"Wedstrijdnummer: {entry['wedstrijdnummer']}" if entry["wedstrijdnummer"] else "",
-            f"Route: {match_maps_url}" if match_maps_url else "",
-        ]
-        description = "\n".join(p for p in desc_parts if p)
-
-        gather_time = entry["verzameltijd"] if is_thuis else entry["vertrektijd"]
-        if gather_time and not cancelled:
-            vh, vm = (int(x) for x in gather_time.split(":"))
-            gather_start = kickoff.replace(hour=vh, minute=vm, second=0, microsecond=0)
-            if gather_start < kickoff:
-                sublocatie = "kleedkamer" if is_thuis else "parkeerplaats"
-                lines += vevent(
-                    uid=f"{uid}-verzamelen@{UID_NAMESPACE}",
-                    dtstamp=dtstamp,
-                    start=gather_start,
-                    end=kickoff,
-                    summary=f"Verzamelen ({sublocatie}): [{richting}] {tegenstander}",
-                    location=THUIS_ADRES_VOLLEDIG,
-                    url=THUIS_MAPS_URL,
-                )
-
-        lines += vevent(
-            uid=f"{uid}@{UID_NAMESPACE}",
-            dtstamp=dtstamp,
-            start=kickoff,
-            end=kickoff + timedelta(minutes=90),
-            summary=summary,
-            location=location,
-            description=description,
-            url=match_maps_url,
-            cancelled=cancelled,
-        )
-
-    lines.append("END:VCALENDAR")
-    return "\r\n".join(lines) + "\r\n"
 
 
 def sync_team(slug: str, teamnaam: str, teams: list[dict], now: datetime) -> dict:
@@ -385,16 +214,6 @@ def sync_team(slug: str, teamnaam: str, teams: list[dict], now: datetime) -> dic
         "stand": stand,
         "foto": foto,
     })
-
-    state_path = STATE_DIR / f"{slug}.json"
-    state = load_json(state_path)
-    state = merge_state(state, programma, now.isoformat(), teamnaam)
-    save_json(state_path, state)
-
-    ics = build_ics(slug, teamnaam, state, now)
-    ics_path = AGENDA_DIR / f"{slug}.ics"
-    ics_path.parent.mkdir(parents=True, exist_ok=True)
-    ics_path.write_text(ics)
 
     return {"slug": slug, "teamnaam": teamnaam, "teamcode": teamcode}
 
