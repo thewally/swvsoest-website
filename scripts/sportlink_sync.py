@@ -6,8 +6,9 @@ SWV Soest (VVZ'49 x So Soest) via de publieke SportLink Club widget-API
 Geen account of database nodig.
 
 Voor elk team wordt geschreven:
-  - public/data/<slug>.json   -- programma + uitslagen, voor de website
-  - public/agenda/<slug>.ics  -- agenda-feed om te abonneren
+  - public/data/<slug>.json        -- programma + uitslagen + stand + foto-pad, voor de website
+  - public/agenda/<slug>.ics       -- agenda-feed om te abonneren
+  - public/data/photos/<slug>.jpg  -- teamfoto (indien SportLink er een heeft), gedecodeerd uit base64
 
 De client_id staat in de GitHub Actions repository secret
 SPORTLINK_CLIENT_ID (lokaal: zet 'm in de omgevingsvariabele met
@@ -30,6 +31,7 @@ archief, dat na verloop van weken vanzelf het hele seizoen bevat. Wedstrijden
 van vóór de allereerste keer dat dit script draaide, kunnen niet met
 terugwerkende kracht opgehaald worden.
 """
+import base64
 import json
 import os
 import sys
@@ -71,6 +73,7 @@ DATA_DIR = ROOT / "public" / "data"
 AGENDA_DIR = ROOT / "public" / "agenda"
 STATE_DIR = ROOT / "data" / "state"
 RESULTS_STATE_DIR = ROOT / "data" / "state" / "results"
+PHOTOS_DIR = ROOT / "public" / "data" / "photos"
 
 
 def api_get(article: str, **params) -> object:
@@ -125,6 +128,29 @@ def fetch_programma(teamcode: int) -> list[dict]:
 
 def fetch_uitslagen(teamcode: int) -> list[dict]:
     return api_get("uitslagen", teamcode=teamcode, eigenwedstrijden="JA")
+
+
+def fetch_teamfoto_base64(teamcode: int) -> str | None:
+    try:
+        info = api_get("team-gegevens", teamcode=teamcode, lokaleteamcode=-1)
+        return (info.get("team") or {}).get("teamfoto") or None
+    except (urllib.error.URLError, KeyError, ValueError):
+        return None
+
+
+def sync_teamfoto(slug: str, teamcode: int) -> str | None:
+    """Slaat de teamfoto (indien aanwezig in SportLink) op als los JPEG-bestand
+    in public/data/photos/, en geeft het relatieve pad (t.o.v. public/data/)
+    terug -- of None als er geen foto is. Een oude foto wordt opgeruimd zodra
+    het team er geen meer heeft."""
+    photo_path = PHOTOS_DIR / f"{slug}.jpg"
+    base64_data = fetch_teamfoto_base64(teamcode)
+    if not base64_data:
+        photo_path.unlink(missing_ok=True)
+        return None
+    PHOTOS_DIR.mkdir(parents=True, exist_ok=True)
+    photo_path.write_bytes(base64.b64decode(base64_data))
+    return f"photos/{slug}.jpg"
 
 
 def fetch_poulestand(poulecode: int) -> list[dict]:
@@ -342,9 +368,11 @@ def sync_team(slug: str, teamnaam: str, teams: list[dict], now: datetime) -> dic
         reverse=True,
     )
 
+    foto = sync_teamfoto(slug, teamcode)
+
     print(f"[{slug}] teamcode {teamcode}: {len(programma)} programma, "
           f"{len(laatste_speelronde)} nieuw in laatste speelronde, {len(uitslagen)} uitslagen totaal in archief, "
-          f"stand {len(stand)} team(s)")
+          f"stand {len(stand)} team(s), foto {'aanwezig' if foto else 'geen'}")
 
     save_json(DATA_DIR / f"{slug}.json", {
         "slug": slug,
@@ -355,6 +383,7 @@ def sync_team(slug: str, teamnaam: str, teams: list[dict], now: datetime) -> dic
         "uitslagen": uitslagen,
         "poule": poule,
         "stand": stand,
+        "foto": foto,
     })
 
     state_path = STATE_DIR / f"{slug}.json"

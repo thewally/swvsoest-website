@@ -157,17 +157,33 @@ a { color: inherit; }
 }
 
 .site-team-card {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
   background: var(--surface-raised);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
-  padding: var(--space-6);
+  padding: var(--space-4) var(--space-6);
   text-decoration: none;
   color: var(--ink);
 }
-.site-team-card h3 { margin: 0 0 var(--space-2); font-size: 20px; }
-.site-team-card p { margin: 0; color: var(--ink-muted); font-size: 14px; }
+.site-team-card h3 { margin: 0; font-size: 20px; }
+.site-team-photo {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--surface-alt);
+}
+.site-team-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--line-strong);
+}
+.site-team-photo-placeholder svg { width: 60%; height: 60%; }
 
 .site-subscribe {
   display: flex;

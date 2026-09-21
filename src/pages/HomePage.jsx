@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { Hero, Button, SectionHeading, NewsCard } from '../components/svs'
 import MatchGrid from '../components/MatchGrid'
+import TeamCard from '../components/TeamCard'
 import { TEAMS } from '../lib/teams'
 import { fetchAllTeamsData, fetchNieuws } from '../lib/data'
 import { sorteerOplopend, datumSleutel } from '../lib/matchHelpers'
 
 export default function HomePage() {
   const [eerstvolgende, setEerstvolgende] = useState([])
+  const [teamsData, setTeamsData] = useState(null)
   const [nieuws, setNieuws] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -29,6 +30,7 @@ export default function HomePage() {
       const speeldag = eersteDatum ? gesorteerd.filter(w => datumSleutel(w.wedstrijddatum) === eersteDatum) : []
 
       setEerstvolgende(speeldag)
+      setTeamsData(teamsData)
       setNieuws(nieuwsData.slice(0, 3))
       setLoading(false)
     }
@@ -109,12 +111,10 @@ export default function HomePage() {
         <div className="site-container">
           <SectionHeading label="Teams" title="Onze zes JO14-teams" />
           <div className="site-grid">
-            {TEAMS.map(team => (
-              <Link key={team.slug} to={`/teams/${team.slug}`} className="site-team-card">
-                <h3>{team.kort}</h3>
-                <p>Programma, uitslagen en agenda</p>
-              </Link>
-            ))}
+            {TEAMS.map(team => {
+              const foto = teamsData?.find(t => t.team.slug === team.slug)?.data?.foto
+              return <TeamCard key={team.slug} team={team} foto={foto} />
+            })}
           </div>
         </div>
       </section>
