@@ -23,11 +23,7 @@ export default function TeamCard({ team, foto }) {
   const base = import.meta.env.BASE_URL
   return (
     <Link to={`/teams/${team.slug}`} className="site-team-card">
-      {foto ? (
-        <img src={`${base}data/${foto}`} alt="" className="site-team-photo" />
-      ) : (
-        <TeamPhotoPlaceholder />
-      )}
+      {foto ? <img src={`${base}data/${foto}`} alt="" className="site-team-photo" /> : <TeamPhotoPlaceholder />}
       <h3>{team.kort}</h3>
     </Link>
   )

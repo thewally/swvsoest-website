@@ -4,14 +4,16 @@ import { groepeerPerDag, formatDagLabel, matchStatus, parseScore, locatieLabel }
 
 // Witte cirkel achter elk logo, zodat donkere of transparante SportLink-logo's
 // altijd goed contrasteren -- en een nette placeholder als de afbeelding
-// (bv. een verlopen ondertekende URL) niet laadt.
-function TeamLogo({ src }) {
+// (bv. een verlopen ondertekende URL) niet laadt. `align` zit op de wrapper
+// zodat de mobiele lay-out thuis- en uitlogo apart kan positioneren.
+function TeamLogo({ src, align }) {
   const [broken, setBroken] = useState(false)
+  const cls = `site-match-logo-wrap site-match-logo-${align}`
   if (!src || broken) {
-    return <span className="site-match-logo-wrap site-match-logo-empty" aria-hidden="true" />
+    return <span className={`${cls} site-match-logo-empty`} aria-hidden="true" />
   }
   return (
-    <span className="site-match-logo-wrap">
+    <span className={cls}>
       <img src={src} alt="" className="site-match-logo" onError={() => setBroken(true)} />
     </span>
   )
@@ -19,11 +21,14 @@ function TeamLogo({ src }) {
 
 // Teamnaam staat altijd aan de buitenkant, het logo altijd naast de
 // uitslag/"vs" in het midden: thuis = naam - logo, uit = logo - naam.
+// Naam en logo krijgen elk een eigen align-klasse zodat de mobiele lay-out
+// (naam boven, logo's + uitslag op één regel, naam onder) ze onafhankelijk
+// van elkaar kan plaatsen via CSS grid-areas.
 function TeamCol({ name, logo, align, own }) {
-  const naam = <span>{name}</span>
-  const logoEl = <TeamLogo src={logo} />
+  const naam = <span className={`site-match-name site-match-name-${align}${own ? ' is-own' : ''}`}>{name}</span>
+  const logoEl = <TeamLogo src={logo} align={align} />
   return (
-    <div className={`site-match-team site-match-team-${align}${own ? ' is-own' : ''}`}>
+    <div className={`site-match-team site-match-team-${align}`}>
       {align === 'home' ? (
         <>
           {naam}
@@ -82,7 +87,6 @@ export default function MatchGrid({ wedstrijden, gespeeld = false, leegTekst = '
                   </div>
                   <TeamCol name={w.uitteam} logo={w.uitteamlogo} align="away" own={w.uitteam === w.team?.sportlinkNaam} />
                   <div className="site-match-meta">
-                    {w.team?.kort && <span className="svs-label site-match-cat">{w.team.kort}</span>}
                     <span className="svs-meta">{locatieLabel(w)}</span>
                   </div>
                 </div>

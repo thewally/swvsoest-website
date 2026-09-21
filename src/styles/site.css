@@ -89,7 +89,7 @@ a { color: inherit; }
 .site-match-team span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .site-match-team-home { justify-content: flex-end; }
 .site-match-team-away { justify-content: flex-start; }
-.site-match-team.is-own { color: var(--groen-actie); }
+.site-match-name.is-own { color: var(--groen-actie); }
 /* Witte cirkel achter elk clublogo: sommige SportLink-logo's zijn donker of
    transparant en zijn anders slecht leesbaar op de kaart-achtergrond. */
 .site-match-logo-wrap {
@@ -109,18 +109,37 @@ a { color: inherit; }
 .site-match-mid { display: flex; justify-content: center; }
 .site-match-score { font-family: var(--font-display); font-size: 22px; color: var(--ink); white-space: nowrap; }
 .site-match-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; text-align: right; }
-.site-match-cat { color: var(--blauw-actie); }
 
 @media (max-width: 720px) {
+  /* Compacte scorebord-indeling:
+       [teamnaam thuis]
+     [logo thuis]  -/score  [logo uit]
+       [teamnaam uit]
+     De wrapper-divs rond naam+logo (.site-match-team-*) doen zelf niet meer
+     mee in de grid (display:contents) zodat naam en logo onafhankelijk op
+     hun eigen grid-area geplaatst kunnen worden. */
   .site-match-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas:
+      "time time time"
+      "nameHome nameHome nameHome"
+      "logoHome mid logoAway"
+      "nameAway nameAway nameAway"
+      "meta meta meta";
     justify-items: center;
     text-align: center;
     gap: var(--space-2);
     padding: var(--space-4);
   }
-  .site-match-team-home, .site-match-team-away { justify-content: center; }
-  .site-match-team span { white-space: normal; }
+  .site-match-row-time { grid-area: time; }
+  .site-match-team-home, .site-match-team-away { display: contents; }
+  .site-match-name-home { grid-area: nameHome; }
+  .site-match-name-away { grid-area: nameAway; }
+  .site-match-logo-home { grid-area: logoHome; }
+  .site-match-logo-away { grid-area: logoAway; }
+  .site-match-mid { grid-area: mid; }
+  .site-match-meta { grid-area: meta; }
+  .site-match-name { white-space: normal; }
   .site-match-meta { align-items: center; text-align: center; }
 }
 
@@ -158,23 +177,23 @@ a { color: inherit; }
 
 .site-team-card {
   display: flex;
-  align-items: center;
-  gap: var(--space-4);
+  flex-direction: column;
   background: var(--surface-raised);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
-  padding: var(--space-4) var(--space-6);
+  overflow: hidden;
   text-decoration: none;
   color: var(--ink);
 }
-.site-team-card h3 { margin: 0; font-size: 20px; }
+.site-team-card h3 { margin: 0; padding: var(--space-4) var(--space-6); font-size: 20px; }
+/* Teamfoto: volle kaartbreedte, boven de naam, met een vaste beeldverhouding
+   zodat de foto nooit vervormt (object-fit: cover snijdt bij, i.p.v. rekken). */
 .site-team-photo {
-  width: 56px;
-  height: 56px;
-  border-radius: var(--radius-full);
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
-  flex-shrink: 0;
   background: var(--surface-alt);
 }
 .site-team-photo-placeholder {
@@ -183,7 +202,7 @@ a { color: inherit; }
   justify-content: center;
   color: var(--line-strong);
 }
-.site-team-photo-placeholder svg { width: 60%; height: 60%; }
+.site-team-photo-placeholder svg { width: 30%; height: 30%; }
 
 .site-subscribe {
   display: flex;
@@ -240,6 +259,20 @@ a { color: inherit; }
 .site-article a { color: var(--blauw-actie); text-decoration: underline; }
 .site-article img { border-radius: var(--radius-lg); margin: var(--space-4) 0; }
 
+/* Nieuwsafbeelding (overzicht én detailpagina): vaste 16:9-kader, altijd
+   volledig zichtbaar (object-fit: contain i.p.v. bijsnijden) -- nodig omdat
+   een nieuwsbericht ook een logo of ander niet-16:9-beeld kan gebruiken. */
+.svs-news-img { object-fit: contain; background: var(--surface-alt); }
+.site-article-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: var(--surface-alt);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-6);
+}
+
 .site-hero-mark-fallback { background: linear-gradient(90deg, var(--vvz-groen) 0 50%, var(--so-blauw) 50% 100%); }
 
 /* Groter cirkel-embleem in de Hero, met het logo zelf kleiner en meer
@@ -256,7 +289,28 @@ a { color: inherit; }
   object-fit: contain;
 }
 @media (max-width: 720px) {
-  .svs-hero-mark { width: 260px; height: 260px; padding: 40px; }
+  /* De huisstijl-bundel schakelt op mobiel over naar een effen blauwe Hero
+     met een groene rand en verbergt het embleem. Hier houden we bewust de
+     groen/blauw-vlakverdeling (het herkenningsteken uit het merkboek) aan,
+     ook op mobiel, met het embleem gecentreerd boven de tekst. */
+  .svs-hero {
+    background: linear-gradient(90deg, var(--vvz-groen) 0 50%, var(--so-blauw) 50% 100%);
+    border-top: none;
+  }
+  .svs-hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .svs-hero-mark {
+    display: block;
+    order: -1;
+    width: 260px;
+    height: 260px;
+    padding: 40px;
+  }
+  .svs-hero-text { max-width: none; }
 }
 
 /* Hero-titel: "Samenwerking Voetbalverenigingen SOEST", waarbij SOEST

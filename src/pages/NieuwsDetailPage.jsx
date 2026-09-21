@@ -39,13 +39,7 @@ export default function NieuwsDetailPage() {
         <p className="svs-meta" style={{ marginBottom: 24 }}>
           {artikel.dateDisplay}
         </p>
-        {artikel.image && (
-          <img
-            src={artikel.image}
-            alt=""
-            style={{ width: '100%', borderRadius: 'var(--radius-lg)', marginBottom: 24 }}
-          />
-        )}
+        {artikel.image && <img src={artikel.image} alt="" className="site-article-image" />}
         <div className="site-article" dangerouslySetInnerHTML={{ __html: artikel.html }} />
       </div>
     </div>
