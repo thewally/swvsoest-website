@@ -69,12 +69,15 @@ def api_get(article: str, **params) -> object:
         return json.loads(resp.read().decode("utf-8"))
 
 
-def find_teamcode(teamnaam: str) -> int:
-    teams = api_get("teams")
+def find_team_record(teams: list[dict], teamnaam: str) -> dict:
+    """Zoekt de 'bond'-registratie van dit team op. Geeft bij voorkeur een
+    registratie met poulecode terug (nodig voor de stand); zonder poule
+    (bv. net na de zomerstop) valt terug op de eerste match."""
     matches = [t for t in teams if t.get("teamnaam") == teamnaam and t.get("teamsoort") == "bond"]
     if not matches:
         raise RuntimeError(f"Team '{teamnaam}' niet gevonden in teams-lijst.")
-    return matches[0]["teamcode"]
+    with_poule = [t for t in matches if t.get("poulecode")]
+    return (with_poule or matches)[0]
 
 
 def fetch_programma(teamcode: int) -> list[dict]:
@@ -83,6 +86,10 @@ def fetch_programma(teamcode: int) -> list[dict]:
 
 def fetch_uitslagen(teamcode: int) -> list[dict]:
     return api_get("uitslagen", teamcode=teamcode, eigenwedstrijden="JA")
+
+
+def fetch_poulestand(poulecode: int) -> list[dict]:
+    return api_get("poulestand", poulecode=poulecode)
 
 
 def fetch_accommodatie(wedstrijdcode: int) -> dict:
@@ -254,11 +261,23 @@ def build_ics(slug: str, teamnaam: str, state: dict, now: datetime) -> str:
     return "\r\n".join(lines) + "\r\n"
 
 
-def sync_team(slug: str, teamnaam: str, now: datetime) -> dict:
-    teamcode = find_teamcode(teamnaam)
+def sync_team(slug: str, teamnaam: str, teams: list[dict], now: datetime) -> dict:
+    record = find_team_record(teams, teamnaam)
+    teamcode = record["teamcode"]
+    poulecode = record.get("poulecode")
+    stand = fetch_poulestand(poulecode) if poulecode else []
+    poule = {
+        "poulecode": poulecode,
+        "competitienaam": record.get("competitienaam"),
+        "klasse": record.get("klasse"),
+        "poule": record.get("poule"),
+        "klassepoule": record.get("klassepoule"),
+    } if poulecode else None
+
     programma = fetch_programma(teamcode)
     uitslagen = fetch_uitslagen(teamcode)
-    print(f"[{slug}] teamcode {teamcode}: {len(programma)} programma, {len(uitslagen)} uitslagen")
+    print(f"[{slug}] teamcode {teamcode}: {len(programma)} programma, {len(uitslagen)} uitslagen, "
+          f"stand {len(stand)} team(s)")
 
     save_json(DATA_DIR / f"{slug}.json", {
         "slug": slug,
@@ -267,6 +286,8 @@ def sync_team(slug: str, teamnaam: str, now: datetime) -> dict:
         "updated_at": now.isoformat(),
         "programma": programma,
         "uitslagen": uitslagen,
+        "poule": poule,
+        "stand": stand,
     })
 
     state_path = STATE_DIR / f"{slug}.json"
@@ -288,11 +309,12 @@ def main() -> int:
         return 1
 
     now = datetime.now(TZ_AMS)
+    teams = api_get("teams")
     resultaten = []
     fouten = 0
     for slug, teamnaam in TEAMS.items():
         try:
-            resultaten.append(sync_team(slug, teamnaam, now))
+            resultaten.append(sync_team(slug, teamnaam, teams, now))
         except (urllib.error.URLError, RuntimeError) as exc:
             fouten += 1
             print(f"[{slug}] kon niet worden bijgewerkt: {exc}", file=sys.stderr)

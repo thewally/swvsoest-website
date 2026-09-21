@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { SectionHeading } from '../components/svs'
 import MatchGrid from '../components/MatchGrid'
+import StandTable from '../components/StandTable'
 import { getTeam } from '../lib/teams'
 import { fetchTeamData } from '../lib/data'
 import { sorteerOplopend, sorteerAflopend, datumSleutel } from '../lib/matchHelpers'
@@ -82,6 +83,17 @@ export default function TeamPage() {
             <p className="site-loading">Uitslagen laden…</p>
           ) : (
             <MatchGrid wedstrijden={uitslagen} gespeeld leegTekst="Nog geen uitslagen bekend." />
+          )}
+        </section>
+
+        <section className="site-section-tight">
+          <h2 className="svs-sechead-title" style={{ fontSize: 20, marginBottom: 12 }}>
+            Stand
+          </h2>
+          {!data && !error ? (
+            <p className="site-loading">Stand laden…</p>
+          ) : (
+            <StandTable stand={data?.stand} poule={data?.poule} />
           )}
         </section>
       </div>

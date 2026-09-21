@@ -12,24 +12,11 @@ const DUTCH_MONTHS = [
   'januari', 'februari', 'maart', 'april', 'mei', 'juni',
   'juli', 'augustus', 'september', 'oktober', 'november', 'december',
 ]
-const DUTCH_DAYS_SHORT = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za']
-const DUTCH_MONTHS_SHORT = ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec']
 
 // "zaterdag 26 september"
 export function formatDagLabel(wedstrijddatum) {
   const d = parseWedstrijdDatum(wedstrijddatum)
   return `${DUTCH_DAYS[d.getDay()]} ${d.getDate()} ${DUTCH_MONTHS[d.getMonth()]}`
-}
-
-// "Za 26 sep" — voor gebruik in MatchCard
-export function formatDatumKort(wedstrijddatum) {
-  const d = parseWedstrijdDatum(wedstrijddatum)
-  const dag = DUTCH_DAYS_SHORT[d.getDay()]
-  return `${dag.charAt(0).toUpperCase()}${dag.slice(1)} ${d.getDate()} ${DUTCH_MONTHS_SHORT[d.getMonth()]}`
-}
-
-export function isThuis(wedstrijd, teamnaam) {
-  return wedstrijd.thuisteam === teamnaam
 }
 
 export function parseScore(uitslag) {

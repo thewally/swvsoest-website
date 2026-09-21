@@ -55,7 +55,10 @@ export default function Layout() {
       <main className="site-main">
         <Outlet />
       </main>
-      <SiteFooter logoSrc={`${base}logo-svs.svg`} note="Programma, uitslagen en nieuws van de JO14-teams van VVZ'49 en So Soest." />
+      <SiteFooter
+        logoSrc={`${base}logo-svs.svg`}
+        note="Programma, uitslagen en nieuws van alle teams uit de samenwerking tussen VVZ'49 en So Soest."
+      />
     </>
   )
 }

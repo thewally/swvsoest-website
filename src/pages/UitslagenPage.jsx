@@ -3,7 +3,9 @@ import { SectionHeading } from '../components/svs'
 import MatchGrid from '../components/MatchGrid'
 import { TEAMS } from '../lib/teams'
 import { fetchAllTeamsData } from '../lib/data'
-import { sorteerAflopend } from '../lib/matchHelpers'
+import { sorteerAflopend, datumSleutel } from '../lib/matchHelpers'
+
+const WEKEN_TERUG = 4
 
 export default function UitslagenPage() {
   const [wedstrijden, setWedstrijden] = useState(null)
@@ -13,7 +15,14 @@ export default function UitslagenPage() {
     let actief = true
     fetchAllTeamsData(TEAMS).then(teamsData => {
       if (!actief) return
-      const alle = teamsData.flatMap(({ team, data }) => (data?.uitslagen || []).map(w => ({ ...w, team })))
+      const grens = new Date()
+      grens.setDate(grens.getDate() - WEKEN_TERUG * 7)
+      const grensSleutel = datumSleutel(grens.toISOString())
+      const alle = teamsData.flatMap(({ team, data }) =>
+        (data?.uitslagen || [])
+          .filter(w => w.wedstrijddatum && datumSleutel(w.wedstrijddatum) >= grensSleutel)
+          .map(w => ({ ...w, team }))
+      )
       setWedstrijden(sorteerAflopend(alle))
     })
     return () => {
@@ -46,7 +55,7 @@ export default function UitslagenPage() {
         {wedstrijden === null ? (
           <p className="site-loading">Uitslagen laden…</p>
         ) : (
-          <MatchGrid wedstrijden={gefilterd} gespeeld leegTekst="Nog geen uitslagen bekend." />
+          <MatchGrid wedstrijden={gefilterd} gespeeld leegTekst="Geen uitslagen in de afgelopen 4 weken." />
         )}
       </div>
     </div>

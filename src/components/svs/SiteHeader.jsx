@@ -12,8 +12,7 @@ export default function SiteHeader({ logoSrc, homeHref = '/', items = [], cta, m
         <Link className="svs-header-brand" to={homeHref}>
           {logoSrc ? <img src={logoSrc} alt="" className="svs-header-logo" /> : null}
           <span className="svs-header-name">
-            <span className="svs-header-sub">Samenwerking Voetbalverenigingen</span>
-            <span className="svs-header-town">Soest</span>
+            <span className="svs-header-town">SWV Soest</span>
           </span>
         </Link>
         <nav className="svs-header-nav" aria-label="Hoofdmenu">

@@ -44,8 +44,7 @@ export default function HomePage() {
     <>
       <Hero
         label="Samenwerking Voetbalverenigingen Soest"
-        title="JO14 van VVZ'49 en So Soest"
-        intro="Zes JO14-teams, één samenwerking. Hier vind je het programma, de uitslagen en het laatste nieuws van JO14-1 tot en met JO14-6."
+        title="van VVZ'49 en So Soest"
         markSrc={`${base}logo-svs.svg`}
         actions={
           <>
@@ -60,17 +59,6 @@ export default function HomePage() {
       />
 
       <section className="site-section">
-        <div className="site-container">
-          <SectionHeading label="Wedstrijddag" title="Eerstvolgende wedstrijden" />
-          {loading ? (
-            <p className="site-loading">Programma laden…</p>
-          ) : (
-            <MatchGrid wedstrijden={eerstvolgende} leegTekst="Er zijn geen komende wedstrijden bekend." />
-          )}
-        </div>
-      </section>
-
-      <section className="site-section site-section-alt">
         <div className="site-container">
           <SectionHeading
             label="Nieuws"
@@ -98,6 +86,17 @@ export default function HomePage() {
                 />
               ))}
             </div>
+          )}
+        </div>
+      </section>
+
+      <section className="site-section site-section-alt">
+        <div className="site-container">
+          <SectionHeading label="Wedstrijddag" title="Eerstvolgende wedstrijden" />
+          {loading ? (
+            <p className="site-loading">Programma laden…</p>
+          ) : (
+            <MatchGrid wedstrijden={eerstvolgende} leegTekst="Er zijn geen komende wedstrijden bekend." />
           )}
         </div>
       </section>

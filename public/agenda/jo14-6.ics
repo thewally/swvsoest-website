@@ -5,7 +5,7 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:ST SO Soest/VVZ'49 O14-6
 BEGIN:VEVENT
 UID:20850331-verzamelen@swvsoest-website
-DTSTAMP:20260921T121309Z
+DTSTAMP:20260921T123113Z
 DTSTART:20260926T060000Z
 DTEND:20260926T070000Z
 SUMMARY:Verzamelen (parkeerplaats): [UIT] KVVA O14-1
@@ -14,7 +14,7 @@ URL:https://www.google.com/maps/search/?api=1&query=Eemweg%202D%2C%203764%20DG%2
 END:VEVENT
 BEGIN:VEVENT
 UID:20850331@swvsoest-website
-DTSTAMP:20260921T121309Z
+DTSTAMP:20260921T123113Z
 DTSTART:20260926T070000Z
 DTEND:20260926T083000Z
 SUMMARY:[UIT] KVVA O14-1
@@ -24,21 +24,21 @@ URL:https://www.google.com/maps/search/?api=1&query=Dollardstraat%20115%2C%20381
 END:VEVENT
 BEGIN:VEVENT
 UID:20832352-verzamelen@swvsoest-website
-DTSTAMP:20260921T121309Z
+DTSTAMP:20260921T123113Z
 DTSTART:20261003T064500Z
-DTEND:20261003T100000Z
+DTEND:20261003T080000Z
 SUMMARY:Verzamelen (parkeerplaats): [UIT] Hercules O14-5
 LOCATION:Sportvereniging Vrienden van Zonnegloren Eemweg 2D\, 3764 DG Soest\, Nederland
 URL:https://www.google.com/maps/search/?api=1&query=Eemweg%202D%2C%203764%20DG%20Soest
 END:VEVENT
 BEGIN:VEVENT
 UID:20832352@swvsoest-website
-DTSTAMP:20260921T121309Z
-DTSTART:20261003T100000Z
-DTEND:20261003T113000Z
+DTSTAMP:20260921T123113Z
+DTSTART:20261003T080000Z
+DTEND:20261003T093000Z
 SUMMARY:[UIT] Hercules O14-5
 LOCATION:Sportpark Voordorp
-DESCRIPTION:Status: Te spelen\nVeld: veld 8-Sporting'70\nPlaats: UTRECHT\nWedstrijdnummer: 13784\nRoute: https://www.google.com/maps/search/?api=1&query=Voorveldselaan%204%2C%203573PV%20UTRECHT
+DESCRIPTION:Status: Te spelen\nVeld: veld 5-Hercules\nPlaats: UTRECHT\nWedstrijdnummer: 13784\nRoute: https://www.google.com/maps/search/?api=1&query=Voorveldselaan%204%2C%203573PV%20UTRECHT
 URL:https://www.google.com/maps/search/?api=1&query=Voorveldselaan%204%2C%203573PV%20UTRECHT
 END:VEVENT
 END:VCALENDAR
