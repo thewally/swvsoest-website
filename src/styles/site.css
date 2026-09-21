@@ -76,7 +76,15 @@ a { color: inherit; }
   border-bottom: 1px solid var(--line);
 }
 .site-match-row:last-child { border-bottom: none; }
+/* Bij gespeelde wedstrijden staat de "Uitslag"-badge boven het aanvangstijdstip. */
+.site-match-row-time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
 .site-match-clock { font-weight: 700; font-size: 15px; color: var(--ink); }
+.site-match-clock-sub { font-weight: 600; font-size: 12px; color: var(--ink-muted); }
 .site-match-team {
   display: flex;
   align-items: center;
@@ -131,7 +139,7 @@ a { color: inherit; }
     gap: var(--space-2);
     padding: var(--space-4);
   }
-  .site-match-row-time { grid-area: time; }
+  .site-match-row-time { grid-area: time; align-items: center; flex-direction: row; gap: var(--space-2); }
   .site-match-team-home, .site-match-team-away { display: contents; }
   .site-match-name-home { grid-area: nameHome; }
   .site-match-name-away { grid-area: nameAway; }
