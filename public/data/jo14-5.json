@@ -32,11 +32,11 @@
       "thuisteam": "Baarn sv O14-3",
       "thuisteamclubrelatiecode": "BBCC40F",
       "thuisteamid": 367006,
-      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/4CF03A40AD7B7160C3D86267ACD0C85F?expires=1790022680&sig=a10db33a63ed886f894f41932dc3f8d945c42697",
+      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/4CF03A40AD7B7160C3D86267ACD0C85F?expires=1790022845&sig=f2dd0aa41a1aa2f73b37e0c4f67f56864f383cdb",
       "uitteam": "ST SO Soest/VVZ'49 O14-5",
       "uitteamclubrelatiecode": "BBBZ168",
       "uitteamid": 304986,
-      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790022680&sig=540ef3a99ae000ce095f7c6b6d484a3581aea792",
+      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790022845&sig=da287be57a59dfbd5c9ec66ef3b0e9ef5a34782d",
       "veld": "veld 3 BAARN SV / TOV",
       "vertrektijd": "",
       "verzameltijd": "",
@@ -146,7 +146,7 @@
       "thuisteam": "ST SO Soest/VVZ'49 O14-5",
       "thuisteamclubrelatiecode": "BBBZ168",
       "thuisteamid": "304986",
-      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790022680&sig=540ef3a99ae000ce095f7c6b6d484a3581aea792",
+      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790022846&sig=5dc403c39ef9192d7243dbf4f8356a0be60060d2",
       "uitslag": "2 - 3",
       "uitslag-nv": null,
       "uitslag-regulier": "2 - 3",
@@ -154,7 +154,7 @@
       "uitteam": "IJsselmeervogels O14-3",
       "uitteamclubrelatiecode": "BBCC83K",
       "uitteamid": "364959",
-      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/C6875A6D391E4AE28983CE221085F3E6?expires=1790022680&sig=295888271454771198e7852340229e002015c611",
+      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/C6875A6D391E4AE28983CE221085F3E6?expires=1790022846&sig=23c363873f4db3f5a0a769427bec3667fdf9c6b3",
       "verenigingswedstrijd": "Nee",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-5 - IJsselmeervogels O14-3",
       "wedstrijdcode": 20868534,
@@ -162,5 +162,5 @@
       "wedstrijdnummer": 49966
     }
   ],
-  "updated_at": "2026-09-21T14:31:13.155102+02:00"
+  "updated_at": "2026-09-21T14:33:46.531041+02:00"
 }
