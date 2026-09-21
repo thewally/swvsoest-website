@@ -1,5 +1,5 @@
 ---
-title: Welkom op de website van Samenwerking Voetbalverenigingen Soest JO14
+title: Welkom op de website van Samenwerking Voetbalverenigingen Soest
 date: 2026-09-21
 label: Clubnieuws
 tone: neutral
