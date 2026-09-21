@@ -90,8 +90,22 @@ a { color: inherit; }
 .site-match-team-home { justify-content: flex-end; }
 .site-match-team-away { justify-content: flex-start; }
 .site-match-team.is-own { color: var(--groen-actie); }
-.site-match-logo { width: 26px; height: 26px; object-fit: contain; flex-shrink: 0; }
-.site-match-logo-empty { display: inline-block; border-radius: var(--radius-full); background: var(--surface-alt); }
+/* Witte cirkel achter elk clublogo: sommige SportLink-logo's zijn donker of
+   transparant en zijn anders slecht leesbaar op de kaart-achtergrond. */
+.site-match-logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-full);
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.site-match-logo { width: 22px; height: 22px; object-fit: contain; }
+.site-match-logo-wrap.site-match-logo-empty { background: var(--surface-alt); border-color: transparent; }
 .site-match-mid { display: flex; justify-content: center; }
 .site-match-score { font-family: var(--font-display); font-size: 22px; color: var(--ink); white-space: nowrap; }
 .site-match-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; text-align: right; }
@@ -212,18 +226,21 @@ a { color: inherit; }
 
 .site-hero-mark-fallback { background: linear-gradient(90deg, var(--vvz-groen) 0 50%, var(--so-blauw) 50% 100%); }
 
-/* Groter logo-embleem in de Hero, met wat meer lucht eromheen. */
+/* Groter cirkel-embleem in de Hero, met het logo zelf kleiner en meer
+   witruimte ertussen (padding krimpt de zichtbare afbeelding, de cirkel
+   -- breedte/hoogte/achtergrond/schaduwring uit svs.css -- blijft groot). */
 .svs-hero-mark {
   width: 360px;
   height: 360px;
+  padding: 60px;
   margin: var(--space-8) auto;
 }
 @media (max-width: 720px) {
-  .svs-hero-mark { width: 260px; height: 260px; }
+  .svs-hero-mark { width: 260px; height: 260px; padding: 40px; }
 }
 
-/* Hero-titel: "Samenwerking Voetbalverenigingen SOEST van VVZ'49 en So Soest",
-   waarbij SOEST (zoals in het logo) veel groter is dan de rest. */
+/* Hero-titel: "Samenwerking Voetbalverenigingen SOEST", waarbij SOEST
+   (zoals in het logo) veel groter is dan de rest. */
 .site-hero-lead {
   display: block;
   font-family: var(--font-sans);
@@ -238,14 +255,7 @@ a { color: inherit; }
   line-height: 1;
   margin: var(--space-2) 0;
 }
-.site-hero-tail {
-  display: block;
-  font-family: var(--font-display);
-  font-size: 40px;
-  line-height: 1.15;
-}
 @media (max-width: 720px) {
   .site-hero-lead { font-size: 16px; }
   .site-hero-soest { font-size: 56px; }
-  .site-hero-tail { font-size: 30px; }
 }

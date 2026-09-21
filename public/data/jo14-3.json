@@ -32,11 +32,11 @@
       "thuisteam": "ST SO Soest/VVZ'49 O14-3",
       "thuisteamclubrelatiecode": "BBBZ168",
       "thuisteamid": 304982,
-      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790023751&sig=ad33beb0f15e744529ce99534a5daa1e23f653e6",
+      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790024054&sig=84a46333381e0dc5ff29d20bb6540d27e7cd7956",
       "uitteam": "Hees O14-1",
       "uitteamclubrelatiecode": "BBCC58G",
       "uitteamid": 327590,
-      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/AF5EE77CE56A5B959A260F35BFA198C9?expires=1790023751&sig=18ed98cf7628448375fcd46032b94b802f5032fd",
+      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/AF5EE77CE56A5B959A260F35BFA198C9?expires=1790024054&sig=7d04d6f363e4e2fd82e614889ab8427ab3067abc",
       "veld": "veld 3-SO Soest",
       "vertrektijd": "",
       "verzameltijd": "",
@@ -70,11 +70,11 @@
       "thuisteam": "ST SO Soest/VVZ'49 O14-3",
       "thuisteamclubrelatiecode": "BBBZ168",
       "thuisteamid": 304982,
-      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790023751&sig=ad33beb0f15e744529ce99534a5daa1e23f653e6",
+      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790024054&sig=84a46333381e0dc5ff29d20bb6540d27e7cd7956",
       "uitteam": "Sporting '70 O14-3",
       "uitteamclubrelatiecode": "BBBZ179",
       "uitteamid": 350142,
-      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/F24051DDD56D9D1448203D80D00E20A2?expires=1790023751&sig=5456eebdb4426ad1e7778a1432cb0cd1761876fa",
+      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/F24051DDD56D9D1448203D80D00E20A2?expires=1790024054&sig=6ab7f5c363ec126c333513f3b1f7cd644d3b4be1",
       "veld": "veld 3-SO Soest",
       "vertrektijd": "",
       "verzameltijd": "",
@@ -87,7 +87,7 @@
   "slug": "jo14-3",
   "stand": [
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/B527D8745EE41EBF1BE900F7156AD05E?expires=1790024094&sig=58d1ef3fb1ea8fe1ba7cf72798978375f582aa5c",
+      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/B527D8745EE41EBF1BE900F7156AD05E?expires=1790024054&sig=e7e1df74de25dccf7c03fb1af696d21ff96ed3b2",
       "clubrelatiecode": "BBBZ41C",
       "doelpuntentegen": 4,
       "doelpuntenvoor": 14,
@@ -103,7 +103,7 @@
       "verloren": 0
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/A32B5F98695E06BB63C4D6063F58372C?expires=1790024094&sig=ba422981016556f7d1571c36b1a57cf935d582f0",
+      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/A32B5F98695E06BB63C4D6063F58372C?expires=1790024054&sig=f48bfdb74d861abaf0f1487bcdfab9e22b2ade88",
       "clubrelatiecode": "FZXX85C",
       "doelpuntentegen": 6,
       "doelpuntenvoor": 13,
@@ -119,7 +119,7 @@
       "verloren": 0
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/CB9C6D92BACAFDD82862D4FB491757FD?expires=1790024094&sig=50574e07a159883b757dc58e7caba550557e8a6c",
+      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/CB9C6D92BACAFDD82862D4FB491757FD?expires=1790024054&sig=f150623798c9ac94c41795c9f76c669671d28bf8",
       "clubrelatiecode": "FJQB25X",
       "doelpuntentegen": 6,
       "doelpuntenvoor": 15,
@@ -135,7 +135,7 @@
       "verloren": 1
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/AF5EE77CE56A5B959A260F35BFA198C9?expires=1790024094&sig=e1cddcc306102a4f7c77145c479a446a6eed7c4f",
+      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/AF5EE77CE56A5B959A260F35BFA198C9?expires=1790024054&sig=7d04d6f363e4e2fd82e614889ab8427ab3067abc",
       "clubrelatiecode": "BBCC58G",
       "doelpuntentegen": 4,
       "doelpuntenvoor": 3,
@@ -151,7 +151,7 @@
       "verloren": 1
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/F24051DDD56D9D1448203D80D00E20A2?expires=1790024094&sig=9bfc0a572575ae00fcffe96408cbd37fa9b9b925",
+      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/F24051DDD56D9D1448203D80D00E20A2?expires=1790024054&sig=6ab7f5c363ec126c333513f3b1f7cd644d3b4be1",
       "clubrelatiecode": "BBBZ179",
       "doelpuntentegen": 16,
       "doelpuntenvoor": 2,
@@ -167,7 +167,7 @@
       "verloren": 2
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790024094&sig=e49e812d53f71a46bb62513a6b1f922d0c68ed07",
+      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790024054&sig=84a46333381e0dc5ff29d20bb6540d27e7cd7956",
       "clubrelatiecode": "BBBZ168",
       "doelpuntentegen": 17,
       "doelpuntenvoor": 6,
@@ -195,14 +195,14 @@
       "datumopgemaakt": "19 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-21T14:48:53.877318+02:00",
-      "last_seen": "2026-09-21T14:54:44.658378+02:00",
+      "last_seen": "2026-09-21T15:03:13.731119+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20850994&teamcode=304982&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
       "thuisteam": "Bilt De FC O14-2",
       "thuisteamclubrelatiecode": "FJQB25X",
       "thuisteamid": "308561",
-      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/CB9C6D92BACAFDD82862D4FB491757FD?expires=1790023751&sig=b6d171b20db9e5b04cb77dd8e88c018da1dc0c46",
+      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/CB9C6D92BACAFDD82862D4FB491757FD?expires=1790024054&sig=f150623798c9ac94c41795c9f76c669671d28bf8",
       "uitslag": "3 - 1",
       "uitslag-nv": null,
       "uitslag-regulier": "3 - 1",
@@ -210,7 +210,7 @@
       "uitteam": "ST SO Soest/VVZ'49 O14-3",
       "uitteamclubrelatiecode": "BBBZ168",
       "uitteamid": "304982",
-      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790023751&sig=ad33beb0f15e744529ce99534a5daa1e23f653e6",
+      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790024054&sig=84a46333381e0dc5ff29d20bb6540d27e7cd7956",
       "verenigingswedstrijd": "Nee",
       "wedstrijd": "Bilt De FC O14-2 - ST SO Soest/VVZ'49 O14-3",
       "wedstrijdcode": 20850994,
@@ -218,5 +218,5 @@
       "wedstrijdnummer": 32426
     }
   ],
-  "updated_at": "2026-09-21T14:54:44.658378+02:00"
+  "updated_at": "2026-09-21T15:03:13.731119+02:00"
 }

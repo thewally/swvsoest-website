@@ -32,11 +32,11 @@
       "thuisteam": "Baarn sv O14-3",
       "thuisteamclubrelatiecode": "BBCC40F",
       "thuisteamid": 367006,
-      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/4CF03A40AD7B7160C3D86267ACD0C85F?expires=1790024064&sig=b6352839ad553e7c2f109507fad9344c4ba2abe4",
+      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/4CF03A40AD7B7160C3D86267ACD0C85F?expires=1790024595&sig=b2b4ddc10cbfebe1c007c6fae1ea6efdabcd91a9",
       "uitteam": "ST SO Soest/VVZ'49 O14-5",
       "uitteamclubrelatiecode": "BBBZ168",
       "uitteamid": 304986,
-      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790024064&sig=4061c3b1645cb25bfd04036a9ac751bc91eabd77",
+      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790024595&sig=10456cf0346ddb58453ccf7936b2265eb1d7649e",
       "veld": "veld 3 BAARN SV / TOV",
       "vertrektijd": "",
       "verzameltijd": "",
@@ -49,7 +49,7 @@
   "slug": "jo14-5",
   "stand": [
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/0B203FE1E8998F0FCA0C082FBC52650B?expires=1790024099&sig=f9b6c0c8871130aa1b82615fd6eb2efa0f87295e",
+      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/0B203FE1E8998F0FCA0C082FBC52650B?expires=1790024064&sig=43e9c3cdc24c49695e94b794ad43c7ff250544c4",
       "clubrelatiecode": "BBCC08V",
       "doelpuntentegen": 1,
       "doelpuntenvoor": 14,
@@ -65,7 +65,7 @@
       "verloren": 0
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/C6875A6D391E4AE28983CE221085F3E6?expires=1790024099&sig=70793568240c723c6faa3c896e8eb64ae416f11c",
+      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/C6875A6D391E4AE28983CE221085F3E6?expires=1790024064&sig=ba5c925ddab98b4284d711345acd706b98d26e96",
       "clubrelatiecode": "BBCC83K",
       "doelpuntentegen": 5,
       "doelpuntenvoor": 6,
@@ -81,7 +81,7 @@
       "verloren": 0
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790024099&sig=fe80369d8841f831ad298025839eb1f4be8bb7cf",
+      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790024064&sig=4061c3b1645cb25bfd04036a9ac751bc91eabd77",
       "clubrelatiecode": "BBBZ168",
       "doelpuntentegen": 16,
       "doelpuntenvoor": 6,
@@ -97,7 +97,7 @@
       "verloren": 2
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/4CF03A40AD7B7160C3D86267ACD0C85F?expires=1790024099&sig=726bd5ad008f9442d6659f5a2c6395fd3a99f7d1",
+      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/4CF03A40AD7B7160C3D86267ACD0C85F?expires=1790024064&sig=b6352839ad553e7c2f109507fad9344c4ba2abe4",
       "clubrelatiecode": "BBCC40F",
       "doelpuntentegen": 7,
       "doelpuntenvoor": 7,
@@ -113,7 +113,7 @@
       "verloren": 0
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/F8948725BEF7E49215251457E65F88FA?expires=1790024099&sig=fd82c059707d7d31fd59858731753705abaca552",
+      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/F8948725BEF7E49215251457E65F88FA?expires=1790024064&sig=f6ae204b092002dd88c767a8465f78594149999d",
       "clubrelatiecode": "BBBZ69Q",
       "doelpuntentegen": 12,
       "doelpuntenvoor": 8,
@@ -141,7 +141,7 @@
       "datumopgemaakt": "19 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-21T14:48:53.877318+02:00",
-      "last_seen": "2026-09-21T14:54:44.658378+02:00",
+      "last_seen": "2026-09-21T15:03:13.731119+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20868534&teamcode=304986&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -164,5 +164,5 @@
       "wedstrijdnummer": 49966
     }
   ],
-  "updated_at": "2026-09-21T14:54:44.658378+02:00"
+  "updated_at": "2026-09-21T15:03:13.731119+02:00"
 }

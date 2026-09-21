@@ -47,7 +47,6 @@ export default function HomePage() {
           <>
             <span className="site-hero-lead">Samenwerking Voetbalverenigingen</span>
             <span className="site-hero-soest">Soest</span>
-            <span className="site-hero-tail">van VVZ'49 en So Soest</span>
           </>
         }
         markSrc={`${base}logo-svs.svg`}

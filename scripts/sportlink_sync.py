@@ -81,15 +81,42 @@ def api_get(article: str, **params) -> object:
         return json.loads(resp.read().decode("utf-8"))
 
 
-def find_team_record(teams: list[dict], teamnaam: str) -> dict:
-    """Zoekt de 'bond'-registratie van dit team op. Geeft bij voorkeur een
-    registratie met poulecode terug (nodig voor de stand); zonder poule
-    (bv. net na de zomerstop) valt terug op de eerste match."""
+def find_teamcode(teams: list[dict], teamnaam: str) -> int:
     matches = [t for t in teams if t.get("teamnaam") == teamnaam and t.get("teamsoort") == "bond"]
     if not matches:
         raise RuntimeError(f"Team '{teamnaam}' niet gevonden in teams-lijst.")
-    with_poule = [t for t in matches if t.get("poulecode")]
-    return (with_poule or matches)[0]
+    return matches[0]["teamcode"]
+
+
+def kies_poule(teams: list[dict], teamcode: int, programma: list[dict]) -> dict | None:
+    """Kiest de juiste poule-registratie voor de stand -- zelfde aanpak als
+    vvz-toolbox (src/services/wedstrijdenHelpers.js: kiesPouleViaWedstrijd /
+    kiesPouleFallback). Een team kan meerdere keren met poulecode in de
+    teams-lijst staan (bv. bij een fase-wissel, of naast een bekercompetitie);
+    zonder disambiguatie kan dan de verkeerde (bv. een afgelopen of nog niet
+    actieve) poule gekozen worden, met een lege of onlogische stand tot gevolg.
+    We matchen daarom bij voorkeur op de competitienaam van de eerstvolgende
+    wedstrijd, en vallen anders terug op de reguliere competitie-inschrijving."""
+    kandidaten = [t for t in teams if t.get("teamcode") == teamcode and t.get("poulecode")]
+    if not kandidaten:
+        return None
+    if len(kandidaten) == 1:
+        return kandidaten[0]
+
+    aankomend = sorted(
+        (m for m in programma if m.get("wedstrijddatum")),
+        key=lambda m: m["wedstrijddatum"],
+    )
+    if aankomend:
+        comp_naam = (aankomend[0].get("competitie") or "").strip().lower()
+        if comp_naam:
+            for p in kandidaten:
+                poule_naam = (p.get("competitienaam") or "").strip().lower()
+                if poule_naam and (poule_naam == comp_naam or poule_naam in comp_naam or comp_naam in poule_naam):
+                    return p
+
+    regulier = [p for p in kandidaten if p.get("competitiesoort") == "regulier"]
+    return (regulier or kandidaten)[0]
 
 
 def fetch_programma(teamcode: int) -> list[dict]:
@@ -289,19 +316,20 @@ def build_ics(slug: str, teamnaam: str, state: dict, now: datetime) -> str:
 
 
 def sync_team(slug: str, teamnaam: str, teams: list[dict], now: datetime) -> dict:
-    record = find_team_record(teams, teamnaam)
-    teamcode = record["teamcode"]
-    poulecode = record.get("poulecode")
+    teamcode = find_teamcode(teams, teamnaam)
+    programma = fetch_programma(teamcode)
+
+    poule_record = kies_poule(teams, teamcode, programma)
+    poulecode = poule_record.get("poulecode") if poule_record else None
     stand = fetch_poulestand(poulecode) if poulecode else []
     poule = {
         "poulecode": poulecode,
-        "competitienaam": record.get("competitienaam"),
-        "klasse": record.get("klasse"),
-        "poule": record.get("poule"),
-        "klassepoule": record.get("klassepoule"),
-    } if poulecode else None
+        "competitienaam": poule_record.get("competitienaam"),
+        "klasse": poule_record.get("klasse"),
+        "poule": poule_record.get("poule"),
+        "klassepoule": poule_record.get("klassepoule"),
+    } if poule_record else None
 
-    programma = fetch_programma(teamcode)
     laatste_speelronde = fetch_uitslagen(teamcode)
 
     results_path = RESULTS_STATE_DIR / f"{slug}.json"

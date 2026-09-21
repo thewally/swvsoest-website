@@ -1,14 +1,26 @@
+import { useState } from 'react'
 import { Badge } from './svs'
 import { groepeerPerDag, formatDagLabel, matchStatus, parseScore, locatieLabel } from '../lib/matchHelpers'
+
+// Witte cirkel achter elk logo, zodat donkere of transparante SportLink-logo's
+// altijd goed contrasteren -- en een nette placeholder als de afbeelding
+// (bv. een verlopen ondertekende URL) niet laadt.
+function TeamLogo({ src }) {
+  const [broken, setBroken] = useState(false)
+  if (!src || broken) {
+    return <span className="site-match-logo-wrap site-match-logo-empty" aria-hidden="true" />
+  }
+  return (
+    <span className="site-match-logo-wrap">
+      <img src={src} alt="" className="site-match-logo" onError={() => setBroken(true)} />
+    </span>
+  )
+}
 
 function TeamCol({ name, logo, align, own }) {
   return (
     <div className={`site-match-team site-match-team-${align}${own ? ' is-own' : ''}`}>
-      {logo ? (
-        <img src={logo} alt="" className="site-match-logo" />
-      ) : (
-        <span className="site-match-logo site-match-logo-empty" aria-hidden="true" />
-      )}
+      <TeamLogo src={logo} />
       <span>{name}</span>
     </div>
   )
