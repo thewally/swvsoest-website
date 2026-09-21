@@ -1,5 +1,5 @@
 ---
-title: Welkom op de website van SWV Soest JO14
+title: Welkom op de website van Samenwerking Voetbalverenigingen Soest JO14
 date: 2026-09-21
 label: Clubnieuws
 tone: neutral
@@ -14,4 +14,4 @@ Dit seizoen spelen VVZ'49 en So Soest samen met zes JO14-teams: JO14-1 tot en me
 - **Uitslagen** — de meest recente uitslagen, per team te filteren.
 - **Teampagina's** — programma, uitslagen en een agenda-abonnement per team.
 
-Nieuws over de teams plaatsen we hier ook. Heb je zelf een bericht voor op deze pagina? Neem contact op met de commissie.
+Nieuws over de teams plaatsen we hier ook.
