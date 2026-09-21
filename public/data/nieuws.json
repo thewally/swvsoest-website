@@ -1,13 +1,13 @@
 [
   {
     "slug": "welkom-op-de-website",
-    "title": "Welkom op de website van SWV Soest JO14",
+    "title": "Welkom op de website van Samenwerking Voetbalverenigingen Soest",
     "date": "2026-09-21",
     "dateDisplay": "21 september 2026",
     "label": "Clubnieuws",
     "tone": "neutral",
     "excerpt": "Vanaf nu vind je hier het programma, de uitslagen en het laatste nieuws van de zes JO14-teams van VVZ'49 en So Soest.",
-    "image": null,
-    "html": "<p>Dit seizoen spelen VVZ&#39;49 en So Soest samen met zes JO14-teams: JO14-1 tot en met JO14-6. Op deze site vind je per team het programma en de uitslagen, en kun je de wedstrijdagenda direct in je eigen agenda-app abonneren.</p>\n<h2>Wat vind je hier</h2>\n<ul>\n<li><strong>Programma</strong> — alle komende wedstrijden van de zes teams, gesorteerd per speeldag.</li>\n<li><strong>Uitslagen</strong> — de meest recente uitslagen, per team te filteren.</li>\n<li><strong>Teampagina&#39;s</strong> — programma, uitslagen en een agenda-abonnement per team.</li>\n</ul>\n<p>Nieuws over de teams plaatsen we hier ook. Heb je zelf een bericht voor op deze pagina? Neem contact op met de commissie.</p>\n"
+    "image": "https://thewally.github.io/swvsoest-website/logo-svs.svg",
+    "html": "<p>Dit seizoen spelen VVZ&#39;49 en So Soest samen met zes JO14-teams: JO14-1 tot en met JO14-6. Op deze site vind je per team het programma en de uitslagen, en kun je de wedstrijdagenda direct in je eigen agenda-app abonneren.</p>\n<h2>Wat vind je hier</h2>\n<ul>\n<li><strong>Programma</strong> — alle komende wedstrijden van de zes teams, gesorteerd per speeldag.</li>\n<li><strong>Uitslagen</strong> — de meest recente uitslagen, per team te filteren.</li>\n<li><strong>Teampagina&#39;s</strong> — programma, uitslagen en een agenda-abonnement per team.</li>\n</ul>\n<p>Nieuws over de teams plaatsen we hier ook.</p>\n"
   }
 ]
