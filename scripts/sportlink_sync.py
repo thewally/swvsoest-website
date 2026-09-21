@@ -18,6 +18,17 @@ poulecode, die halverwege het seizoen kan wisselen). Voor de ICS-feed
 houden we per team een state-bestand (data/state/<slug>.json) bij zodat
 al geziene wedstrijden niet verdwijnen uit de agenda als een fase/poule
 wisselt -- zie vvz49-jo14-6-agenda voor dezelfde aanpak op een los team.
+
+Belangrijke beperking van de publieke `uitslagen`-article: die geeft altijd
+alleen de laatst gespeelde speelronde terug, ongeacht `aantaldagen` of
+andere parameters (uitgeprobeerd; geen van de aannemelijke parameternamen
+had effect) -- er is geen manier om er in één keer de hele seizoenshistorie
+uit te halen. Daarom bouwen we zelf een archief op: elke run wordt de net
+opgehaalde speelronde gemerged in data/state/results/<slug>.json (net als
+de ICS-state, op wedstrijdcode). De site's "uitslagen" komen uit dat
+archief, dat na verloop van weken vanzelf het hele seizoen bevat. Wedstrijden
+van vóór de allereerste keer dat dit script draaide, kunnen niet met
+terugwerkende kracht opgehaald worden.
 """
 import json
 import os
@@ -59,6 +70,7 @@ ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "public" / "data"
 AGENDA_DIR = ROOT / "public" / "agenda"
 STATE_DIR = ROOT / "data" / "state"
+RESULTS_STATE_DIR = ROOT / "data" / "state" / "results"
 
 
 def api_get(article: str, **params) -> object:
@@ -155,6 +167,21 @@ def merge_state(state: dict, matches: list[dict], now_iso: str, teamnaam: str) -
         entry.setdefault("first_seen", now_iso)
         state[uid] = entry
     return state
+
+
+def merge_results(results_state: dict, uitslagen: list[dict], now_iso: str) -> dict:
+    """De publieke `uitslagen`-article geeft altijd alleen de laatst
+    gespeelde speelronde terug. Door elke run te mergen op wedstrijdcode
+    bouwen we zelf een archief op van alle uitslagen die we ooit gezien
+    hebben, zodat de site niet beperkt blijft tot de vorige speeldag."""
+    for m in uitslagen:
+        uid = str(m["wedstrijdcode"])
+        entry = results_state.get(uid, {})
+        entry.update(m)
+        entry["last_seen"] = now_iso
+        entry.setdefault("first_seen", now_iso)
+        results_state[uid] = entry
+    return results_state
 
 
 def ics_escape(s: str) -> str:
@@ -275,8 +302,20 @@ def sync_team(slug: str, teamnaam: str, teams: list[dict], now: datetime) -> dic
     } if poulecode else None
 
     programma = fetch_programma(teamcode)
-    uitslagen = fetch_uitslagen(teamcode)
-    print(f"[{slug}] teamcode {teamcode}: {len(programma)} programma, {len(uitslagen)} uitslagen, "
+    laatste_speelronde = fetch_uitslagen(teamcode)
+
+    results_path = RESULTS_STATE_DIR / f"{slug}.json"
+    results_state = load_json(results_path)
+    results_state = merge_results(results_state, laatste_speelronde, now.isoformat())
+    save_json(results_path, results_state)
+    uitslagen = sorted(
+        (dict(v) for v in results_state.values()),
+        key=lambda r: r["wedstrijddatum"],
+        reverse=True,
+    )
+
+    print(f"[{slug}] teamcode {teamcode}: {len(programma)} programma, "
+          f"{len(laatste_speelronde)} nieuw in laatste speelronde, {len(uitslagen)} uitslagen totaal in archief, "
           f"stand {len(stand)} team(s)")
 
     save_json(DATA_DIR / f"{slug}.json", {

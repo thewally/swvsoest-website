@@ -43,8 +43,13 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        label="Samenwerking Voetbalverenigingen Soest"
-        title="van VVZ'49 en So Soest"
+        title={
+          <>
+            <span className="site-hero-lead">Samenwerking Voetbalverenigingen</span>
+            <span className="site-hero-soest">Soest</span>
+            <span className="site-hero-tail">van VVZ'49 en So Soest</span>
+          </>
+        }
         markSrc={`${base}logo-svs.svg`}
         actions={
           <>

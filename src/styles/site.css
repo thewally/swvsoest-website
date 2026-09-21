@@ -214,10 +214,38 @@ a { color: inherit; }
 
 /* Groter logo-embleem in de Hero, met wat meer lucht eromheen. */
 .svs-hero-mark {
-  width: 280px;
-  height: 280px;
+  width: 360px;
+  height: 360px;
   margin: var(--space-8) auto;
 }
 @media (max-width: 720px) {
-  .svs-hero-mark { width: 220px; height: 220px; }
+  .svs-hero-mark { width: 260px; height: 260px; }
+}
+
+/* Hero-titel: "Samenwerking Voetbalverenigingen SOEST van VVZ'49 en So Soest",
+   waarbij SOEST (zoals in het logo) veel groter is dan de rest. */
+.site-hero-lead {
+  display: block;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+}
+.site-hero-soest {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 88px;
+  line-height: 1;
+  margin: var(--space-2) 0;
+}
+.site-hero-tail {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 40px;
+  line-height: 1.15;
+}
+@media (max-width: 720px) {
+  .site-hero-lead { font-size: 16px; }
+  .site-hero-soest { font-size: 56px; }
+  .site-hero-tail { font-size: 30px; }
 }

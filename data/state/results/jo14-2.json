@@ -1,0 +1,33 @@
+{
+  "20846125": {
+    "aanvangstijd": "11:15",
+    "accommodatie": "Sportpark Bosstraat-Oost",
+    "competitienaam": "0355 Onder 14 Zwaluwen Jeugd (1e fase A-Cat)",
+    "competitiesoort": "regulier",
+    "datum": "2026-09-19 00:00:00.00",
+    "datumopgemaakt": "19 sep.",
+    "eigenteam": "true",
+    "first_seen": "2026-09-21T14:48:53.877318+02:00",
+    "last_seen": "2026-09-21T14:48:53.877318+02:00",
+    "meer": "wedstrijd-informatie?wedstrijdcode=20846125&teamcode=304979&eigenwedstrijden=JA",
+    "sportomschrijving": "Veld Algemeen/Zaterdag",
+    "status": "Uitgespeeld",
+    "thuisteam": "ST SO Soest/VVZ'49 O14-2",
+    "thuisteamclubrelatiecode": "BBBZ168",
+    "thuisteamid": "304979",
+    "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790023750&sig=4e32204df030444ff76d2821af4aa383a35ab2a4",
+    "uitslag": "0 - 2",
+    "uitslag-nv": null,
+    "uitslag-regulier": "0 - 2",
+    "uitslag-s": null,
+    "uitteam": "Wasmeer O14-1",
+    "uitteamclubrelatiecode": "BBCC346",
+    "uitteamid": "319252",
+    "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/E2751DDCEE0B3BCA00F9966853744A2F?expires=1790023750&sig=30da4ac6cc6b1f27aea92871d3be0d9666e1b7f2",
+    "verenigingswedstrijd": "Nee",
+    "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - Wasmeer O14-1",
+    "wedstrijdcode": 20846125,
+    "wedstrijddatum": "2026-09-19T11:15:00+0200",
+    "wedstrijdnummer": 27557
+  }
+}

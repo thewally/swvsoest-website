@@ -1,0 +1,33 @@
+{
+  "20855121": {
+    "aanvangstijd": "09:45",
+    "accommodatie": "Sportpark Panhuis",
+    "competitienaam": "0355 Onder 14 Zwaluwen Jeugd (1e fase A-Cat)",
+    "competitiesoort": "regulier",
+    "datum": "2026-09-19 00:00:00.00",
+    "datumopgemaakt": "19 sep.",
+    "eigenteam": "true",
+    "first_seen": "2026-09-21T14:48:53.877318+02:00",
+    "last_seen": "2026-09-21T14:48:53.877318+02:00",
+    "meer": "wedstrijd-informatie?wedstrijdcode=20855121&teamcode=289917&eigenwedstrijden=JA",
+    "sportomschrijving": "Veld Algemeen/Zaterdag",
+    "status": "Uitgespeeld",
+    "thuisteam": "GVVV O14-1",
+    "thuisteamclubrelatiecode": "BBCB01J",
+    "thuisteamid": "331909",
+    "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/F3E59A770BBDC1A430DCCB87F78AF9FB?expires=1790023748&sig=905e0080a7bc6d78d878047e1edb86d5a44c1279",
+    "uitslag": "1 - 9",
+    "uitslag-nv": null,
+    "uitslag-regulier": "1 - 9",
+    "uitslag-s": null,
+    "uitteam": "ST SO Soest/VVZ'49 O14-1",
+    "uitteamclubrelatiecode": "BBBZ168",
+    "uitteamid": "289917",
+    "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790023748&sig=e43f2bcd4175b4bf6c2ff7f72d9ea4f51c95dbe7",
+    "verenigingswedstrijd": "Nee",
+    "wedstrijd": "GVVV O14-1 - ST SO Soest/VVZ'49 O14-1",
+    "wedstrijdcode": 20855121,
+    "wedstrijddatum": "2026-09-19T09:45:00+0200",
+    "wedstrijdnummer": 36553
+  }
+}
