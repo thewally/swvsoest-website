@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   { label: 'Teams', href: '/teams' },
   { label: 'Activiteiten', href: '/activiteiten' },
   { label: 'Nieuws', href: '/nieuws' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 export default function Layout() {

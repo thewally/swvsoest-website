@@ -9,6 +9,7 @@ import NieuwsPage from './pages/NieuwsPage'
 import NieuwsDetailPage from './pages/NieuwsDetailPage'
 import ActiviteitenPage from './pages/ActiviteitenPage'
 import ActiviteitDetailPage from './pages/ActiviteitDetailPage'
+import ContactPage from './pages/ContactPage'
 import NotFoundPage from './pages/NotFoundPage'
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="nieuws/:slug" element={<NieuwsDetailPage />} />
         <Route path="activiteiten" element={<ActiviteitenPage />} />
         <Route path="activiteiten/:slug" element={<ActiviteitDetailPage />} />
+        <Route path="contact" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
