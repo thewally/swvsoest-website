@@ -41,16 +41,20 @@ export default function TeamPage() {
         <SectionHeading label="Team" title={team.kort} />
 
         <section className="site-section-tight">
-          <h2 className="svs-sechead-title" style={{ fontSize: 20, marginBottom: 12 }}>
-            Abonneer op de agenda
-          </h2>
-          <p className="svs-meta" style={{ marginBottom: 12 }}>
-            Elke wedstrijd van {team.kort} staat in een agenda-feed, inclusief verzameltijd en locatie. Op de
-            agendapagina staat een stap-voor-stap uitleg voor Google Calendar, Outlook en Apple Agenda.
-          </p>
           <a className="svs-btn svs-btn-primary svs-btn-sm" href={team.agendaUrl} target="_blank" rel="noreferrer">
-            Open agenda &amp; instructies
+            Importeer Programma (met instructies)
           </a>
+          <div className="site-balloon">
+            <p className="site-balloon-lead">
+              Werkt met <strong>Google Calendar</strong>, <strong>Outlook</strong> en <strong>Apple Agenda</strong>.
+              Bevat alle wedstrijden van {team.kort}: tegenstander, aanvangstijd, verzameltijd en locatie.
+            </p>
+            <ol className="site-balloon-steps">
+              <li>Open deze pagina op je computer of Mac.</li>
+              <li>Kopieer de link (gebruik het knopje op de agendapagina).</li>
+              <li>Ga naar Google Calendar, Outlook of Apple Agenda en voer daar de stappen uit om een agenda via een link te importeren.</li>
+            </ol>
+          </div>
         </section>
 
         {error && <p className="site-error">Kon gegevens niet laden: {error}</p>}
