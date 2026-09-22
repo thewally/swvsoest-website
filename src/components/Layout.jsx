@@ -6,6 +6,7 @@ const NAV_ITEMS = [
   { label: 'Programma', href: '/programma' },
   { label: 'Uitslagen', href: '/uitslagen' },
   { label: 'Teams', href: '/teams' },
+  { label: 'Activiteiten', href: '/activiteiten' },
   { label: 'Nieuws', href: '/nieuws' },
 ]
 

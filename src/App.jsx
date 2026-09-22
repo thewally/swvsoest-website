@@ -7,6 +7,8 @@ import TeamsIndexPage from './pages/TeamsIndexPage'
 import TeamPage from './pages/TeamPage'
 import NieuwsPage from './pages/NieuwsPage'
 import NieuwsDetailPage from './pages/NieuwsDetailPage'
+import ActiviteitenPage from './pages/ActiviteitenPage'
+import ActiviteitDetailPage from './pages/ActiviteitDetailPage'
 import NotFoundPage from './pages/NotFoundPage'
 
 export default function App() {
@@ -20,6 +22,8 @@ export default function App() {
         <Route path="teams/:slug" element={<TeamPage />} />
         <Route path="nieuws" element={<NieuwsPage />} />
         <Route path="nieuws/:slug" element={<NieuwsDetailPage />} />
+        <Route path="activiteiten" element={<ActiviteitenPage />} />
+        <Route path="activiteiten/:slug" element={<ActiviteitDetailPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>

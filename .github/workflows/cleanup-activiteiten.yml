@@ -1,0 +1,52 @@
+name: Cleanup verlopen activiteiten
+
+on:
+  schedule:
+    # Elke nacht om 02:00 UTC (03/04:00 NL-tijd).
+    - cron: "0 2 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  actions: write
+
+# Voorkomt dat een geplande run en een handmatige run tegelijk willen pushen.
+concurrency:
+  group: cleanup-activiteiten
+  cancel-in-progress: false
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - run: node scripts/cleanup-activiteiten.mjs
+
+      - name: Commit als er wijzigingen zijn
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/activiteiten
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Verwijder verlopen activiteiten"
+            git pull --rebase
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Een commit van deze Action (met het standaard GITHUB_TOKEN) triggert
+      # zelf geen andere workflows -- de deploy-workflow moet dus expliciet
+      # aangestoten worden zodat de site ook echt bijgewerkt wordt.
+      - name: Deploy triggeren
+        if: steps.commit.outputs.changed == 'true'
+        run: gh workflow run deploy.yml --repo "$GITHUB_REPOSITORY"
+        env:
+          GH_TOKEN: ${{ github.token }}

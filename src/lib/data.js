@@ -32,3 +32,14 @@ export async function fetchNieuwsArtikel(slug) {
   const items = await fetchNieuws()
   return items.find(item => item.slug === slug) || null
 }
+
+export async function fetchActiviteiten() {
+  const res = await fetchJson('data/activiteiten.json')
+  if (!res.ok) return []
+  return res.json()
+}
+
+export async function fetchActiviteit(slug) {
+  const items = await fetchActiviteiten()
+  return items.find(item => item.slug === slug) || null
+}
