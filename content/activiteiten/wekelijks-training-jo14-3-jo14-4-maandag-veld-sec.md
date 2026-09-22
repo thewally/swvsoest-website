@@ -7,7 +7,7 @@ tijd: 18:30 - 19:45
 locatie: Veld SEC
 label: JO14-3 & JO14-4
 tone: blauw
-excerpt: Wekelijkse training voor JO14-3 & JO14-4, elke maandag van 18:30 tot 19:45 uur op veld SEC.
+excerpt: Wekelijkse training voor JO14-3 & JO14-4, elke maandag van 18:30 tot 19:45 uur.
 ---
 
 Training op veld SEC.
