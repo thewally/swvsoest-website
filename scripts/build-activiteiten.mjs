@@ -42,6 +42,7 @@ async function main() {
     }
 
     let date, dateDisplay
+    let herhalingText = null
     if (data.herhaling) {
       const intervalDays = HERHALING_INTERVAL_DAYS[data.herhaling]
       if (!intervalDays) {
@@ -65,7 +66,11 @@ async function main() {
         // Eerstvolgende gelegenheid zou na het einde van de reeks vallen.
         continue
       }
-      dateDisplay = `${herhalingLabel(data)} · eerstvolgende: ${formatDateDisplay(date)}`
+      // Op de overzichtslijst tonen we alleen de eerstvolgende datum (zelfde formaat
+      // als een eenmalige activiteit); het herhalingspatroon zelf komt pas op de
+      // detailpagina te staan (zie herhalingText hieronder).
+      dateDisplay = formatDateDisplay(date)
+      herhalingText = herhalingLabel(data)
     } else {
       if (!data.date) {
         console.warn(`[build-activiteiten] ${filename}: mist 'date' in frontmatter, overgeslagen`)
@@ -84,6 +89,7 @@ async function main() {
       title: data.title,
       date,
       dateDisplay,
+      herhalingText,
       label: data.label || null,
       tone: data.tone || 'neutral',
       excerpt: data.excerpt || '',
