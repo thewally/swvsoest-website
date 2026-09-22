@@ -213,20 +213,27 @@ a { color: inherit; }
 .site-team-photo-placeholder svg { width: 30%; height: 30%; }
 
 /* "Ballon" met korte uitleg + stappenplan, uitgeklapt onder de
-   agenda-importknop (AgendaBalloon.jsx). Bewust geen flexbox op de
-   lijst/stappen zelf -- een kolom-flex met tekst die moet wrappen kan de
-   doos breder duwen dan zijn max-width; met gewone block-opmaak (ol/li +
-   margin) kan dat niet gebeuren. */
+   agenda-importknop (AgendaBalloon.jsx).
+   Let op: deze tokenschaal springt van --space-4 (16px) naar --space-6
+   (24px) -- er is geen --space-5. Een var() met een niet-bestaande token
+   maakt de HELE declaratie ongeldig (padding valt dan terug op 0), dus dat
+   is precies wat hier eerder misging.
+   De stappen zijn met de hand genummerd (cirkel + tekst in een flex-rij)
+   i.p.v. met <ol>/::marker: bij list-style-position:outside valt de marker
+   buiten de content-box van de <li>, en zonder passende padding op de
+   ouder komt dat cijfer zichtbaar buiten de ballon te staan. Met een eigen
+   flex-rij (vast cirkeltje + tekst met min-width:0) is de positie altijd
+   voorspelbaar en blijft alles binnen de padding van de ballon. */
 .site-balloon {
   position: relative;
   box-sizing: border-box;
-  margin-top: var(--space-5);
+  margin-top: var(--space-6);
   max-width: 480px;
   width: 100%;
   background: var(--surface-alt);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  padding: var(--space-4) var(--space-5);
+  padding: var(--space-6);
   overflow-wrap: anywhere;
 }
 .site-balloon::before {
@@ -243,11 +250,32 @@ a { color: inherit; }
 }
 .site-balloon-warning {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--space-2);
+  align-items: flex-start;
+  gap: var(--space-3);
   margin-bottom: var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--warning);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+}
+.site-balloon-warning-icon {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+  color: var(--warning);
+}
+.site-balloon-warning strong {
+  display: block;
   font-size: 13px;
+  line-height: 18px;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+.site-balloon-warning p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 18px;
   color: var(--ink-muted);
 }
 .site-balloon-lead {
@@ -257,15 +285,35 @@ a { color: inherit; }
   color: var(--ink);
 }
 .site-balloon-steps {
-  margin: 0;
-  padding-left: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.site-balloon-step {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+.site-balloon-step-num {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-full);
+  background: var(--groen-actie);
+  color: var(--on-groen-actie);
+  font-size: 12px;
+  font-weight: 700;
+}
+.site-balloon-step-text {
+  flex: 1 1 auto;
+  min-width: 0;
   font-size: 14px;
   line-height: 20px;
   color: var(--ink-muted);
 }
-.site-balloon-steps li { margin-bottom: var(--space-3); }
-.site-balloon-steps li:last-child { margin-bottom: 0; }
-.site-balloon-steps li::marker { font-weight: 700; color: var(--ink); }
 .site-balloon-copyrow {
   display: flex;
   flex-wrap: wrap;
