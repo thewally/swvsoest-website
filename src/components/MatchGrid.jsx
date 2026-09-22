@@ -2,19 +2,35 @@ import { useState } from 'react'
 import { Badge } from './svs'
 import { groepeerPerDag, formatDagLabel, matchStatus, parseScore, locatieLabel } from '../lib/matchHelpers'
 
+const BASE = import.meta.env.BASE_URL
+
+// SportLink-logo's komen na de sync als lokaal pad (bv. "logos/BBBZ168.png",
+// zie scripts/sportlink_sync.py) en moeten met BASE_URL + 'data/' ervoor
+// worden opgehaald -- net als de teamfoto in TeamCard.jsx. Oudere,
+// nog-niet-herschreven data (of een club waarvan het logo niet gedownload
+// kon worden) heeft soms nog de originele absolute SportLink-URL; die laten
+// we ongemoeid.
+function resolveLogoSrc(src) {
+  if (!src) return null
+  return /^https?:\/\//.test(src) ? src : `${BASE}data/${src}`
+}
+
 // Witte cirkel achter elk logo, zodat donkere of transparante SportLink-logo's
 // altijd goed contrasteren -- en een nette placeholder als de afbeelding
-// (bv. een verlopen ondertekende URL) niet laadt. `align` zit op de wrapper
-// zodat de mobiele lay-out thuis- en uitlogo apart kan positioneren.
+// niet laadt (bv. een club zonder logo, of een enkele keer nog een
+// verlopen ondertekende SportLink-URL die niet lokaal gecachet kon worden).
+// `align` zit op de wrapper zodat de mobiele lay-out thuis- en uitlogo
+// apart kan positioneren.
 function TeamLogo({ src, align }) {
   const [broken, setBroken] = useState(false)
   const cls = `site-match-logo-wrap site-match-logo-${align}`
-  if (!src || broken) {
+  const resolved = resolveLogoSrc(src)
+  if (!resolved || broken) {
     return <span className={`${cls} site-match-logo-empty`} aria-hidden="true" />
   }
   return (
     <span className={cls}>
-      <img src={src} alt="" className="site-match-logo" onError={() => setBroken(true)} />
+      <img src={resolved} alt="" className="site-match-logo" onError={() => setBroken(true)} />
     </span>
   )
 }
