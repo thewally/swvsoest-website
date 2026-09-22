@@ -59,10 +59,10 @@ export default function AgendaBalloon({ team }) {
               <line x1="12" y1="16.5" x2="12" y2="16.5" />
             </svg>
             <div>
-              <strong>Google Calendar en Outlook: gebruik een computer of Mac.</strong>
+              <strong>Gebruik je Google Calendar of Outlook? Gebruik dan een computer of Mac.</strong>
               <p>
                 Toevoegen via deze link lukt bij die twee meestal niet op een telefoon. Apple Agenda werkt wél
-                gewoon op een iPhone of iPad: tik daar simpelweg op de link hieronder.
+                gewoon op een iPhone of iPad: tik hieronder simpelweg op "Apple Agenda".
               </p>
             </div>
           </div>
