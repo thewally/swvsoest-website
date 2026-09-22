@@ -7,7 +7,7 @@ tijd: 18:30 - 20:00
 locatie: Trainingsveld VVZ'49
 label: JO14-1 & JO14-2
 tone: blauw
-excerpt: Tweewekelijkse training (oneven weken) voor JO14-1 & JO14-2, op donderdag van 18:30 tot 20:00 uur op het Trainingsveld van VVZ'49.
+excerpt: Wekelijkse training voor JO14-1 & JO14-2, op donderdag van 18:30 tot 20:00 uur.
 ---
 
-Training op het Trainingsveld van VVZ'49, in de oneven weken.
+Training op het Trainingsveld van VVZ'49.
