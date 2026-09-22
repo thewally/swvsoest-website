@@ -10,4 +10,4 @@ tone: blauw
 excerpt: Wekelijkse training voor JO14-1 & JO14-2, op donderdag van 18:30 tot 20:00 uur.
 ---
 
-Training op het Hoofdveld van VVZ'49, in de even weken.
+Training op het Hoofdveld van VVZ'49.
