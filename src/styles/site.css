@@ -212,15 +212,22 @@ a { color: inherit; }
 }
 .site-team-photo-placeholder svg { width: 30%; height: 30%; }
 
-/* "Ballon" met korte uitleg + stappenplan onder de agenda-importknop. */
+/* "Ballon" met korte uitleg + stappenplan, uitgeklapt onder de
+   agenda-importknop (AgendaBalloon.jsx). Bewust geen flexbox op de
+   lijst/stappen zelf -- een kolom-flex met tekst die moet wrappen kan de
+   doos breder duwen dan zijn max-width; met gewone block-opmaak (ol/li +
+   margin) kan dat niet gebeuren. */
 .site-balloon {
   position: relative;
+  box-sizing: border-box;
   margin-top: var(--space-5);
   max-width: 480px;
+  width: 100%;
   background: var(--surface-alt);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   padding: var(--space-4) var(--space-5);
+  overflow-wrap: anywhere;
 }
 .site-balloon::before {
   content: '';
@@ -234,8 +241,17 @@ a { color: inherit; }
   border-top: 1px solid var(--line);
   transform: rotate(45deg);
 }
+.site-balloon-warning {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  font-size: 13px;
+  color: var(--ink-muted);
+}
 .site-balloon-lead {
-  margin: 0 0 var(--space-3);
+  margin: 0 0 var(--space-4);
   font-size: 14px;
   line-height: 22px;
   color: var(--ink);
@@ -243,14 +259,43 @@ a { color: inherit; }
 .site-balloon-steps {
   margin: 0;
   padding-left: var(--space-5);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
   font-size: 14px;
   line-height: 20px;
   color: var(--ink-muted);
 }
+.site-balloon-steps li { margin-bottom: var(--space-3); }
+.site-balloon-steps li:last-child { margin-bottom: 0; }
 .site-balloon-steps li::marker { font-weight: 700; color: var(--ink); }
+.site-balloon-copyrow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+.site-balloon-url {
+  flex: 1 1 200px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: var(--space-1) var(--space-2);
+  font-size: 12px;
+  color: var(--ink);
+}
+.site-balloon-apps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  margin-top: var(--space-2);
+}
+.site-balloon-apps a {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--blauw-actie);
+  text-decoration: underline;
+}
 
 .site-loading, .site-error {
   padding: var(--space-16) 0;
