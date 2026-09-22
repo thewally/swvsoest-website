@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { SectionHeading, NewsCard } from '../components/svs'
+import { Link } from 'react-router-dom'
+import { SectionHeading, Badge } from '../components/svs'
 import { fetchActiviteiten } from '../lib/data'
 
 export default function ActiviteitenPage() {
@@ -22,18 +23,16 @@ export default function ActiviteitenPage() {
         ) : activiteiten.length === 0 ? (
           <p className="site-empty">Er zijn nog geen activiteiten gepland.</p>
         ) : (
-          <div className="site-grid">
+          <div className="site-activiteit-list">
             {activiteiten.map(item => (
-              <NewsCard
-                key={item.slug}
-                title={item.title}
-                href={`/activiteiten/${item.slug}`}
-                image={item.image}
-                label={item.label}
-                tone={item.tone}
-                excerpt={item.excerpt}
-                date={item.dateDisplay}
-              />
+              <Link key={item.slug} to={`/activiteiten/${item.slug}`} className="site-activiteit-row">
+                <p className="site-activiteit-row-date">{item.dateDisplay}</p>
+                <div className="site-activiteit-row-body">
+                  {item.label && <Badge tone={item.tone}>{item.label}</Badge>}
+                  <h3 className="site-activiteit-row-title">{item.title}</h3>
+                  {item.excerpt && <p className="site-activiteit-row-excerpt">{item.excerpt}</p>}
+                </div>
+              </Link>
             ))}
           </div>
         )}
