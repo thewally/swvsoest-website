@@ -38,7 +38,7 @@ export default function AgendaBalloon({ team }) {
         onClick={() => setOpen(o => !o)}
         aria-expanded={open}
       >
-        Importeer programma (met instructies)
+        Importeer speelschema in je agenda
       </button>
 
       {open && (
