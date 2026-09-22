@@ -89,6 +89,8 @@ async function main() {
       title: data.title,
       date,
       dateDisplay,
+      tijd: data.tijd || null,
+      locatie: data.locatie || null,
       herhalingText,
       label: data.label || null,
       tone: data.tone || 'neutral',

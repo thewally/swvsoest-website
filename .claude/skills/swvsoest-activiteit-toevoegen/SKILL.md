@@ -43,11 +43,13 @@ een vaste trainingsavond, een terugkerend overleg — kortom, iets zonder één 
 |---|---|---|
 | `title` | ja | Titel van de activiteit |
 | `date` | ja | `JJJJ-MM-DD` — **de datum van de activiteit zelf, niet een publicatiedatum**. Vraag hier altijd expliciet naar als die niet gegeven is |
+| `tijd` | aanbevolen | Vrije tekst, bv. `14:00 - 17:00`. Vraag hiernaar als een tijd genoemd is maar niet expliciet als veld gegeven — verschijnt onder de datum, zowel in de lijst als op de detailpagina |
+| `locatie` | aanbevolen | Vrije tekst, bv. `Hoofdveld VVZ'49`. Vraag hier altijd expliciet naar als er geen locatie gegeven is — verschijnt onder de titel, zowel in de lijst als op de detailpagina |
 | `label` | nee | Korte badge-tekst, bv. "Jeugd", "Senioren", "Clubbreed" |
 | `tone` | nee | Kleur van de badge: `groen`, `blauw`, `warning`, `danger`, of leeg voor neutraal grijs |
 | `excerpt` | nee | 1–2 zinnen samenvatting die op de activiteitenkaart komt te staan |
 | `image` | nee | Pad/URL naar een headerafbeelding (16:9 werkt het best) |
-| inhoud | ja | Beschrijving als markdown — tijden, locatie, aanmeldinstructies etc. |
+| inhoud | ja | Beschrijving als markdown — aanmeldinstructies etc. |
 
 ### Benodigde informatie — herhalende activiteit
 
@@ -60,12 +62,14 @@ een vaste trainingsavond, een terugkerend overleg — kortom, iets zonder één 
 | `vanaf` | ja | `JJJJ-MM-DD` — eerste keer dat de reeks plaatsvindt. **Moet zelf op de juiste weekdag vallen** (bv. als de gebruiker "elke dinsdag vanaf begin oktober" zegt, reken zelf de eerste dinsdag op/na die datum uit) |
 | `dag` | aanbevolen | `maandag` t/m `zondag` — puur ter controle/documentatie, moet overeenkomen met de weekdag van `vanaf`. Het bouwscript waarschuwt (maar faalt niet) bij een mismatch en gebruikt dan `vanaf` als waarheid |
 | `tijd` | aanbevolen | Vrije tekst, bv. `18:30 - 19:45`. Vraag hiernaar als tijden genoemd zijn maar niet expliciet als veld gegeven |
+| `locatie` | aanbevolen | Vrije tekst, bv. `Hoofdveld VVZ'49`. Vraag hier altijd expliciet naar als er geen locatie gegeven is — verschijnt onder de titel, zowel in de lijst als op de detailpagina |
 | `tot` | nee | `JJJJ-MM-DD` — laatste datum dat de reeks nog loopt, bv. einde van een seizoen. Zonder `tot` loopt de reeks door totdat iemand het bestand handmatig verwijdert |
 | `label`, `tone`, `excerpt`, `image` | nee | Zelfde als bij een eenmalige activiteit |
-| inhoud | ja | Beschrijving als markdown — locatie, verzameltijd, aanmeldinstructies etc. |
+| inhoud | ja | Beschrijving als markdown — verzameltijd, aanmeldinstructies etc. |
 
-Op de site verschijnt dit automatisch als "Elke dinsdag, 18:30 - 19:45 · eerstvolgende: \<datum>"
-in plaats van een vaste datum; die eerstvolgende datum schuift vanzelf door bij elke build.
+Op de site verschijnt automatisch de eerstvolgende datum van de reeks (schuift vanzelf door bij
+elke build); op de detailpagina staat daaronder ook het herhalingspatroon, bv. "Elke dinsdag,
+18:30 - 19:45".
 
 ## Werkwijze
 
@@ -93,13 +97,15 @@ in plaats van een vaste datum; die eerstvolgende datum schuift vanzelf door bij 
    ---
    title: <titel>
    date: <JJJJ-MM-DD van de activiteit zelf>
+   tijd: <bv. 14:00 - 17:00, of weglaten>
+   locatie: <bv. Hoofdveld VVZ'49, of weglaten>
    label: <label of weglaten>
    tone: <groen|blauw|warning|danger of weglaten>
    excerpt: <samenvatting of weglaten>
    image: <pad/URL of weglaten>
    ---
 
-   <beschrijving in markdown — tijden, locatie, aanmelden>
+   <beschrijving in markdown — aanmelden>
    ```
 
    Herhalend:
@@ -110,6 +116,7 @@ in plaats van een vaste datum; die eerstvolgende datum schuift vanzelf door bij 
    dag: <maandag t/m zondag>
    vanaf: <JJJJ-MM-DD, eerste keer, op de juiste weekdag>
    tijd: <bv. 18:30 - 19:45, of weglaten>
+   locatie: <bv. Hoofdveld VVZ'49, of weglaten>
    tot: <JJJJ-MM-DD, of weglaten voor een doorlopende reeks>
    label: <label of weglaten>
    tone: <groen|blauw|warning|danger of weglaten>
@@ -117,7 +124,7 @@ in plaats van een vaste datum; die eerstvolgende datum schuift vanzelf door bij 
    image: <pad/URL of weglaten>
    ---
 
-   <beschrijving in markdown — locatie, verzameltijd, aanmelden>
+   <beschrijving in markdown — verzameltijd, aanmelden>
    ```
    Laat een veld helemaal weg (niet leeg laten staan) als er geen waarde voor is.
 6. **Toon het resultaat** aan de gebruiker (het volledige bestand) voordat je commit, zodat die

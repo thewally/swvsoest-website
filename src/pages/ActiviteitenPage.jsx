@@ -26,10 +26,14 @@ export default function ActiviteitenPage() {
           <div className="site-activiteit-list">
             {activiteiten.map(item => (
               <Link key={item.slug} to={`/activiteiten/${item.slug}`} className="site-activiteit-row">
-                <p className="site-activiteit-row-date">{item.dateDisplay}</p>
+                <div className="site-activiteit-row-date-col">
+                  <p className="site-activiteit-row-date">{item.dateDisplay}</p>
+                  {item.tijd && <p className="site-activiteit-row-time">{item.tijd}</p>}
+                </div>
                 <div className="site-activiteit-row-body">
                   {item.label && <Badge tone={item.tone}>{item.label}</Badge>}
                   <h3 className="site-activiteit-row-title">{item.title}</h3>
+                  {item.locatie && <p className="site-activiteit-row-location">{item.locatie}</p>}
                   {item.excerpt && <p className="site-activiteit-row-excerpt">{item.excerpt}</p>}
                 </div>
               </Link>

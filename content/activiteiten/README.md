@@ -11,20 +11,24 @@ Voeg een `.md` bestand toe in deze map, bijvoorbeeld `2026-10-17-familiedag.md`:
 ---
 title: Familiedag JO14
 date: 2026-10-17
+tijd: 14:00 - 17:00
+locatie: Hoofdveld VVZ'49
 label: Jeugd
 tone: groen
 excerpt: Alle JO14-teams samen een middag op het sportpark, met een klein toernooitje en patat.
 image:
 ---
 
-Tekst van de activiteit, in **markdown**. Zet hier tijden, locatie en
-eventuele aanmeldinstructies in.
+Tekst van de activiteit, in **markdown**. Zet hier eventuele
+aanmeldinstructies in.
 ```
 
 | Veld | Verplicht | Uitleg |
 |---|---|---|
 | `title` | ja | Titel van de activiteit |
 | `date` | ja | `JJJJ-MM-DD` -- de datum van de activiteit zelf (niet een publicatiedatum) |
+| `tijd` | nee | Vrije tekst, bv. `14:00 - 17:00` -- verschijnt onder de datum, zowel in de lijst als op de detailpagina |
+| `locatie` | nee | Vrije tekst, bv. `Hoofdveld VVZ'49` -- verschijnt onder de titel, zowel in de lijst als op de detailpagina |
 | `label` | nee | Badge-tekst, bv. "Jeugd", "Senioren", "Clubbreed" |
 | `tone` | nee | `groen`, `blauw` of `neutral` (kleur van de badge) |
 | `excerpt` | nee | Korte samenvatting op de kaart |
@@ -42,6 +46,7 @@ herhaling: wekelijks
 dag: dinsdag
 vanaf: 2026-09-01
 tijd: 18:30 - 19:45
+locatie: Hoofdveld VVZ'49
 label: Jeugd
 tone: blauw
 excerpt: Wekelijkse training voor JO16-4.
@@ -56,13 +61,14 @@ Training op het hoofdveld. Verzamelen om 18:15 uur.
 | `herhaling` | ja | `wekelijks` of `tweewekelijks` |
 | `vanaf` | ja | `JJJJ-MM-DD` -- eerste keer dat de reeks plaatsvindt. Moet zelf op de juiste weekdag vallen |
 | `dag` | nee | `maandag` t/m `zondag`, alleen ter controle -- moet overeenkomen met de weekdag van `vanaf` (anders komt er een waarschuwing in de build-log, en is `vanaf` leidend) |
-| `tijd` | nee | Vrije tekst, bv. `18:30 - 19:45` -- verschijnt naast de dag |
+| `tijd` | nee | Vrije tekst, bv. `18:30 - 19:45` -- verschijnt onder de (eerstvolgende) datum, zowel in de lijst als op de detailpagina |
+| `locatie` | nee | Vrije tekst, bv. `Hoofdveld VVZ'49` -- verschijnt onder de titel, zowel in de lijst als op de detailpagina |
 | `tot` | nee | `JJJJ-MM-DD` -- laatste datum dat de reeks nog loopt. Zonder `tot` loopt de reeks door totdat het bestand handmatig verwijderd wordt |
 | `label`, `tone`, `excerpt`, `image` | nee | Zelfde als bij een eenmalige activiteit |
 
-Op de site verschijnt dit als "Elke dinsdag, 18:30 - 19:45 · eerstvolgende: \<datum>" in plaats
-van een vaste datum; de eerstvolgende datum wordt bij elke build opnieuw berekend, dus die schuift
-vanzelf door naar de volgende gelegenheid.
+Op de site verschijnt de eerstvolgende datum van de reeks (schuift automatisch door bij elke
+build); op de detailpagina staat daaronder ook het herhalingspatroon, bv. "Elke dinsdag,
+18:30 - 19:45".
 
 Voor `tweewekelijks` bepaalt `vanaf` ook welke week de "aan"-week is -- de reeks valt op `vanaf`,
 `vanaf` + 2 weken, + 4 weken, enzovoort.

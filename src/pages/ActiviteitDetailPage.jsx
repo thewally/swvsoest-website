@@ -36,12 +36,21 @@ export default function ActiviteitDetailPage() {
         <h1 className="svs-hero-title" style={{ fontSize: 36, margin: '12px 0 4px', color: 'var(--ink)' }}>
           {activiteit.title}
         </h1>
-        <p className="svs-meta" style={{ marginBottom: activiteit.herhalingText ? 4 : 24 }}>
+        <p className="svs-meta" style={{ marginBottom: activiteit.herhalingText || activiteit.tijd || activiteit.locatie ? 4 : 24 }}>
           {activiteit.dateDisplay}
         </p>
-        {activiteit.herhalingText && (
-          <p className="svs-meta" style={{ marginBottom: 24 }}>
+        {activiteit.herhalingText ? (
+          <p className="svs-meta" style={{ marginBottom: activiteit.locatie ? 4 : 24 }}>
             {activiteit.herhalingText}
+          </p>
+        ) : activiteit.tijd ? (
+          <p className="svs-meta" style={{ marginBottom: activiteit.locatie ? 4 : 24 }}>
+            {activiteit.tijd}
+          </p>
+        ) : null}
+        {activiteit.locatie && (
+          <p className="svs-meta" style={{ marginBottom: 24 }}>
+            {activiteit.locatie}
           </p>
         )}
         {activiteit.image && <img src={activiteit.image} alt="" className="site-article-image" />}

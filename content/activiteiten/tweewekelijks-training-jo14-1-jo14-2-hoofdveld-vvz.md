@@ -4,6 +4,7 @@ herhaling: tweewekelijks
 dag: donderdag
 vanaf: 2026-10-01
 tijd: 18:30 - 20:00
+locatie: Hoofdveld VVZ'49
 label: JO14-1 & JO14-2
 tone: blauw
 excerpt: Tweewekelijkse training (even weken) voor JO14-1 & JO14-2, op donderdag van 18:30 tot 20:00 uur op het Hoofdveld van VVZ'49.
