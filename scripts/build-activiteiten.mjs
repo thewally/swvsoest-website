@@ -8,7 +8,16 @@ import { readdir, readFile, mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { marked } from 'marked'
-import { parseFrontmatter, slugFromFilename, formatDateDisplay } from './lib/frontmatter.mjs'
+import {
+  parseFrontmatter,
+  slugFromFilename,
+  formatDateDisplay,
+  weekdayName,
+  nextOccurrence,
+  herhalingLabel,
+} from './lib/frontmatter.mjs'
+
+const HERHALING_INTERVAL_DAYS = { wekelijks: 7, tweewekelijks: 14 }
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)))
 const ACTIVITEITEN_DIR = path.join(ROOT, 'content', 'activiteiten')
@@ -27,19 +36,54 @@ async function main() {
   for (const filename of files) {
     const raw = await readFile(path.join(ACTIVITEITEN_DIR, filename), 'utf-8')
     const { data, body } = parseFrontmatter(raw)
-    if (!data.title || !data.date) {
-      console.warn(`[build-activiteiten] ${filename}: mist 'title' of 'date' in frontmatter, overgeslagen`)
+    if (!data.title) {
+      console.warn(`[build-activiteiten] ${filename}: mist 'title' in frontmatter, overgeslagen`)
       continue
     }
-    if (data.date < vandaag) {
-      // Al geweest: niet meer tonen. De nachtelijke cleanup-job verwijdert het bestand zelf.
-      continue
+
+    let date, dateDisplay
+    if (data.herhaling) {
+      const intervalDays = HERHALING_INTERVAL_DAYS[data.herhaling]
+      if (!intervalDays) {
+        console.warn(`[build-activiteiten] ${filename}: onbekende 'herhaling' waarde "${data.herhaling}" (verwacht wekelijks of tweewekelijks), overgeslagen`)
+        continue
+      }
+      if (!data.vanaf) {
+        console.warn(`[build-activiteiten] ${filename}: mist 'vanaf' (startdatum van de reeks), overgeslagen`)
+        continue
+      }
+      if (data.dag && data.dag !== weekdayName(data.vanaf)) {
+        console.warn(`[build-activiteiten] ${filename}: 'dag' (${data.dag}) komt niet overeen met de weekdag van 'vanaf' (${data.vanaf} is een ${weekdayName(data.vanaf)}) -- 'vanaf' is leidend`)
+      }
+      if (data.tot && data.tot < vandaag) {
+        // Reeks is definitief afgelopen: niet meer tonen. De nachtelijke cleanup-job
+        // verwijdert het bestand zelf.
+        continue
+      }
+      date = nextOccurrence(data.vanaf, intervalDays, vandaag)
+      if (data.tot && date > data.tot) {
+        // Eerstvolgende gelegenheid zou na het einde van de reeks vallen.
+        continue
+      }
+      dateDisplay = `${herhalingLabel(data)} · eerstvolgende: ${formatDateDisplay(date)}`
+    } else {
+      if (!data.date) {
+        console.warn(`[build-activiteiten] ${filename}: mist 'date' in frontmatter, overgeslagen`)
+        continue
+      }
+      if (data.date < vandaag) {
+        // Al geweest: niet meer tonen. De nachtelijke cleanup-job verwijdert het bestand zelf.
+        continue
+      }
+      date = data.date
+      dateDisplay = formatDateDisplay(data.date)
     }
+
     activiteiten.push({
       slug: data.slug || slugFromFilename(filename),
       title: data.title,
-      date: data.date,
-      dateDisplay: formatDateDisplay(data.date),
+      date,
+      dateDisplay,
       label: data.label || null,
       tone: data.tone || 'neutral',
       excerpt: data.excerpt || '',

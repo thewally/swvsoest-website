@@ -27,6 +27,16 @@ async function main() {
     const filePath = path.join(ACTIVITEITEN_DIR, filename)
     const raw = await readFile(filePath, 'utf-8')
     const { data } = parseFrontmatter(raw)
+    if (data.herhaling) {
+      // Herhalende activiteiten blijven staan zolang de reeks loopt -- alleen opruimen
+      // als er een 'tot' einddatum is en die voorbij is.
+      if (data.tot && data.tot < vandaag) {
+        await unlink(filePath)
+        console.log(`[cleanup-activiteiten] verwijderd (reeks eindigde op ${data.tot}): ${filename}`)
+        verwijderd++
+      }
+      continue
+    }
     if (data.date && data.date < vandaag) {
       await unlink(filePath)
       console.log(`[cleanup-activiteiten] verwijderd (was op ${data.date}): ${filename}`)
