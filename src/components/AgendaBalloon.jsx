@@ -76,14 +76,6 @@ export default function AgendaBalloon({ team }) {
             <div className="site-balloon-step">
               <span className="site-balloon-step-num">1</span>
               <span className="site-balloon-step-text">
-                Open deze pagina op je computer of Mac.
-                <br />
-                Gebruik je een iPhone of iPad? Ga dan direct naar stap 3 en tik op Apple Agenda.
-              </span>
-            </div>
-            <div className="site-balloon-step">
-              <span className="site-balloon-step-num">2</span>
-              <span className="site-balloon-step-text">
                 <div className="site-balloon-copyrow">
                   <code className="site-balloon-url">{icsUrl}</code>
                   <button type="button" className="svs-btn svs-btn-quiet svs-btn-sm" onClick={kopieerLink}>
@@ -93,7 +85,7 @@ export default function AgendaBalloon({ team }) {
               </span>
             </div>
             <div className="site-balloon-step">
-              <span className="site-balloon-step-num">3</span>
+              <span className="site-balloon-step-num">2</span>
               <span className="site-balloon-step-text">
                 Ga naar je agenda-app en voeg de link toe als agenda-abonnement:
                 <div className="site-balloon-apps">
