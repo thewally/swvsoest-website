@@ -33,11 +33,11 @@
       "thuisteam": "Saestum O14-1",
       "thuisteamclubrelatiecode": "BBCC49E",
       "thuisteamid": 309395,
-      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/9C911B1C90946183B9FE70EDF9F14AD3?expires=1790052028&sig=795ed53645ff3190dc10ec46f8b00357c98ea103",
+      "thuisteamlogo": "logos/BBCC49E.png",
       "uitteam": "ST SO Soest/VVZ'49 O14-2",
       "uitteamclubrelatiecode": "BBBZ168",
       "uitteamid": 304979,
-      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790052028&sig=d339e6508292e154cc50556ca1fdef6a25bbe840",
+      "uitteamlogo": "logos/BBBZ168.png",
       "veld": "veld 1",
       "vertrektijd": "08:00",
       "verzameltijd": "",
@@ -71,11 +71,11 @@
       "thuisteam": "ST SO Soest/VVZ'49 O14-2",
       "thuisteamclubrelatiecode": "BBBZ168",
       "thuisteamid": 304979,
-      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790052028&sig=d339e6508292e154cc50556ca1fdef6a25bbe840",
+      "thuisteamlogo": "logos/BBBZ168.png",
       "uitteam": "Altius O14-1",
       "uitteamclubrelatiecode": "BBCC184",
       "uitteamid": 289586,
-      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/2C6AF7F1405175C9956CD2D8BBC0E054?expires=1790052028&sig=a674e1a77af8ba4a06e4cbc9133737aeff1d98dc",
+      "uitteamlogo": "logos/BBCC184.png",
       "veld": "veld 2",
       "vertrektijd": "",
       "verzameltijd": "",
@@ -88,7 +88,7 @@
   "slug": "jo14-2",
   "stand": [
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/B527D8745EE41EBF1BE900F7156AD05E?expires=1790052028&sig=0791d32d8dd1ab3c87168229c3473d322699b612",
+      "clublogo": "logos/BBBZ41C.png",
       "clubrelatiecode": "BBBZ41C",
       "doelpuntentegen": 5,
       "doelpuntenvoor": 18,
@@ -104,7 +104,7 @@
       "verloren": 0
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/F24051DDD56D9D1448203D80D00E20A2?expires=1790052028&sig=d2327a8e1db66b5eb97635c3f09955670b51c304",
+      "clublogo": "logos/BBBZ179.png",
       "clubrelatiecode": "BBBZ179",
       "doelpuntentegen": 1,
       "doelpuntenvoor": 14,
@@ -120,7 +120,7 @@
       "verloren": 0
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/E2751DDCEE0B3BCA00F9966853744A2F?expires=1790052028&sig=770aeb271fc270229b9dade7415d54ea904a5162",
+      "clublogo": "logos/BBCC346.png",
       "clubrelatiecode": "BBCC346",
       "doelpuntentegen": 8,
       "doelpuntenvoor": 4,
@@ -136,7 +136,7 @@
       "verloren": 1
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/9C911B1C90946183B9FE70EDF9F14AD3?expires=1790052028&sig=795ed53645ff3190dc10ec46f8b00357c98ea103",
+      "clublogo": "logos/BBCC49E.png",
       "clubrelatiecode": "BBCC49E",
       "doelpuntentegen": 5,
       "doelpuntenvoor": 2,
@@ -152,7 +152,7 @@
       "verloren": 1
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/2C6AF7F1405175C9956CD2D8BBC0E054?expires=1790052028&sig=a674e1a77af8ba4a06e4cbc9133737aeff1d98dc",
+      "clublogo": "logos/BBCC184.png",
       "clubrelatiecode": "BBCC184",
       "doelpuntentegen": 10,
       "doelpuntenvoor": 1,
@@ -168,7 +168,7 @@
       "verloren": 2
     },
     {
-      "clublogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790052028&sig=d339e6508292e154cc50556ca1fdef6a25bbe840",
+      "clublogo": "logos/BBBZ168.png",
       "clubrelatiecode": "BBBZ168",
       "doelpuntentegen": 13,
       "doelpuntenvoor": 3,
@@ -196,14 +196,14 @@
       "datumopgemaakt": "19 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-21T14:48:53.877318+02:00",
-      "last_seen": "2026-09-21T22:40:22.881811+02:00",
+      "last_seen": "2026-09-22T09:45:22.565509+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20846125&teamcode=304979&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
       "thuisteam": "ST SO Soest/VVZ'49 O14-2",
       "thuisteamclubrelatiecode": "BBBZ168",
       "thuisteamid": "304979",
-      "thuisteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/185BE097AE2F6645AF8AAA77D9C88EBF?expires=1790052029&sig=cf5b74cc61b463ec60691031df5993bd35b40305",
+      "thuisteamlogo": "logos/BBBZ168.png",
       "uitslag": "0 - 2",
       "uitslag-nv": null,
       "uitslag-regulier": "0 - 2",
@@ -211,7 +211,7 @@
       "uitteam": "Wasmeer O14-1",
       "uitteamclubrelatiecode": "BBCC346",
       "uitteamid": "319252",
-      "uitteamlogo": "https://binaries.sportlink.com/KNVB-production-DOCUMENT/E2751DDCEE0B3BCA00F9966853744A2F?expires=1790052029&sig=4f8a15b0bf0b36fb2c1da26c346a6734400b2298",
+      "uitteamlogo": "logos/BBCC346.png",
       "verenigingswedstrijd": "Nee",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - Wasmeer O14-1",
       "wedstrijdcode": 20846125,
@@ -219,5 +219,5 @@
       "wedstrijdnummer": 27557
     }
   ],
-  "updated_at": "2026-09-21T22:40:22.881811+02:00"
+  "updated_at": "2026-09-22T09:45:22.565509+02:00"
 }
