@@ -25,8 +25,8 @@
       "plaats": "AMERSFOORT",
       "poule": "11",
       "rijders": "",
-      "scheidsrechter": "",
-      "scheidsrechters": "",
+      "scheidsrechter": "P. (Patrick) Brouwer",
+      "scheidsrechters": "P. (Patrick) Brouwer (Scheidsrechter)",
       "status": "Te spelen",
       "teamnaam": "ST SO Soest/VVZ'49 O14-6",
       "teamvolgorde": 2606,
@@ -196,7 +196,7 @@
       "datumopgemaakt": "19 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-21T14:48:53.877318+02:00",
-      "last_seen": "2026-09-24T11:35:25.595768+02:00",
+      "last_seen": "2026-09-24T22:11:38.718193+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20859765&teamcode=304987&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -219,5 +219,5 @@
       "wedstrijdnummer": 41197
     }
   ],
-  "updated_at": "2026-09-24T11:35:25.595768+02:00"
+  "updated_at": "2026-09-24T22:11:38.718193+02:00"
 }
