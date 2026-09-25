@@ -4,8 +4,9 @@ import { SectionHeading } from '../components/svs'
 import MatchGrid from '../components/MatchGrid'
 import StandTable from '../components/StandTable'
 import AgendaBalloon from '../components/AgendaBalloon'
+import ActiviteitRow from '../components/ActiviteitRow'
 import { getTeam } from '../lib/teams'
-import { fetchTeamData } from '../lib/data'
+import { fetchTeamData, fetchTeamActiviteiten } from '../lib/data'
 import { sorteerOplopend, sorteerAflopend, datumSleutel } from '../lib/matchHelpers'
 import NotFoundPage from './NotFoundPage'
 
@@ -14,6 +15,7 @@ export default function TeamPage() {
   const team = getTeam(slug)
   const [data, setData] = useState(null)
   const [error, setError] = useState(null)
+  const [activiteiten, setActiviteiten] = useState(null)
 
   useEffect(() => {
     if (!team) return
@@ -23,6 +25,16 @@ export default function TeamPage() {
     fetchTeamData(team.slug)
       .then(d => actief && setData(d))
       .catch(e => actief && setError(e.message))
+    return () => {
+      actief = false
+    }
+  }, [team])
+
+  useEffect(() => {
+    if (!team) return
+    let actief = true
+    setActiviteiten(null)
+    fetchTeamActiviteiten(team.slug).then(items => actief && setActiviteiten(items))
     return () => {
       actief = false
     }
@@ -54,6 +66,19 @@ export default function TeamPage() {
         <section className="site-section-tight">
           <AgendaBalloon team={team} />
         </section>
+
+        {activiteiten && activiteiten.length > 0 && (
+          <section className="site-section-tight">
+            <h2 className="svs-sechead-title" style={{ fontSize: 20, marginBottom: 12 }}>
+              Activiteiten
+            </h2>
+            <div className="site-activiteit-list">
+              {activiteiten.map(item => (
+                <ActiviteitRow key={item.slug} item={item} />
+              ))}
+            </div>
+          </section>
+        )}
 
         {error && <p className="site-error">Kon gegevens niet laden: {error}</p>}
 

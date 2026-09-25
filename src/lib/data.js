@@ -43,3 +43,8 @@ export async function fetchActiviteit(slug) {
   const items = await fetchActiviteiten()
   return items.find(item => item.slug === slug) || null
 }
+
+export async function fetchTeamActiviteiten(teamSlug) {
+  const items = await fetchActiviteiten()
+  return items.filter(item => Array.isArray(item.teams) && item.teams.includes(teamSlug))
+}

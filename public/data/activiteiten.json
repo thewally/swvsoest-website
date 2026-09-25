@@ -12,6 +12,10 @@
     "tone": "blauw",
     "excerpt": "Wekelijkse training voor JO14-3 & JO14-4, elke maandag van 18:30 tot 19:45 uur.",
     "image": null,
+    "teams": [
+      "jo14-3",
+      "jo14-4"
+    ],
     "html": "<p>Training op veld SEC.</p>\n"
   },
   {
@@ -27,6 +31,9 @@
     "tone": "blauw",
     "excerpt": "Wekelijkse training voor JO14-5, elke maandag van 18:30 tot 19:45 uur.",
     "image": null,
+    "teams": [
+      "jo14-5"
+    ],
     "html": "<p>Training op veld 3 bij So Soest.</p>\n"
   },
   {
@@ -42,6 +49,9 @@
     "tone": "blauw",
     "excerpt": "Wekelijkse training voor JO14-6, elke dinsdag van 18:30 tot 19:45 uur.",
     "image": null,
+    "teams": [
+      "jo14-6"
+    ],
     "html": "<p>Training op het hoofdveld bij VVZ&#39;49.</p>\n"
   },
   {
@@ -57,6 +67,10 @@
     "tone": "blauw",
     "excerpt": "Wekelijkse training voor JO14-1 & JO14-2, elke dinsdag van 18:30 tot 20:00 uur.",
     "image": null,
+    "teams": [
+      "jo14-1",
+      "jo14-2"
+    ],
     "html": "<p>Training op het Hoofdveld van So Soest.</p>\n"
   },
   {
@@ -72,6 +86,10 @@
     "tone": "blauw",
     "excerpt": "Wekelijkse training voor JO14-3 & JO14-4, elke woensdag van 18:30 tot 19:45 uur.",
     "image": null,
+    "teams": [
+      "jo14-3",
+      "jo14-4"
+    ],
     "html": "<p>Training op veld 3 bij So Soest.</p>\n"
   },
   {
@@ -87,6 +105,9 @@
     "tone": "blauw",
     "excerpt": "Wekelijkse training voor JO14-6, op donderdag van 18:00 tot 19:15 uur.",
     "image": null,
+    "teams": [
+      "jo14-6"
+    ],
     "html": "<p>Training op het Hoofdveld van VVZ&#39;49.</p>\n"
   },
   {
@@ -102,6 +123,10 @@
     "tone": "blauw",
     "excerpt": "Wekelijkse training voor JO14-1 & JO14-2, op donderdag van 18:30 tot 20:00 uur.",
     "image": null,
+    "teams": [
+      "jo14-1",
+      "jo14-2"
+    ],
     "html": "<p>Training op het Trainingsveld van VVZ&#39;49.</p>\n"
   },
   {
@@ -117,6 +142,10 @@
     "tone": "blauw",
     "excerpt": "Wekelijkse training voor JO14-3 & JO14-4, elke maandag van 18:30 tot 19:45 uur.",
     "image": null,
+    "teams": [
+      "jo14-3",
+      "jo14-4"
+    ],
     "html": "<p>Training op veld SEC.</p>\n"
   },
   {
@@ -132,6 +161,9 @@
     "tone": "blauw",
     "excerpt": "Wekelijkse training voor JO14-5, elke maandag van 18:30 tot 19:45 uur.",
     "image": null,
+    "teams": [
+      "jo14-5"
+    ],
     "html": "<p>Training op veld 3 bij So Soest.</p>\n"
   },
   {
@@ -147,6 +179,9 @@
     "tone": "blauw",
     "excerpt": "Wekelijkse training voor JO14-6, elke dinsdag van 18:30 tot 19:45 uur.",
     "image": null,
+    "teams": [
+      "jo14-6"
+    ],
     "html": "<p>Training op het hoofdveld bij VVZ&#39;49.</p>\n"
   },
   {
@@ -162,6 +197,10 @@
     "tone": "blauw",
     "excerpt": "Wekelijkse training voor JO14-1 & JO14-2, elke dinsdag van 18:30 tot 20:00 uur.",
     "image": null,
+    "teams": [
+      "jo14-1",
+      "jo14-2"
+    ],
     "html": "<p>Training op het Hoofdveld van So Soest.</p>\n"
   },
   {
@@ -177,6 +216,10 @@
     "tone": "blauw",
     "excerpt": "Wekelijkse training voor JO14-3 & JO14-4, elke woensdag van 18:30 tot 19:45 uur.",
     "image": null,
+    "teams": [
+      "jo14-3",
+      "jo14-4"
+    ],
     "html": "<p>Training op veld 3 bij So Soest.</p>\n"
   },
   {
@@ -192,6 +235,10 @@
     "tone": "blauw",
     "excerpt": "Wekelijkse training voor JO14-1 & JO14-2, op donderdag van 18:30 tot 20:00 uur.",
     "image": null,
+    "teams": [
+      "jo14-1",
+      "jo14-2"
+    ],
     "html": "<p>Training op het Hoofdveld van VVZ&#39;49.</p>\n"
   },
   {
@@ -207,6 +254,9 @@
     "tone": "blauw",
     "excerpt": "Wekelijkse training voor JO14-6, op donderdag van 18:00 tot 19:15 uur.",
     "image": null,
+    "teams": [
+      "jo14-6"
+    ],
     "html": "<p>Training op het Trainingsveld van VVZ&#39;49.</p>\n"
   }
 ]

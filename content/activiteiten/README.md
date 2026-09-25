@@ -33,6 +33,7 @@ aanmeldinstructies in.
 | `tone` | nee | `groen`, `blauw` of `neutral` (kleur van de badge) |
 | `excerpt` | nee | Korte samenvatting op de kaart |
 | `image` | nee | Pad of URL naar een headerfoto (16:9) |
+| `teams` | nee | Komma-gescheiden team-slugs uit `src/lib/teams.js`, bv. `jo14-1, jo14-2` -- laat de activiteit ook verschijnen onder "Activiteiten" op de betreffende teampagina('s). Weglaten = alleen op de algemene Activiteiten-pagina |
 
 ## Herhalende activiteit (bv. wekelijkse training)
 
@@ -64,7 +65,7 @@ Training op het hoofdveld. Verzamelen om 18:15 uur.
 | `tijd` | nee | Vrije tekst, bv. `18:30 - 19:45` -- verschijnt onder de (eerstvolgende) datum, zowel in de lijst als op de detailpagina |
 | `locatie` | nee | Vrije tekst, bv. `Hoofdveld VVZ'49` -- verschijnt onder de titel, zowel in de lijst als op de detailpagina |
 | `tot` | nee | `JJJJ-MM-DD` -- laatste datum dat de reeks nog loopt. Zonder `tot` loopt de reeks door totdat het bestand handmatig verwijderd wordt |
-| `label`, `tone`, `excerpt`, `image` | nee | Zelfde als bij een eenmalige activiteit |
+| `label`, `tone`, `excerpt`, `image`, `teams` | nee | Zelfde als bij een eenmalige activiteit |
 
 Op de site verschijnt de eerstvolgende datum van de reeks (schuift automatisch door bij elke
 build); op de detailpagina staat daaronder ook het herhalingspatroon, bv. "Elke dinsdag,
@@ -72,6 +73,13 @@ build); op de detailpagina staat daaronder ook het herhalingspatroon, bv. "Elke 
 
 Voor `tweewekelijks` bepaalt `vanaf` ook welke week de "aan"-week is -- de reeks valt op `vanaf`,
 `vanaf` + 2 weken, + 4 weken, enzovoort.
+
+## Activiteit aan een team koppelen
+
+Vul `teams` in (komma-gescheiden team-slugs, bv. `teams: jo14-6` of `teams: jo14-1, jo14-2` voor
+een gecombineerde training) om de activiteit óók te tonen onder "Activiteiten" op de teampagina('s)
+van die team(s) -- naast de algemene Activiteiten-pagina, niet in plaats daarvan. Zonder `teams`
+verschijnt een activiteit alleen op de algemene Activiteiten-pagina.
 
 ## Wat gebeurt er automatisch
 

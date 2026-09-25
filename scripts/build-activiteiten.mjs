@@ -100,6 +100,13 @@ async function main() {
     }
 
     const baseSlug = data.slug || slugFromFilename(filename)
+    // Optioneel: komma-gescheiden team-slugs (zie src/lib/teams.js), bv. "jo14-1, jo14-2"
+    // voor een gecombineerde training. Alleen gebruikt om de activiteit ook op de
+    // betreffende teampagina('s) te tonen -- geen invloed op de Activiteiten-lijst zelf.
+    const teams = data.teams
+      ? data.teams.split(',').map(s => s.trim()).filter(Boolean)
+      : null
+
     dates.forEach((date, i) => {
       activiteiten.push({
         slug: i === 0 ? baseSlug : `${baseSlug}-${date}`,
@@ -114,6 +121,7 @@ async function main() {
         tone: data.tone || 'neutral',
         excerpt: data.excerpt || '',
         image: data.image || null,
+        teams,
         html: marked.parse(body.trim()),
       })
     })

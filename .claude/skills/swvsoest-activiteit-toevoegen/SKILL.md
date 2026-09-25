@@ -49,6 +49,7 @@ een vaste trainingsavond, een terugkerend overleg — kortom, iets zonder één 
 | `tone` | nee | Kleur van de badge: `groen`, `blauw`, `warning`, `danger`, of leeg voor neutraal grijs |
 | `excerpt` | nee | 1–2 zinnen samenvatting die op de activiteitenkaart komt te staan |
 | `image` | nee | Pad/URL naar een headerafbeelding (16:9 werkt het best) |
+| `teams` | nee | Komma-gescheiden team-slugs uit `src/lib/teams.js` (bv. `jo14-6`, of `jo14-1, jo14-2` bij een gecombineerde activiteit). Is de activiteit specifiek voor één of meer teams (training, teamuitje) — vraag hier expliciet naar en vul dit in, zodat hij ook op de betreffende teampagina('s) verschijnt, naast de algemene Activiteiten-pagina |
 | inhoud | ja | Beschrijving als markdown — aanmeldinstructies etc. |
 
 ### Benodigde informatie — herhalende activiteit
@@ -64,12 +65,13 @@ een vaste trainingsavond, een terugkerend overleg — kortom, iets zonder één 
 | `tijd` | aanbevolen | Vrije tekst, bv. `18:30 - 19:45`. Vraag hiernaar als tijden genoemd zijn maar niet expliciet als veld gegeven |
 | `locatie` | aanbevolen | Vrije tekst, bv. `Hoofdveld VVZ'49`. Vraag hier altijd expliciet naar als er geen locatie gegeven is — verschijnt onder de titel, zowel in de lijst als op de detailpagina |
 | `tot` | nee | `JJJJ-MM-DD` — laatste datum dat de reeks nog loopt, bv. einde van een seizoen. Zonder `tot` loopt de reeks door totdat iemand het bestand handmatig verwijdert |
-| `label`, `tone`, `excerpt`, `image` | nee | Zelfde als bij een eenmalige activiteit |
+| `label`, `tone`, `excerpt`, `image`, `teams` | nee | Zelfde als bij een eenmalige activiteit (zie hierboven) — bij een training is `teams` bijna altijd relevant, vraag er expliciet naar |
 | inhoud | ja | Beschrijving als markdown — verzameltijd, aanmeldinstructies etc. |
 
-Op de site verschijnt automatisch de eerstvolgende datum van de reeks (schuift vanzelf door bij
-elke build); op de detailpagina staat daaronder ook het herhalingspatroon, bv. "Elke dinsdag,
-18:30 - 19:45".
+Op de site verschijnt automatisch elke gelegenheid van de reeks die binnen de eerstvolgende 14
+dagen valt (vandaag als dag 1), plus altijd minstens de eerstvolgende gelegenheid zelf ook als die
+verder weg ligt (bv. een reeks die nog moet beginnen) — dat schuift vanzelf door bij elke build.
+Op de detailpagina staat daaronder ook het herhalingspatroon, bv. "Elke dinsdag, 18:30 - 19:45".
 
 ## Werkwijze
 
@@ -81,6 +83,9 @@ elke build); op de detailpagina staat daaronder ook het herhalingspatroon, bv. "
    - Herhalend: **reken `vanaf` zelf goed uit** — het moet een concrete datum zijn die op de
      genoemde weekdag valt (bv. gebruiker zegt "elke dinsdag vanaf begin oktober" → zoek de eerste
      dinsdag op of na 1 oktober op). Vul ook `dag` in ter controle.
+   - **Is de activiteit team-specifiek** (een training, een teamuitje voor één of meer teams)?
+     Vraag dit expliciet als het niet duidelijk is, en vul dan `teams` in met de bijbehorende
+     team-slug(s) uit `src/lib/teams.js` — anders verschijnt hij niet op de teampagina('s).
 3. **Bepaal de slug** — leid een URL-vriendelijke slug af van de titel: lowercase, spaties en
    leestekens naar `-`, geen diakritische tekens/apostroffen (bv. "Familiedag JO14!" →
    `familiedag-jo14`).
@@ -99,6 +104,7 @@ elke build); op de detailpagina staat daaronder ook het herhalingspatroon, bv. "
    date: <JJJJ-MM-DD van de activiteit zelf>
    tijd: <bv. 14:00 - 17:00, of weglaten>
    locatie: <bv. Hoofdveld VVZ'49, of weglaten>
+   teams: <bv. jo14-6, of jo14-1, jo14-2 -- of weglaten als niet team-specifiek>
    label: <label of weglaten>
    tone: <groen|blauw|warning|danger of weglaten>
    excerpt: <samenvatting of weglaten>
@@ -118,6 +124,7 @@ elke build); op de detailpagina staat daaronder ook het herhalingspatroon, bv. "
    tijd: <bv. 18:30 - 19:45, of weglaten>
    locatie: <bv. Hoofdveld VVZ'49, of weglaten>
    tot: <JJJJ-MM-DD, of weglaten voor een doorlopende reeks>
+   teams: <bv. jo14-6, of jo14-1, jo14-2 -- of weglaten als niet team-specifiek>
    label: <label of weglaten>
    tone: <groen|blauw|warning|danger of weglaten>
    excerpt: <samenvatting of weglaten>
@@ -154,3 +161,7 @@ elke build); op de detailpagina staat daaronder ook het herhalingspatroon, bv. "
 - Voor `tweewekelijks` bepaalt `vanaf` ook welke week de "aan"-week is (de reeks valt op `vanaf`,
   `vanaf` + 2 weken, + 4 weken, enz.) — kies dus bewust de eerste échte gelegenheid als `vanaf`,
   niet zomaar een willekeurige datum in het verleden.
+- `teams` gebruikt de exacte slugs uit `src/lib/teams.js` (bv. `jo14-1` t/m `jo14-6`), niet het
+  `label`-veld (dat is losse weergavetekst en heeft geen invloed op waar de activiteit verschijnt).
+  Zonder `teams` staat een activiteit alléén op de algemene Activiteiten-pagina, nooit op een
+  teampagina.
