@@ -13,11 +13,18 @@ import {
   slugFromFilename,
   formatDateDisplay,
   weekdayName,
+  weekdayAbbrev,
   nextOccurrence,
+  addDays,
   herhalingLabel,
 } from './lib/frontmatter.mjs'
 
 const HERHALING_INTERVAL_DAYS = { wekelijks: 7, tweewekelijks: 14 }
+// Herhalende activiteiten laten we niet met één losse eerstvolgende datum zien, maar met
+// de eerstvolgende 2 gelegenheden (dus 2 rijen), zowel voor wekelijkse als tweewekelijkse
+// activiteiten -- zodat je in één oogopslag 2 weken (resp. 4 weken) vooruit kunt plannen
+// in plaats van alleen de allereerstvolgende keer te zien.
+const OCCURRENCE_COUNT = 2
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)))
 const ACTIVITEITEN_DIR = path.join(ROOT, 'content', 'activiteiten')
@@ -41,7 +48,7 @@ async function main() {
       continue
     }
 
-    let date, dateDisplay
+    let dates
     let herhalingText = null
     if (data.herhaling) {
       const intervalDays = HERHALING_INTERVAL_DAYS[data.herhaling]
@@ -61,15 +68,20 @@ async function main() {
         // verwijdert het bestand zelf.
         continue
       }
-      date = nextOccurrence(data.vanaf, intervalDays, vandaag)
-      if (data.tot && date > data.tot) {
+      const eerstvolgende = nextOccurrence(data.vanaf, intervalDays, vandaag)
+      if (data.tot && eerstvolgende > data.tot) {
         // Eerstvolgende gelegenheid zou na het einde van de reeks vallen.
         continue
       }
-      // Op de overzichtslijst tonen we alleen de eerstvolgende datum (zelfde formaat
-      // als een eenmalige activiteit); het herhalingspatroon zelf komt pas op de
-      // detailpagina te staan (zie herhalingText hieronder).
-      dateDisplay = formatDateDisplay(date)
+      // Toon niet alleen de eerstvolgende datum, maar de eerstvolgende OCCURRENCE_COUNT
+      // gelegenheden (zolang de reeks nog loopt, oftewel binnen een eventuele 'tot').
+      dates = [eerstvolgende]
+      let volgende = eerstvolgende
+      while (dates.length < OCCURRENCE_COUNT) {
+        volgende = addDays(volgende, intervalDays)
+        if (data.tot && volgende > data.tot) break
+        dates.push(volgende)
+      }
       herhalingText = herhalingLabel(data)
     } else {
       if (!data.date) {
@@ -80,23 +92,26 @@ async function main() {
         // Al geweest: niet meer tonen. De nachtelijke cleanup-job verwijdert het bestand zelf.
         continue
       }
-      date = data.date
-      dateDisplay = formatDateDisplay(data.date)
+      dates = [data.date]
     }
 
-    activiteiten.push({
-      slug: data.slug || slugFromFilename(filename),
-      title: data.title,
-      date,
-      dateDisplay,
-      tijd: data.tijd || null,
-      locatie: data.locatie || null,
-      herhalingText,
-      label: data.label || null,
-      tone: data.tone || 'neutral',
-      excerpt: data.excerpt || '',
-      image: data.image || null,
-      html: marked.parse(body.trim()),
+    const baseSlug = data.slug || slugFromFilename(filename)
+    dates.forEach((date, i) => {
+      activiteiten.push({
+        slug: i === 0 ? baseSlug : `${baseSlug}-${date}`,
+        title: data.title,
+        date,
+        dateDisplay: formatDateDisplay(date),
+        weekdayAbbrev: weekdayAbbrev(date),
+        tijd: data.tijd || null,
+        locatie: data.locatie || null,
+        herhalingText,
+        label: data.label || null,
+        tone: data.tone || 'neutral',
+        excerpt: data.excerpt || '',
+        image: data.image || null,
+        html: marked.parse(body.trim()),
+      })
     })
   }
 

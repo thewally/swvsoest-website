@@ -34,6 +34,7 @@ export function formatDateDisplay(isoDate) {
 }
 
 const DUTCH_WEEKDAYS = ['zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag']
+const DUTCH_WEEKDAYS_SHORT = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za']
 
 // Alle datumberekening hier gebeurt bewust in UTC (i.p.v. lokale tijd + toISOString,
 // wat in UTC+1/+2 -- onze tijdzone -- een dag terug kan schuiven) zodat "JJJJ-MM-DD"
@@ -49,6 +50,16 @@ function fromUTCDate(date) {
 
 export function weekdayName(isoDate) {
   return DUTCH_WEEKDAYS[toUTCDate(isoDate).getUTCDay()]
+}
+
+export function weekdayAbbrev(isoDate) {
+  return DUTCH_WEEKDAYS_SHORT[toUTCDate(isoDate).getUTCDay()]
+}
+
+export function addDays(isoDate, days) {
+  const date = toUTCDate(isoDate)
+  date.setUTCDate(date.getUTCDate() + days)
+  return fromUTCDate(date)
 }
 
 // Berekent de eerstvolgende datum (JJJJ-MM-DD) op of na `vandaag` van een reeks die

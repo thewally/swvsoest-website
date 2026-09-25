@@ -26,6 +26,11 @@ export default function ActiviteitenPage() {
           <div className="site-activiteit-list">
             {activiteiten.map(item => (
               <Link key={item.slug} to={`/activiteiten/${item.slug}`} className="site-activiteit-row">
+                {item.weekdayAbbrev && (
+                  <div className="site-activiteit-row-weekday-col">
+                    <p className="site-activiteit-row-weekday">{item.weekdayAbbrev}</p>
+                  </div>
+                )}
                 <div className="site-activiteit-row-date-col">
                   <p className="site-activiteit-row-date">{item.dateDisplay}</p>
                   {item.tijd && <p className="site-activiteit-row-time">{item.tijd}</p>}
