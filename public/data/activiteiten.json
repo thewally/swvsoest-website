@@ -90,19 +90,19 @@
     "html": "<p>Training op het Hoofdveld van VVZ&#39;49.</p>\n"
   },
   {
-    "slug": "tweewekelijks-training-jo14-1-jo14-2-hoofdveld-vvz",
+    "slug": "tweewekelijks-training-jo14-1-jo14-2-trainingsveld-vvz",
     "title": "Training JO14-1 & JO14-2",
     "date": "2026-10-01",
     "dateDisplay": "1 oktober 2026",
     "weekdayAbbrev": "do",
     "tijd": "18:30 - 20:00",
-    "locatie": "Hoofdveld VVZ'49",
+    "locatie": "Trainingsveld VVZ'49",
     "herhalingText": "Elke 2 weken op donderdag, 18:30 - 20:00",
     "label": "JO14-1 & JO14-2",
     "tone": "blauw",
     "excerpt": "Wekelijkse training voor JO14-1 & JO14-2, op donderdag van 18:30 tot 20:00 uur.",
     "image": null,
-    "html": "<p>Training op het Hoofdveld van VVZ&#39;49.</p>\n"
+    "html": "<p>Training op het Trainingsveld van VVZ&#39;49.</p>\n"
   },
   {
     "slug": "wekelijks-training-jo14-3-jo14-4-maandag-veld-sec-2026-10-05",
@@ -180,19 +180,19 @@
     "html": "<p>Training op veld 3 bij So Soest.</p>\n"
   },
   {
-    "slug": "tweewekelijks-training-jo14-1-jo14-2-trainingsveld-vvz",
+    "slug": "tweewekelijks-training-jo14-1-jo14-2-hoofdveld-vvz",
     "title": "Training JO14-1 & JO14-2",
     "date": "2026-10-08",
     "dateDisplay": "8 oktober 2026",
     "weekdayAbbrev": "do",
     "tijd": "18:30 - 20:00",
-    "locatie": "Trainingsveld VVZ'49",
+    "locatie": "Hoofdveld VVZ'49",
     "herhalingText": "Elke 2 weken op donderdag, 18:30 - 20:00",
     "label": "JO14-1 & JO14-2",
     "tone": "blauw",
     "excerpt": "Wekelijkse training voor JO14-1 & JO14-2, op donderdag van 18:30 tot 20:00 uur.",
     "image": null,
-    "html": "<p>Training op het Trainingsveld van VVZ&#39;49.</p>\n"
+    "html": "<p>Training op het Hoofdveld van VVZ&#39;49.</p>\n"
   },
   {
     "slug": "tweewekelijks-training-trainingsveld-jo14-6",
@@ -225,25 +225,10 @@
     "html": "<p>Training op het Hoofdveld van VVZ&#39;49.</p>\n"
   },
   {
-    "slug": "tweewekelijks-training-jo14-1-jo14-2-hoofdveld-vvz-2026-10-15",
+    "slug": "tweewekelijks-training-jo14-1-jo14-2-trainingsveld-vvz-2026-10-15",
     "title": "Training JO14-1 & JO14-2",
     "date": "2026-10-15",
     "dateDisplay": "15 oktober 2026",
-    "weekdayAbbrev": "do",
-    "tijd": "18:30 - 20:00",
-    "locatie": "Hoofdveld VVZ'49",
-    "herhalingText": "Elke 2 weken op donderdag, 18:30 - 20:00",
-    "label": "JO14-1 & JO14-2",
-    "tone": "blauw",
-    "excerpt": "Wekelijkse training voor JO14-1 & JO14-2, op donderdag van 18:30 tot 20:00 uur.",
-    "image": null,
-    "html": "<p>Training op het Hoofdveld van VVZ&#39;49.</p>\n"
-  },
-  {
-    "slug": "tweewekelijks-training-jo14-1-jo14-2-trainingsveld-vvz-2026-10-22",
-    "title": "Training JO14-1 & JO14-2",
-    "date": "2026-10-22",
-    "dateDisplay": "22 oktober 2026",
     "weekdayAbbrev": "do",
     "tijd": "18:30 - 20:00",
     "locatie": "Trainingsveld VVZ'49",
@@ -253,6 +238,21 @@
     "excerpt": "Wekelijkse training voor JO14-1 & JO14-2, op donderdag van 18:30 tot 20:00 uur.",
     "image": null,
     "html": "<p>Training op het Trainingsveld van VVZ&#39;49.</p>\n"
+  },
+  {
+    "slug": "tweewekelijks-training-jo14-1-jo14-2-hoofdveld-vvz-2026-10-22",
+    "title": "Training JO14-1 & JO14-2",
+    "date": "2026-10-22",
+    "dateDisplay": "22 oktober 2026",
+    "weekdayAbbrev": "do",
+    "tijd": "18:30 - 20:00",
+    "locatie": "Hoofdveld VVZ'49",
+    "herhalingText": "Elke 2 weken op donderdag, 18:30 - 20:00",
+    "label": "JO14-1 & JO14-2",
+    "tone": "blauw",
+    "excerpt": "Wekelijkse training voor JO14-1 & JO14-2, op donderdag van 18:30 tot 20:00 uur.",
+    "image": null,
+    "html": "<p>Training op het Hoofdveld van VVZ&#39;49.</p>\n"
   },
   {
     "slug": "tweewekelijks-training-trainingsveld-jo14-6-2026-10-22",
