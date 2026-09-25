@@ -28,25 +28,20 @@ export function parseScore(uitslag) {
   return [thuis, uit]
 }
 
-// Groepeer items (standaard: wedstrijden) per dag (yyyy-mm-dd); binnen elke dag
-// op tijd. De dagen zelf staan oplopend (eerstvolgende eerst) tenzij `aflopend`
-// is gezet -- gebruikt voor uitslagen, waar de meest recente speeldag bovenaan
-// moet staan. `datum`/`tijd` zijn te overschrijven zodat MatchGrid ook een
-// gemengde lijst van wedstrijden + activiteiten (elk met hun eigen datumveld)
-// in dezelfde dag-indeling kan groeperen.
-export function groepeerPerDag(
-  items,
-  { aflopend = false, datum = w => w.wedstrijddatum && datumSleutel(w.wedstrijddatum), tijd = w => w.aanvangstijd || '99:99' } = {}
-) {
+// Groepeer wedstrijden per dag (yyyy-mm-dd); binnen elke dag op aanvangstijd.
+// De dagen zelf staan oplopend (eerstvolgende eerst) tenzij `aflopend` is
+// gezet -- gebruikt voor uitslagen, waar de meest recente speeldag bovenaan
+// moet staan.
+export function groepeerPerDag(wedstrijden, { aflopend = false } = {}) {
   const map = new Map()
-  for (const item of items) {
-    const sleutel = datum(item)
-    if (!sleutel) continue
+  for (const w of wedstrijden) {
+    if (!w.wedstrijddatum) continue
+    const sleutel = datumSleutel(w.wedstrijddatum)
     if (!map.has(sleutel)) map.set(sleutel, [])
-    map.get(sleutel).push(item)
+    map.get(sleutel).push(w)
   }
-  for (const [, groep] of map) {
-    groep.sort((a, b) => tijd(a).localeCompare(tijd(b)))
+  for (const [, items] of map) {
+    items.sort((a, b) => (a.aanvangstijd || '99:99').localeCompare(b.aanvangstijd || '99:99'))
   }
   const dagen = [...map.entries()].sort((a, b) => aflopend ? b[0].localeCompare(a[0]) : a[0].localeCompare(b[0]))
   return new Map(dagen)

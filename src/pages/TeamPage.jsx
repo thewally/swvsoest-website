@@ -4,6 +4,7 @@ import { SectionHeading } from '../components/svs'
 import MatchGrid from '../components/MatchGrid'
 import StandTable from '../components/StandTable'
 import AgendaBalloon from '../components/AgendaBalloon'
+import ActiviteitList from '../components/ActiviteitList'
 import { getTeam } from '../lib/teams'
 import { fetchTeamData, fetchTeamActiviteiten } from '../lib/data'
 import { sorteerOplopend, sorteerAflopend, datumSleutel } from '../lib/matchHelpers'
@@ -66,6 +67,15 @@ export default function TeamPage() {
           <AgendaBalloon team={team} />
         </section>
 
+        {activiteiten && activiteiten.length > 0 && (
+          <section className="site-section-tight">
+            <h2 className="svs-sechead-title" style={{ fontSize: 20, marginBottom: 12 }}>
+              Activiteiten
+            </h2>
+            <ActiviteitList activiteiten={activiteiten} />
+          </section>
+        )}
+
         {error && <p className="site-error">Kon gegevens niet laden: {error}</p>}
 
         <section className="site-section-tight">
@@ -75,11 +85,7 @@ export default function TeamPage() {
           {!data && !error ? (
             <p className="site-loading">Programma laden…</p>
           ) : (
-            <MatchGrid
-              wedstrijden={programma}
-              activiteiten={activiteiten || []}
-              leegTekst="Geen komende wedstrijden of activiteiten."
-            />
+            <MatchGrid wedstrijden={programma} leegTekst="Geen komende wedstrijden." />
           )}
         </section>
 

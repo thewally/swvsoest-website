@@ -1,50 +1,116 @@
-import { groepeerPerDag, formatDagLabel, datumSleutel } from '../lib/matchHelpers'
-import MatchRow from './MatchRow'
-import ActiviteitRow from './ActiviteitRow'
+import { useState } from 'react'
+import { Badge } from './svs'
+import { groepeerPerDag, formatDagLabel, matchStatus, parseScore, locatieLabel } from '../lib/matchHelpers'
 
-// Startijd van een activiteit ("18:30 - 19:45") voor de tijd-sortering binnen
-// een dag -- zelfde '99:99'-fallback als bij een wedstrijd zonder aanvangstijd.
-function activiteitTijd(item) {
-  return (item.tijd || '').split('-')[0].trim() || '99:99'
+const BASE = import.meta.env.BASE_URL
+
+// SportLink-logo's komen na de sync als lokaal pad (bv. "logos/BBBZ168.png",
+// zie scripts/sportlink_sync.py) en moeten met BASE_URL + 'data/' ervoor
+// worden opgehaald -- net als de teamfoto in TeamCard.jsx. Oudere,
+// nog-niet-herschreven data (of een club waarvan het logo niet gedownload
+// kon worden) heeft soms nog de originele absolute SportLink-URL; die laten
+// we ongemoeid.
+function resolveLogoSrc(src) {
+  if (!src) return null
+  return /^https?:\/\//.test(src) ? src : `${BASE}data/${src}`
 }
 
-// Toont wedstrijden als een lijst, gegroepeerd per speeldag -- en, als
-// `activiteiten` is meegegeven (alleen zinvol voor het aankomende programma,
-// niet voor uitslagen), gemengd met team-activiteiten uit diezelfde periode,
-// op tijd door elkaar binnen elke dag. Elke wedstrijd moet een `team` veld
-// hebben (uit lib/teams.js) zodat de eigen-team-markering klopt wanneer
-// wedstrijden van meerdere teams gecombineerd worden.
-export default function MatchGrid({ wedstrijden, activiteiten = [], gespeeld = false, leegTekst = 'Geen wedstrijden gevonden.' }) {
-  const items = [
-    ...wedstrijden.map(w => ({ type: 'wedstrijd', data: w })),
-    ...(gespeeld ? [] : activiteiten.map(a => ({ type: 'activiteit', data: a }))),
-  ]
+// Witte cirkel achter elk logo, zodat donkere of transparante SportLink-logo's
+// altijd goed contrasteren -- en een nette placeholder als de afbeelding
+// niet laadt (bv. een club zonder logo, of een enkele keer nog een
+// verlopen ondertekende SportLink-URL die niet lokaal gecachet kon worden).
+// `align` zit op de wrapper zodat de mobiele lay-out thuis- en uitlogo
+// apart kan positioneren.
+function TeamLogo({ src, align }) {
+  const [broken, setBroken] = useState(false)
+  const cls = `site-match-logo-wrap site-match-logo-${align}`
+  const resolved = resolveLogoSrc(src)
+  if (!resolved || broken) {
+    return <span className={`${cls} site-match-logo-empty`} aria-hidden="true" />
+  }
+  return (
+    <span className={cls}>
+      <img src={resolved} alt="" className="site-match-logo" onError={() => setBroken(true)} />
+    </span>
+  )
+}
 
-  if (items.length === 0) {
+// Teamnaam staat altijd aan de buitenkant, het logo altijd naast de
+// uitslag/"vs" in het midden: thuis = naam - logo, uit = logo - naam.
+// Naam en logo krijgen elk een eigen align-klasse zodat de mobiele lay-out
+// (naam boven, logo's + uitslag op één regel, naam onder) ze onafhankelijk
+// van elkaar kan plaatsen via CSS grid-areas.
+function TeamCol({ name, logo, align, own }) {
+  const naam = <span className={`site-match-name site-match-name-${align}${own ? ' is-own' : ''}`}>{name}</span>
+  const logoEl = <TeamLogo src={logo} align={align} />
+  return (
+    <div className={`site-match-team site-match-team-${align}`}>
+      {align === 'home' ? (
+        <>
+          {naam}
+          {logoEl}
+        </>
+      ) : (
+        <>
+          {logoEl}
+          {naam}
+        </>
+      )}
+    </div>
+  )
+}
+
+// Toont wedstrijden als een lijst, gegroepeerd per speeldag. Elke wedstrijd
+// moet een `team` veld hebben (uit lib/teams.js) zodat de categorie-badge en
+// de eigen-team-markering kloppen wanneer wedstrijden van meerdere teams
+// gecombineerd worden.
+export default function MatchGrid({ wedstrijden, gespeeld = false, leegTekst = 'Geen wedstrijden gevonden.' }) {
+  if (wedstrijden.length === 0) {
     return <p className="site-empty">{leegTekst}</p>
   }
 
-  const perDag = groepeerPerDag(items, {
-    aflopend: gespeeld,
-    datum: it => (it.type === 'wedstrijd' ? it.data.wedstrijddatum && datumSleutel(it.data.wedstrijddatum) : it.data.date),
-    tijd: it => (it.type === 'wedstrijd' ? it.data.aanvangstijd || '99:99' : activiteitTijd(it.data)),
-  })
+  const perDag = groepeerPerDag(wedstrijden, { aflopend: gespeeld })
 
   return (
     <div className="site-stack">
-      {[...perDag.entries()].map(([sleutel, dagItems]) => (
+      {[...perDag.entries()].map(([sleutel, items]) => (
         <div key={sleutel}>
           <h3 className="svs-label site-day-heading">
-            <span>{formatDagLabel(sleutel)}</span>
+            <span>{formatDagLabel(items[0].wedstrijddatum)}</span>
           </h3>
           <div className="svs-card site-match-list">
-            {dagItems.map(it =>
-              it.type === 'wedstrijd' ? (
-                <MatchRow key={it.data.wedstrijdcode} wedstrijd={it.data} gespeeld={gespeeld} />
-              ) : (
-                <ActiviteitRow key={it.data.slug} item={it.data} />
+            {items.map(w => {
+              const status = matchStatus(w, { gespeeld })
+              const score = gespeeld ? parseScore(w.uitslag) : null
+              return (
+                <div key={w.wedstrijdcode} className="site-match-row">
+                  <div className="site-match-row-time">
+                    {status === 'afgelast' ? (
+                      <Badge tone="danger">Afgelast</Badge>
+                    ) : status === 'gespeeld' ? (
+                      <>
+                        <Badge tone="neutral">Uitslag</Badge>
+                        <span className="site-match-clock site-match-clock-sub">{w.aanvangstijd || '--:--'}</span>
+                      </>
+                    ) : (
+                      <span className="site-match-clock">{w.aanvangstijd || '--:--'}</span>
+                    )}
+                  </div>
+                  <TeamCol name={w.thuisteam} logo={w.thuisteamlogo} align="home" own={w.thuisteam === w.team?.sportlinkNaam} />
+                  <div className="site-match-mid">
+                    {status === 'gespeeld' && score ? (
+                      <span className="site-match-score">{`${score[0]} – ${score[1]}`}</span>
+                    ) : (
+                      <span className="svs-meta">vs</span>
+                    )}
+                  </div>
+                  <TeamCol name={w.uitteam} logo={w.uitteamlogo} align="away" own={w.uitteam === w.team?.sportlinkNaam} />
+                  <div className="site-match-meta">
+                    <span className="svs-meta">{locatieLabel(w)}</span>
+                  </div>
+                </div>
               )
-            )}
+            })}
           </div>
         </div>
       ))}
