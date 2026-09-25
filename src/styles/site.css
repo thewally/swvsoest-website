@@ -177,9 +177,23 @@ a { color: inherit; }
 .site-activiteit-row-meta { display: flex; justify-content: flex-end; text-align: right; }
 
 @media (max-width: 640px) {
-  .site-activiteit-row { grid-template-columns: 1fr; gap: var(--space-2); padding: var(--space-4) var(--space-2); }
+  .site-activiteit-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+    padding: var(--space-4) var(--space-2);
+    position: relative;
+  }
   .site-activiteit-row-time { order: -1; }
-  .site-activiteit-row-meta { justify-content: flex-start; text-align: left; }
+  /* Label na titel + samenvatting laten volgen i.p.v. ervoor (flex-`order`
+     verplaatst het binnen dezelfde kolom zonder de JSX-volgorde aan te passen). */
+  .site-activiteit-row-body .svs-badge { order: 1; }
+  /* Locatie uit de tekstflow halen en rechtsboven in het kader plaatsen. */
+  .site-activiteit-row-meta {
+    position: absolute;
+    top: var(--space-4);
+    right: var(--space-2);
+    max-width: 45%;
+  }
 }
 
 .site-stand-table { display: flex; flex-direction: column; }
