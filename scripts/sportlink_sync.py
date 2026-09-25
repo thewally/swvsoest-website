@@ -213,14 +213,30 @@ def cache_club_logo(code: str | None, url: object, logo_cache: dict[str, str]) -
     return logo_cache[code]
 
 
+# Sommige tegenstanders (met name bij oefenwedstrijden) hebben geen
+# clubrelatiecode in de SportLink-data -- cache_club_logo kan dan niets
+# downloaden. Voor die gevallen een handmatige fallback op (een deel van)
+# de teamnaam, logo's handmatig gedownload naar public/data/logos/.
+HANDMATIGE_LOGOS = {
+    "HBOK": "logos/HBOK.png",
+}
+
+
+def _handmatig_logo(teamnaam: str | None) -> str | None:
+    if not teamnaam:
+        return None
+    for naam, pad in HANDMATIGE_LOGOS.items():
+        if naam in teamnaam:
+            return pad
+    return None
+
+
 def cache_logos_in_matches(matches: list[dict], logo_cache: dict[str, str]) -> None:
     for m in matches:
         lokaal_thuis = cache_club_logo(m.get("thuisteamclubrelatiecode"), m.get("thuisteamlogo"), logo_cache)
-        if lokaal_thuis:
-            m["thuisteamlogo"] = lokaal_thuis
+        m["thuisteamlogo"] = lokaal_thuis or _handmatig_logo(m.get("thuisteam")) or m.get("thuisteamlogo")
         lokaal_uit = cache_club_logo(m.get("uitteamclubrelatiecode"), m.get("uitteamlogo"), logo_cache)
-        if lokaal_uit:
-            m["uitteamlogo"] = lokaal_uit
+        m["uitteamlogo"] = lokaal_uit or _handmatig_logo(m.get("uitteam")) or m.get("uitteamlogo")
 
 
 def cache_logos_in_stand(stand: list[dict], logo_cache: dict[str, str]) -> None:
