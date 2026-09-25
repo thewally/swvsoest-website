@@ -196,7 +196,7 @@
       "datumopgemaakt": "19 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-21T14:48:53.877318+02:00",
-      "last_seen": "2026-09-25T11:56:39.886921+02:00",
+      "last_seen": "2026-09-25T12:07:16.487555+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20846125&teamcode=304979&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -238,15 +238,15 @@
       "uitslag-regulier": "3 - 5",
       "uitslag-s": null,
       "uitteam": "Hercules O14-1",
-      "uitteamclubrelatiecode": null,
-      "uitteamlogo": null,
+      "uitteamclubrelatiecode": "BBBZ41C",
+      "uitteamlogo": "logos/BBBZ41C.png",
       "verenigingswedstrijd": "Nee",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - Hercules O14-1",
       "wedstrijdcode": "manual-20260912-jo14-2",
       "wedstrijddatum": "2026-09-12T12:00:00+0200"
     },
     {
-      "aanvangstijd": null,
+      "aanvangstijd": "10:10",
       "accommodatie": null,
       "bron": "handmatig aangevuld via voetbalassist.nl (poule-uitslagen), SportLink-uitslagen-article geeft alleen laatste speelronde",
       "competitienaam": "0355 Onder 14 Zwaluwen Jeugd (1e fase A-Cat)",
@@ -258,8 +258,8 @@
       "last_seen": "2026-09-25T00:00:00+02:00",
       "status": "Uitgespeeld",
       "thuisteam": "Sporting 70 O14-1",
-      "thuisteamclubrelatiecode": null,
-      "thuisteamlogo": null,
+      "thuisteamclubrelatiecode": "BBBZ179",
+      "thuisteamlogo": "logos/BBBZ179.png",
       "uitslag": "6 - 0",
       "uitslag-nv": null,
       "uitslag-regulier": "6 - 0",
@@ -270,8 +270,8 @@
       "verenigingswedstrijd": "Nee",
       "wedstrijd": "Sporting 70 O14-1 - ST SO Soest/VVZ'49 O14-2",
       "wedstrijdcode": "manual-20260905-jo14-2",
-      "wedstrijddatum": "2026-09-05T12:00:00+0200"
+      "wedstrijddatum": "2026-09-05T10:10:00+0200"
     }
   ],
-  "updated_at": "2026-09-25T11:56:39.886921+02:00"
+  "updated_at": "2026-09-25T12:07:16.487555+02:00"
 }

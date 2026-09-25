@@ -196,7 +196,7 @@
       "datumopgemaakt": "19 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-21T14:48:53.877318+02:00",
-      "last_seen": "2026-09-25T11:56:39.886921+02:00",
+      "last_seen": "2026-09-25T12:07:16.487555+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20850994&teamcode=304982&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -238,8 +238,8 @@
       "uitslag-regulier": "5 - 6",
       "uitslag-s": null,
       "uitteam": "Vliegdorp 't vv O14-1",
-      "uitteamclubrelatiecode": null,
-      "uitteamlogo": null,
+      "uitteamclubrelatiecode": "FZXX85C",
+      "uitteamlogo": "logos/FZXX85C.png",
       "verenigingswedstrijd": "Nee",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-3 - Vliegdorp 't vv O14-1",
       "wedstrijdcode": "manual-20260912-jo14-3",
@@ -258,8 +258,8 @@
       "last_seen": "2026-09-25T00:00:00+02:00",
       "status": "Uitgespeeld",
       "thuisteam": "Hercules O14-2",
-      "thuisteamclubrelatiecode": null,
-      "thuisteamlogo": null,
+      "thuisteamclubrelatiecode": "BBBZ41C",
+      "thuisteamlogo": "logos/BBBZ41C.png",
       "uitslag": "8 - 0",
       "uitslag-nv": null,
       "uitslag-regulier": "8 - 0",
@@ -273,5 +273,5 @@
       "wedstrijddatum": "2026-09-05T12:00:00+0200"
     }
   ],
-  "updated_at": "2026-09-25T11:56:39.886921+02:00"
+  "updated_at": "2026-09-25T12:07:16.487555+02:00"
 }

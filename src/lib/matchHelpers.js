@@ -28,8 +28,11 @@ export function parseScore(uitslag) {
   return [thuis, uit]
 }
 
-// Groepeer wedstrijden per dag (yyyy-mm-dd), gesorteerd oplopend; binnen elke dag op aanvangstijd.
-export function groepeerPerDag(wedstrijden) {
+// Groepeer wedstrijden per dag (yyyy-mm-dd); binnen elke dag op aanvangstijd.
+// De dagen zelf staan oplopend (eerstvolgende eerst) tenzij `aflopend` is
+// gezet -- gebruikt voor uitslagen, waar de meest recente speeldag bovenaan
+// moet staan.
+export function groepeerPerDag(wedstrijden, { aflopend = false } = {}) {
   const map = new Map()
   for (const w of wedstrijden) {
     if (!w.wedstrijddatum) continue
@@ -40,7 +43,8 @@ export function groepeerPerDag(wedstrijden) {
   for (const [, items] of map) {
     items.sort((a, b) => (a.aanvangstijd || '99:99').localeCompare(b.aanvangstijd || '99:99'))
   }
-  return new Map([...map.entries()].sort())
+  const dagen = [...map.entries()].sort((a, b) => aflopend ? b[0].localeCompare(a[0]) : a[0].localeCompare(b[0]))
+  return new Map(dagen)
 }
 
 export function sorteerOplopend(wedstrijden) {

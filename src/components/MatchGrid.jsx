@@ -69,7 +69,7 @@ export default function MatchGrid({ wedstrijden, gespeeld = false, leegTekst = '
     return <p className="site-empty">{leegTekst}</p>
   }
 
-  const perDag = groepeerPerDag(wedstrijden)
+  const perDag = groepeerPerDag(wedstrijden, { aflopend: gespeeld })
 
   return (
     <div className="site-stack">
