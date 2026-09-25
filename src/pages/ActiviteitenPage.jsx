@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { SectionHeading } from '../components/svs'
-import ActiviteitRow from '../components/ActiviteitRow'
+import ActiviteitList from '../components/ActiviteitList'
 import { fetchActiviteiten } from '../lib/data'
 
 export default function ActiviteitenPage() {
@@ -20,14 +20,8 @@ export default function ActiviteitenPage() {
         <SectionHeading label="Activiteiten" title="Activiteiten" />
         {activiteiten === null ? (
           <p className="site-loading">Activiteiten laden…</p>
-        ) : activiteiten.length === 0 ? (
-          <p className="site-empty">Er zijn nog geen activiteiten gepland.</p>
         ) : (
-          <div className="site-activiteit-list">
-            {activiteiten.map(item => (
-              <ActiviteitRow key={item.slug} item={item} />
-            ))}
-          </div>
+          <ActiviteitList activiteiten={activiteiten} leegTekst="Er zijn nog geen activiteiten gepland." />
         )}
       </div>
     </div>

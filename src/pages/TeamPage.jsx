@@ -4,7 +4,7 @@ import { SectionHeading } from '../components/svs'
 import MatchGrid from '../components/MatchGrid'
 import StandTable from '../components/StandTable'
 import AgendaBalloon from '../components/AgendaBalloon'
-import ActiviteitRow from '../components/ActiviteitRow'
+import ActiviteitList from '../components/ActiviteitList'
 import { getTeam } from '../lib/teams'
 import { fetchTeamData, fetchTeamActiviteiten } from '../lib/data'
 import { sorteerOplopend, sorteerAflopend, datumSleutel } from '../lib/matchHelpers'
@@ -72,11 +72,7 @@ export default function TeamPage() {
             <h2 className="svs-sechead-title" style={{ fontSize: 20, marginBottom: 12 }}>
               Activiteiten
             </h2>
-            <div className="site-activiteit-list">
-              {activiteiten.map(item => (
-                <ActiviteitRow key={item.slug} item={item} />
-              ))}
-            </div>
+            <ActiviteitList activiteiten={activiteiten} />
           </section>
         )}
 

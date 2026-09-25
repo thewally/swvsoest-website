@@ -4,20 +4,16 @@ import { Badge } from './svs'
 export default function ActiviteitRow({ item }) {
   return (
     <Link to={`/activiteiten/${item.slug}`} className="site-activiteit-row">
-      {item.weekdayAbbrev && (
-        <div className="site-activiteit-row-weekday-col">
-          <p className="site-activiteit-row-weekday">{item.weekdayAbbrev}</p>
-        </div>
-      )}
-      <div className="site-activiteit-row-date-col">
-        <p className="site-activiteit-row-date">{item.dateDisplay}</p>
-        {item.tijd && <p className="site-activiteit-row-time">{item.tijd}</p>}
-        {item.locatie && <p className="site-activiteit-row-location">{item.locatie}</p>}
+      <div className="site-activiteit-row-time">
+        {item.tijd && <span className="site-match-clock">{item.tijd}</span>}
       </div>
       <div className="site-activiteit-row-body">
         {item.label && <Badge tone={item.tone}>{item.label}</Badge>}
         <h3 className="site-activiteit-row-title">{item.title}</h3>
         {item.excerpt && <p className="site-activiteit-row-excerpt">{item.excerpt}</p>}
+      </div>
+      <div className="site-activiteit-row-meta">
+        {item.locatie && <span className="svs-meta">{item.locatie}</span>}
       </div>
     </Link>
   )
