@@ -234,7 +234,7 @@
       "datumopgemaakt": "19 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-21T14:48:53.877318+02:00",
-      "last_seen": "2026-09-25T12:31:41.103835+02:00",
+      "last_seen": "2026-09-25T12:35:10.403456+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20855121&teamcode=289917&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -258,7 +258,7 @@
     },
     {
       "aanvangstijd": "10:10",
-      "accommodatie": null,
+      "accommodatie": "Sportpark Nieuwland",
       "bron": "handmatig aangeleverd door gebruiker (opgezocht op voetbal.nl)",
       "competitienaam": "0355 Onder 14 Zwaluwen Jeugd (1e fase A-Cat)",
       "competitiesoort": "regulier",
@@ -311,5 +311,5 @@
       "wedstrijddatum": "2026-09-05T13:00:00+0200"
     }
   ],
-  "updated_at": "2026-09-25T12:31:41.103835+02:00"
+  "updated_at": "2026-09-25T12:35:10.403456+02:00"
 }
