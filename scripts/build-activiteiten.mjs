@@ -21,10 +21,11 @@ import {
 
 const HERHALING_INTERVAL_DAYS = { wekelijks: 7, tweewekelijks: 14 }
 // Herhalende activiteiten laten we niet met één losse eerstvolgende datum zien, maar met
-// de eerstvolgende 2 gelegenheden (dus 2 rijen), zowel voor wekelijkse als tweewekelijkse
-// activiteiten -- zodat je in één oogopslag 2 weken (resp. 4 weken) vooruit kunt plannen
-// in plaats van alleen de allereerstvolgende keer te zien.
-const OCCURRENCE_COUNT = 2
+// alle gelegenheden die binnen de eerstvolgende LOOKAHEAD_DAYS dagen vallen (vandaag zelf
+// meegeteld als dag 1, dus bv. 25 september -> t/m 8 oktober). Dat geeft meestal 2 rijen
+// voor wekelijkse activiteiten en 1 voor tweewekelijkse. De allereerstvolgende gelegenheid
+// wordt altijd getoond, ook als een reeks pas later start en die datum buiten dit venster valt.
+const LOOKAHEAD_DAYS = 14
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)))
 const ACTIVITEITEN_DIR = path.join(ROOT, 'content', 'activiteiten')
@@ -73,12 +74,15 @@ async function main() {
         // Eerstvolgende gelegenheid zou na het einde van de reeks vallen.
         continue
       }
-      // Toon niet alleen de eerstvolgende datum, maar de eerstvolgende OCCURRENCE_COUNT
-      // gelegenheden (zolang de reeks nog loopt, oftewel binnen een eventuele 'tot').
+      // Toon niet alleen de eerstvolgende datum, maar alle gelegenheden die binnen het
+      // LOOKAHEAD_DAYS-venster vallen (de eerstvolgende gelegenheid altijd, ook als die
+      // zelf al buiten het venster ligt -- bv. een reeks die nog moet beginnen).
       dates = [eerstvolgende]
+      const horizon = addDays(vandaag, LOOKAHEAD_DAYS - 1)
       let volgende = eerstvolgende
-      while (dates.length < OCCURRENCE_COUNT) {
+      while (true) {
         volgende = addDays(volgende, intervalDays)
+        if (volgende > horizon) break
         if (data.tot && volgende > data.tot) break
         dates.push(volgende)
       }
