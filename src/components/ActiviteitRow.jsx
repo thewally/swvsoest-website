@@ -13,7 +13,7 @@ export default function ActiviteitRow({ item }) {
         {item.excerpt && <p className="site-activiteit-row-excerpt">{item.excerpt}</p>}
       </div>
       <div className="site-activiteit-row-meta">
-        {item.locatie && <span className="svs-meta">{item.locatie}</span>}
+        {item.locatie && <span className="site-match-clock">{item.locatie}</span>}
       </div>
     </Link>
   )
