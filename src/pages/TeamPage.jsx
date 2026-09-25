@@ -41,6 +41,16 @@ export default function TeamPage() {
       <div className="site-container">
         <SectionHeading label="Team" title={team.kort} />
 
+        {data?.foto && (
+          <section className="site-section-tight">
+            <img
+              src={`${import.meta.env.BASE_URL}data/${data.foto}`}
+              alt={`Teamfoto ${team.kort}`}
+              className="site-team-photo-large"
+            />
+          </section>
+        )}
+
         <section className="site-section-tight">
           <AgendaBalloon team={team} />
         </section>

@@ -254,6 +254,19 @@ a { color: inherit; }
 }
 .site-team-photo-placeholder svg { width: 30%; height: 30%; }
 
+/* Grotere teamfoto bovenaan de teampagina zelf (zie TeamPage.jsx) --
+   zelfde vaste beeldverhouding als de kaart op /teams, maar breder en
+   met afgeronde hoeken i.p.v. de kaart-container. */
+.site-team-photo-large {
+  display: block;
+  width: 100%;
+  max-height: 480px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  background: var(--surface-alt);
+}
+
 /* "Ballon" met korte uitleg + stappenplan, uitgeklapt onder de
    agenda-importknop (AgendaBalloon.jsx).
    Let op: deze tokenschaal springt van --space-4 (16px) naar --space-6
