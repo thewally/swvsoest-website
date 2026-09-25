@@ -87,11 +87,6 @@ export default function MatchGrid({ wedstrijden, gespeeld = false, leegTekst = '
                   <div className="site-match-row-time">
                     {status === 'afgelast' ? (
                       <Badge tone="danger">Afgelast</Badge>
-                    ) : status === 'gespeeld' ? (
-                      <>
-                        <Badge tone="neutral">Uitslag</Badge>
-                        <span className="site-match-clock site-match-clock-sub">{w.aanvangstijd || '--:--'}</span>
-                      </>
                     ) : (
                       <span className="site-match-clock">{w.aanvangstijd || '--:--'}</span>
                     )}
