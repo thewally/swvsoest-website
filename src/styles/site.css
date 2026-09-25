@@ -166,7 +166,7 @@ a { color: inherit; }
   text-decoration: none;
   color: inherit;
 }
-.site-activiteit-row-weekday-col { padding-top: 2px; }
+.site-activiteit-row-weekday-col { align-self: center; }
 .site-activiteit-row-weekday {
   margin: 0;
   font-weight: 700;
