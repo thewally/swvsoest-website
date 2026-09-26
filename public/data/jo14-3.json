@@ -90,15 +90,15 @@
     {
       "clublogo": "logos/BBBZ41C.png",
       "clubrelatiecode": "BBBZ41C",
-      "doelpuntentegen": 4,
-      "doelpuntenvoor": 14,
-      "doelsaldo": 10,
+      "doelpuntentegen": 5,
+      "doelpuntenvoor": 22,
+      "doelsaldo": 17,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 3,
-      "gewonnen": 3,
+      "gespeeldewedstrijden": 4,
+      "gewonnen": 4,
       "positie": 1,
-      "punten": 9,
+      "punten": 12,
       "teamnaam": "Hercules O14-2",
       "verliespunten": 0,
       "verloren": 0
@@ -106,15 +106,15 @@
     {
       "clublogo": "logos/FZXX85C.png",
       "clubrelatiecode": "FZXX85C",
-      "doelpuntentegen": 6,
-      "doelpuntenvoor": 13,
-      "doelsaldo": 7,
+      "doelpuntentegen": 8,
+      "doelpuntenvoor": 16,
+      "doelsaldo": 8,
       "eigenteam": "false",
       "gelijk": 1,
-      "gespeeldewedstrijden": 3,
-      "gewonnen": 2,
+      "gespeeldewedstrijden": 4,
+      "gewonnen": 3,
       "positie": 2,
-      "punten": 7,
+      "punten": 10,
       "teamnaam": "Vliegdorp 't vv O14-1",
       "verliespunten": 0,
       "verloren": 0
@@ -122,18 +122,18 @@
     {
       "clublogo": "logos/FJQB25X.png",
       "clubrelatiecode": "FJQB25X",
-      "doelpuntentegen": 6,
-      "doelpuntenvoor": 15,
-      "doelsaldo": 9,
+      "doelpuntentegen": 9,
+      "doelpuntenvoor": 17,
+      "doelsaldo": 8,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 3,
+      "gespeeldewedstrijden": 4,
       "gewonnen": 2,
       "positie": 3,
       "punten": 6,
       "teamnaam": "Bilt De FC O14-2",
       "verliespunten": 0,
-      "verloren": 1
+      "verloren": 2
     },
     {
       "clublogo": "logos/BBCC58G.png",
@@ -152,22 +152,6 @@
       "verloren": 1
     },
     {
-      "clublogo": "logos/BBBZ179.png",
-      "clubrelatiecode": "BBBZ179",
-      "doelpuntentegen": 16,
-      "doelpuntenvoor": 2,
-      "doelsaldo": -14,
-      "eigenteam": "false",
-      "gelijk": 0,
-      "gespeeldewedstrijden": 2,
-      "gewonnen": 0,
-      "positie": 5,
-      "punten": 0,
-      "teamnaam": "Sporting '70 O14-3",
-      "verliespunten": 0,
-      "verloren": 2
-    },
-    {
       "clublogo": "logos/BBBZ168.png",
       "clubrelatiecode": "BBBZ168",
       "doelpuntentegen": 17,
@@ -177,9 +161,25 @@
       "gelijk": 0,
       "gespeeldewedstrijden": 3,
       "gewonnen": 0,
-      "positie": 6,
+      "positie": 5,
       "punten": 0,
       "teamnaam": "ST SO Soest/VVZ'49 O14-3",
+      "verliespunten": 0,
+      "verloren": 3
+    },
+    {
+      "clublogo": "logos/BBBZ179.png",
+      "clubrelatiecode": "BBBZ179",
+      "doelpuntentegen": 24,
+      "doelpuntenvoor": 3,
+      "doelsaldo": -21,
+      "eigenteam": "false",
+      "gelijk": 0,
+      "gespeeldewedstrijden": 3,
+      "gewonnen": 0,
+      "positie": 6,
+      "punten": 0,
+      "teamnaam": "Sporting '70 O14-3",
       "verliespunten": 0,
       "verloren": 3
     }
@@ -196,7 +196,7 @@
       "datumopgemaakt": "19 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-21T14:48:53.877318+02:00",
-      "last_seen": "2026-09-26T11:35:00.903406+02:00",
+      "last_seen": "2026-09-26T14:03:38.562234+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20850994&teamcode=304982&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -273,5 +273,5 @@
       "wedstrijddatum": "2026-09-05T16:45:00+0200"
     }
   ],
-  "updated_at": "2026-09-26T11:35:00.903406+02:00"
+  "updated_at": "2026-09-26T14:03:38.562234+02:00"
 }
