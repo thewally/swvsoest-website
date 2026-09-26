@@ -88,20 +88,20 @@
   "slug": "jo14-4",
   "stand": [
     {
-      "clublogo": "logos/BBBZ69Q.png",
-      "clubrelatiecode": "BBBZ69Q",
+      "clublogo": "logos/BBCB07P.png",
+      "clubrelatiecode": "BBCB07P",
       "doelpuntentegen": 6,
-      "doelpuntenvoor": 15,
-      "doelsaldo": 9,
+      "doelpuntenvoor": 11,
+      "doelsaldo": 5,
       "eigenteam": "false",
-      "gelijk": 1,
-      "gespeeldewedstrijden": 3,
-      "gewonnen": 2,
+      "gelijk": 0,
+      "gespeeldewedstrijden": 4,
+      "gewonnen": 3,
       "positie": 1,
-      "punten": 7,
-      "teamnaam": "Hoogland O14-5",
+      "punten": 9,
+      "teamnaam": "CJVV O14-3",
       "verliespunten": 0,
-      "verloren": 0
+      "verloren": 1
     },
     {
       "clublogo": "logos/BBBZ168.png",
@@ -120,18 +120,18 @@
       "verloren": 0
     },
     {
-      "clublogo": "logos/BBCB07P.png",
-      "clubrelatiecode": "BBCB07P",
-      "doelpuntentegen": 6,
-      "doelpuntenvoor": 7,
-      "doelsaldo": 1,
+      "clublogo": "logos/BBBZ69Q.png",
+      "clubrelatiecode": "BBBZ69Q",
+      "doelpuntentegen": 10,
+      "doelpuntenvoor": 15,
+      "doelsaldo": 5,
       "eigenteam": "false",
-      "gelijk": 0,
-      "gespeeldewedstrijden": 3,
+      "gelijk": 1,
+      "gespeeldewedstrijden": 4,
       "gewonnen": 2,
       "positie": 3,
-      "punten": 6,
-      "teamnaam": "CJVV O14-3",
+      "punten": 7,
+      "teamnaam": "Hoogland O14-5",
       "verliespunten": 0,
       "verloren": 1
     },
@@ -196,7 +196,7 @@
       "datumopgemaakt": "19 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-21T14:48:53.877318+02:00",
-      "last_seen": "2026-09-25T22:09:47.946183+02:00",
+      "last_seen": "2026-09-26T11:31:47.070087+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20867057&teamcode=304984&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -273,5 +273,5 @@
       "wedstrijddatum": "2026-09-05T09:45:00+0200"
     }
   ],
-  "updated_at": "2026-09-25T22:09:47.946183+02:00"
+  "updated_at": "2026-09-26T11:31:47.070087+02:00"
 }
