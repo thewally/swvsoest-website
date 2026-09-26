@@ -82,20 +82,36 @@
       "verloren": 1
     },
     {
-      "clublogo": "logos/BBBZ179.png",
-      "clubrelatiecode": "BBBZ179",
-      "doelpuntentegen": 12,
-      "doelpuntenvoor": 8,
-      "doelsaldo": -4,
+      "clublogo": "logos/BBBZ68P.png",
+      "clubrelatiecode": "BBBZ68P",
+      "doelpuntentegen": 18,
+      "doelpuntenvoor": 15,
+      "doelsaldo": -3,
       "eigenteam": "false",
       "gelijk": 1,
-      "gespeeldewedstrijden": 3,
+      "gespeeldewedstrijden": 4,
       "gewonnen": 1,
       "positie": 3,
       "punten": 4,
+      "teamnaam": "Kampong O14-5",
+      "verliespunten": 0,
+      "verloren": 2
+    },
+    {
+      "clublogo": "logos/BBBZ179.png",
+      "clubrelatiecode": "BBBZ179",
+      "doelpuntentegen": 18,
+      "doelpuntenvoor": 9,
+      "doelsaldo": -9,
+      "eigenteam": "false",
+      "gelijk": 1,
+      "gespeeldewedstrijden": 4,
+      "gewonnen": 1,
+      "positie": 4,
+      "punten": 4,
       "teamnaam": "Sporting '70 O14-5",
       "verliespunten": 0,
-      "verloren": 1
+      "verloren": 2
     },
     {
       "clublogo": "logos/BBBZ41C.png",
@@ -107,27 +123,11 @@
       "gelijk": 1,
       "gespeeldewedstrijden": 2,
       "gewonnen": 0,
-      "positie": 4,
+      "positie": 5,
       "punten": 1,
       "teamnaam": "Hercules O14-5",
       "verliespunten": 0,
       "verloren": 1
-    },
-    {
-      "clublogo": "logos/BBBZ68P.png",
-      "clubrelatiecode": "BBBZ68P",
-      "doelpuntentegen": 17,
-      "doelpuntenvoor": 9,
-      "doelsaldo": -8,
-      "eigenteam": "false",
-      "gelijk": 1,
-      "gespeeldewedstrijden": 3,
-      "gewonnen": 0,
-      "positie": 5,
-      "punten": 1,
-      "teamnaam": "Kampong O14-5",
-      "verliespunten": 0,
-      "verloren": 2
     },
     {
       "clublogo": "logos/BBCC313.png",
@@ -158,7 +158,7 @@
       "datumopgemaakt": "26 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-26T11:31:47.070087+02:00",
-      "last_seen": "2026-09-26T14:03:38.562234+02:00",
+      "last_seen": "2026-09-26T16:17:21.176607+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20850331&teamcode=304987&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -189,7 +189,7 @@
       "datumopgemaakt": "19 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-21T14:48:53.877318+02:00",
-      "last_seen": "2026-09-26T14:03:38.562234+02:00",
+      "last_seen": "2026-09-26T16:17:21.176607+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20859765&teamcode=304987&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -266,5 +266,5 @@
       "wedstrijddatum": "2026-09-05T12:00:00+0200"
     }
   ],
-  "updated_at": "2026-09-26T14:03:38.562234+02:00"
+  "updated_at": "2026-09-26T16:17:21.176607+02:00"
 }
