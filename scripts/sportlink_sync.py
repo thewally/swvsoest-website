@@ -54,6 +54,7 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+# Handmatige sync-trigger: wijziging in dit bestand start de workflow.
 API_BASE = "https://data.sportlink.com"
 CLIENT_ID = os.environ.get("SPORTLINK_CLIENT_ID")
 
