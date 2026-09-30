@@ -47,7 +47,6 @@ import base64
 import json
 import os
 import sys
-import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime
@@ -143,7 +142,7 @@ def fetch_teamfoto_base64(teamcode: int) -> str | None:
     try:
         info = api_get("team-gegevens", teamcode=teamcode, lokaleteamcode=-1)
         return (info.get("team") or {}).get("teamfoto") or None
-    except (urllib.error.URLError, KeyError, ValueError):
+    except (OSError, KeyError, ValueError):
         return None
 
 
@@ -203,7 +202,7 @@ def cache_club_logo(code: str | None, url: object, logo_cache: dict[str, str]) -
         with urllib.request.urlopen(req, timeout=20) as resp:
             content = resp.read()
             ext = _logo_extension(resp.headers.get("Content-Type"), remote_url)
-    except urllib.error.URLError as exc:
+    except OSError as exc:
         print(f"[logo] kon logo voor {code} niet ophalen: {exc}", file=sys.stderr)
         return None
 
@@ -349,7 +348,7 @@ def main() -> int:
     for slug, teamnaam in TEAMS.items():
         try:
             resultaten.append(sync_team(slug, teamnaam, teams, now, logo_cache))
-        except (urllib.error.URLError, RuntimeError) as exc:
+        except (OSError, RuntimeError) as exc:
             fouten += 1
             print(f"[{slug}] kon niet worden bijgewerkt: {exc}", file=sys.stderr)
 
