@@ -196,10 +196,15 @@ a { color: inherit; }
   }
 }
 
-.site-stand-table { display: flex; flex-direction: column; }
+/* Op smalle schermen scrollt de tabel horizontaal i.p.v. de kolommen te
+   pletten -- .site-stand-table-wrap is de svs-card (ronde hoeken, rand) en
+   krijgt de scroll, .site-stand-table zelf krijgt een min-width zodat de
+   teamnaam-kolom niet verdwijnt. */
+.site-stand-table-wrap { overflow-x: auto; }
+.site-stand-table { display: flex; flex-direction: column; min-width: 540px; }
 .site-stand-row {
   display: grid;
-  grid-template-columns: 28px 1fr 32px 32px 32px 32px 40px;
+  grid-template-columns: 28px 1fr 32px 32px 32px 32px 32px 32px 36px 40px;
   align-items: center;
   gap: var(--space-2);
   padding: var(--space-3) var(--space-4);
