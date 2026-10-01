@@ -125,7 +125,16 @@ async function main() {
     })
   }
 
-  activiteiten.sort((a, b) => a.date.localeCompare(b.date))
+  // Binnen dezelfde dag ook op starttijd sorteren (vroeg naar laat) -- anders komt de
+  // volgorde overeen met de bestandsvolgorde uit content/activiteiten/, die niet per dag
+  // chronologisch is. Activiteiten zonder 'tijd' komen na de activiteiten met een tijd.
+  activiteiten.sort((a, b) => {
+    const dateCompare = a.date.localeCompare(b.date)
+    if (dateCompare !== 0) return dateCompare
+    const tijdA = a.tijd || '￿'
+    const tijdB = b.tijd || '￿'
+    return tijdA.localeCompare(tijdB)
+  })
 
   await mkdir(path.dirname(OUT_FILE), { recursive: true })
   await writeFile(OUT_FILE, JSON.stringify(activiteiten, null, 2) + '\n')

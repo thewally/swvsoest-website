@@ -10,27 +10,35 @@ export default function StandTable({ stand, poule }) {
           {[poule.klasse, poule.poule ? `poule ${poule.poule}` : null].filter(Boolean).join(' · ')}
         </p>
       )}
-      <div className="svs-card site-stand-table">
-        <div className="site-stand-row site-stand-head">
-          <span>#</span>
-          <span>Team</span>
-          <span>G</span>
-          <span>W</span>
-          <span>G</span>
-          <span>V</span>
-          <span>Pt</span>
-        </div>
-        {stand.map(rij => (
-          <div key={rij.positie} className={`site-stand-row${rij.eigenteam === 'true' ? ' is-own' : ''}`}>
-            <span>{rij.positie}</span>
-            <span className="site-stand-team">{rij.teamnaam}</span>
-            <span>{rij.gespeeldewedstrijden}</span>
-            <span>{rij.gewonnen}</span>
-            <span>{rij.gelijk}</span>
-            <span>{rij.verloren}</span>
-            <span className="site-stand-points">{rij.punten}</span>
+      <div className="svs-card site-stand-table-wrap">
+        <div className="site-stand-table">
+          <div className="site-stand-row site-stand-head">
+            <span>#</span>
+            <span>Team</span>
+            <span>G</span>
+            <span>W</span>
+            <span>G</span>
+            <span>V</span>
+            <span>+</span>
+            <span>-</span>
+            <span>S</span>
+            <span>Pt</span>
           </div>
-        ))}
+          {stand.map(rij => (
+            <div key={rij.positie} className={`site-stand-row${rij.eigenteam === 'true' ? ' is-own' : ''}`}>
+              <span>{rij.positie}</span>
+              <span className="site-stand-team">{rij.teamnaam}</span>
+              <span>{rij.gespeeldewedstrijden}</span>
+              <span>{rij.gewonnen}</span>
+              <span>{rij.gelijk}</span>
+              <span>{rij.verloren}</span>
+              <span>{rij.doelpuntenvoor}</span>
+              <span>{rij.doelpuntentegen}</span>
+              <span>{rij.doelsaldo > 0 ? `+${rij.doelsaldo}` : rij.doelsaldo}</span>
+              <span className="site-stand-points">{rij.punten}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )
