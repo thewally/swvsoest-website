@@ -45,44 +45,6 @@
       "wedstrijdcode": 20838600,
       "wedstrijddatum": "2026-10-03T09:45:00+0200",
       "wedstrijdnummer": 20032
-    },
-    {
-      "aanvangstijd": "11:30",
-      "accommodatie": "Sportpark Bosstraat-Oost",
-      "competitie": "",
-      "competitiesoort": "Oefenwedstrijd",
-      "datum": "10 okt.",
-      "kaledatum": "2026-10-10 00:00:00.00",
-      "klasse": "",
-      "klassepoule": "",
-      "kleedkamerscheidsrechter": "",
-      "kleedkamerthuisteam": "",
-      "kleedkameruitteam": "",
-      "locatie": "Outdoor",
-      "meer": "wedstrijd-informatie?wedstrijdcode=21100623&aantaldagen=365&teamcode=289917&eigenwedstrijden=JA&aantalregels=200",
-      "plaats": "SOEST",
-      "poule": "",
-      "rijders": null,
-      "scheidsrechter": "",
-      "scheidsrechters": "",
-      "status": "Te spelen",
-      "teamnaam": "ST SO Soest/VVZ'49 O14-1",
-      "teamvolgorde": 999999,
-      "thuisteam": "ST SO Soest/VVZ'49 O14-1",
-      "thuisteamclubrelatiecode": "BBBZ168",
-      "thuisteamid": 105,
-      "thuisteamlogo": "logos/BBBZ168.png",
-      "uitteam": "HBOK 014-1",
-      "uitteamclubrelatiecode": "",
-      "uitteamid": -1,
-      "uitteamlogo": "logos/HBOK.png",
-      "veld": "veld 2-SO Soest",
-      "vertrektijd": "",
-      "verzameltijd": "",
-      "wedstrijd": "ST SO Soest/VVZ'49 O14-1 - HBOK 014-1",
-      "wedstrijdcode": 21100623,
-      "wedstrijddatum": "2026-10-10T11:30:00+0200",
-      "wedstrijdnummer": 1
     }
   ],
   "slug": "jo14-1",
@@ -196,7 +158,7 @@
       "datumopgemaakt": "26 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-26T14:03:38.562234+02:00",
-      "last_seen": "2026-10-02T12:45:38.704203+02:00",
+      "last_seen": "2026-10-02T23:03:49.911433+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20848237&teamcode=289917&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -304,5 +266,5 @@
       "wedstrijddatum": "2026-09-05T13:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-02T12:45:38.704203+02:00"
+  "updated_at": "2026-10-02T23:03:49.911433+02:00"
 }
