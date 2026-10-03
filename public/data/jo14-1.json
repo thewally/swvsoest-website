@@ -69,14 +69,14 @@
       "clublogo": "logos/BBCC73H.png",
       "clubrelatiecode": "BBCC73H",
       "doelpuntentegen": 7,
-      "doelpuntenvoor": 24,
-      "doelsaldo": 17,
+      "doelpuntenvoor": 26,
+      "doelsaldo": 19,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 4,
-      "gewonnen": 3,
+      "gespeeldewedstrijden": 5,
+      "gewonnen": 4,
       "positie": 2,
-      "punten": 9,
+      "punten": 12,
       "teamnaam": "Valleivogels O14-1",
       "verliespunten": 0,
       "verloren": 1
@@ -116,18 +116,18 @@
     {
       "clublogo": "logos/BBBZ26B.png",
       "clubrelatiecode": "BBBZ26B",
-      "doelpuntentegen": 7,
+      "doelpuntentegen": 9,
       "doelpuntenvoor": 6,
-      "doelsaldo": -1,
+      "doelsaldo": -3,
       "eigenteam": "false",
       "gelijk": 1,
-      "gespeeldewedstrijden": 4,
+      "gespeeldewedstrijden": 5,
       "gewonnen": 1,
       "positie": 5,
       "punten": 4,
       "teamnaam": "VRC O14-2",
       "verliespunten": 0,
-      "verloren": 2
+      "verloren": 3
     },
     {
       "clublogo": "logos/BBCB01J.png",
@@ -158,7 +158,7 @@
       "datumopgemaakt": "26 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-26T14:03:38.562234+02:00",
-      "last_seen": "2026-10-03T14:23:22.376096+02:00",
+      "last_seen": "2026-10-03T19:08:19.946914+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20848237&teamcode=289917&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -266,5 +266,5 @@
       "wedstrijddatum": "2026-09-05T13:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-03T14:23:22.376096+02:00"
+  "updated_at": "2026-10-03T19:08:19.946914+02:00"
 }
