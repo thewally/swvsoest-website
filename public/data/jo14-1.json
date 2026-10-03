@@ -82,6 +82,22 @@
       "verloren": 1
     },
     {
+      "clublogo": "logos/FJQB27Z.png",
+      "clubrelatiecode": "FJQB27Z",
+      "doelpuntentegen": 16,
+      "doelpuntenvoor": 16,
+      "doelsaldo": 0,
+      "eigenteam": "false",
+      "gelijk": 1,
+      "gespeeldewedstrijden": 5,
+      "gewonnen": 2,
+      "positie": 3,
+      "punten": 7,
+      "teamnaam": "Nieuwland ASC O14-1",
+      "verliespunten": 0,
+      "verloren": 2
+    },
+    {
       "clublogo": "logos/BBCB07P.png",
       "clubrelatiecode": "BBCB07P",
       "doelpuntentegen": 11,
@@ -91,7 +107,7 @@
       "gelijk": 2,
       "gespeeldewedstrijden": 4,
       "gewonnen": 1,
-      "positie": 3,
+      "positie": 4,
       "punten": 5,
       "teamnaam": "CJVV O14-1",
       "verliespunten": 0,
@@ -107,43 +123,27 @@
       "gelijk": 1,
       "gespeeldewedstrijden": 4,
       "gewonnen": 1,
-      "positie": 4,
+      "positie": 5,
       "punten": 4,
       "teamnaam": "VRC O14-2",
       "verliespunten": 0,
       "verloren": 2
     },
     {
-      "clublogo": "logos/FJQB27Z.png",
-      "clubrelatiecode": "FJQB27Z",
-      "doelpuntentegen": 15,
-      "doelpuntenvoor": 9,
-      "doelsaldo": -6,
-      "eigenteam": "false",
-      "gelijk": 1,
-      "gespeeldewedstrijden": 4,
-      "gewonnen": 1,
-      "positie": 5,
-      "punten": 4,
-      "teamnaam": "Nieuwland ASC O14-1",
-      "verliespunten": 0,
-      "verloren": 2
-    },
-    {
       "clublogo": "logos/BBCB01J.png",
       "clubrelatiecode": "BBCB01J",
-      "doelpuntentegen": 29,
-      "doelpuntenvoor": 6,
-      "doelsaldo": -23,
+      "doelpuntentegen": 36,
+      "doelpuntenvoor": 7,
+      "doelsaldo": -29,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 4,
+      "gespeeldewedstrijden": 5,
       "gewonnen": 0,
       "positie": 6,
       "punten": 0,
       "teamnaam": "GVVV O14-1",
       "verliespunten": 0,
-      "verloren": 4
+      "verloren": 5
     }
   ],
   "teamcode": 289917,
@@ -158,7 +158,7 @@
       "datumopgemaakt": "26 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-26T14:03:38.562234+02:00",
-      "last_seen": "2026-10-03T12:05:36.073309+02:00",
+      "last_seen": "2026-10-03T14:23:22.376096+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20848237&teamcode=289917&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -266,5 +266,5 @@
       "wedstrijddatum": "2026-09-05T13:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-03T12:05:36.073309+02:00"
+  "updated_at": "2026-10-03T14:23:22.376096+02:00"
 }
