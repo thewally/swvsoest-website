@@ -52,15 +52,15 @@
     {
       "clublogo": "logos/BBCC08V.png",
       "clubrelatiecode": "BBCC08V",
-      "doelpuntentegen": 3,
-      "doelpuntenvoor": 18,
-      "doelsaldo": 15,
+      "doelpuntentegen": 4,
+      "doelpuntenvoor": 21,
+      "doelsaldo": 17,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 3,
-      "gewonnen": 3,
+      "gespeeldewedstrijden": 4,
+      "gewonnen": 4,
       "positie": 1,
-      "punten": 9,
+      "punten": 12,
       "teamnaam": "DOSC O14-2",
       "verliespunten": 0,
       "verloren": 0
@@ -68,18 +68,18 @@
     {
       "clublogo": "logos/BBCC83K.png",
       "clubrelatiecode": "BBCC83K",
-      "doelpuntentegen": 8,
-      "doelpuntenvoor": 11,
-      "doelsaldo": 3,
+      "doelpuntentegen": 11,
+      "doelpuntenvoor": 12,
+      "doelsaldo": 1,
       "eigenteam": "false",
       "gelijk": 1,
-      "gespeeldewedstrijden": 3,
+      "gespeeldewedstrijden": 4,
       "gewonnen": 2,
       "positie": 2,
       "punten": 7,
       "teamnaam": "IJsselmeervogels O14-3",
       "verliespunten": 0,
-      "verloren": 0
+      "verloren": 1
     },
     {
       "clublogo": "logos/BBBZ168.png",
@@ -142,7 +142,7 @@
       "datumopgemaakt": "26 sep.",
       "eigenteam": "true",
       "first_seen": "2026-09-26T14:03:38.562234+02:00",
-      "last_seen": "2026-10-02T23:03:49.911433+02:00",
+      "last_seen": "2026-10-03T12:05:36.073309+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21112745&teamcode=304986&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -250,5 +250,5 @@
       "wedstrijddatum": "2026-09-05T08:30:00+0200"
     }
   ],
-  "updated_at": "2026-10-02T23:03:49.911433+02:00"
+  "updated_at": "2026-10-03T12:05:36.073309+02:00"
 }
