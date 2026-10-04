@@ -45,31 +45,31 @@
     {
       "clublogo": "logos/BBBZ69Q.png",
       "clubrelatiecode": "BBBZ69Q",
-      "doelpuntentegen": 10,
-      "doelpuntenvoor": 15,
-      "doelsaldo": 5,
+      "doelpuntentegen": 15,
+      "doelpuntenvoor": 17,
+      "doelsaldo": 2,
       "eigenteam": "false",
       "gelijk": 1,
-      "gespeeldewedstrijden": 4,
+      "gespeeldewedstrijden": 5,
       "gewonnen": 2,
       "positie": 3,
       "punten": 7,
       "teamnaam": "Hoogland O14-5",
       "verliespunten": 0,
-      "verloren": 1
+      "verloren": 2
     },
     {
       "clublogo": "logos/BBCC78M.png",
       "clubrelatiecode": "BBCC78M",
-      "doelpuntentegen": 9,
-      "doelpuntenvoor": 9,
-      "doelsaldo": 0,
+      "doelpuntentegen": 11,
+      "doelpuntenvoor": 14,
+      "doelsaldo": 3,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 3,
-      "gewonnen": 1,
+      "gespeeldewedstrijden": 4,
+      "gewonnen": 2,
       "positie": 4,
-      "punten": 3,
+      "punten": 6,
       "teamnaam": "Roda '46 O14-5",
       "verliespunten": 0,
       "verloren": 2
@@ -119,7 +119,7 @@
       "datumopgemaakt": "3 okt.",
       "eigenteam": "true",
       "first_seen": "2026-10-03T12:05:36.073309+02:00",
-      "last_seen": "2026-10-03T21:33:14.609674+02:00",
+      "last_seen": "2026-10-04T12:47:02.293030+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20843988&teamcode=304984&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -258,5 +258,5 @@
       "wedstrijddatum": "2026-09-05T09:45:00+0200"
     }
   ],
-  "updated_at": "2026-10-03T21:33:14.609674+02:00"
+  "updated_at": "2026-10-04T12:47:02.293030+02:00"
 }
