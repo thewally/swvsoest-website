@@ -7,7 +7,46 @@
     "poule": "A",
     "poulecode": 838293
   },
-  "programma": [],
+  "programma": [
+    {
+      "aanvangstijd": "11:30",
+      "accommodatie": "Sportpark Bosstraat-Oost",
+      "competitie": "0355 Onder 14 Zwaluwen Jeugd (1e fase A-Cat)",
+      "competitiesoort": "regulier",
+      "datum": "10 okt.",
+      "kaledatum": "2026-10-10 00:00:00.00",
+      "klasse": "Hoofdklasse Zwaluwen Jeugd (1e fase A-cat)",
+      "klassepoule": "Hoofdklasse Zwaluwen Jeugd (1e fase A-cat) A",
+      "kleedkamerscheidsrechter": "",
+      "kleedkamerthuisteam": "",
+      "kleedkameruitteam": "",
+      "locatie": "Veld",
+      "meer": "wedstrijd-informatie?wedstrijdcode=20838600&aantaldagen=365&teamcode=289917&eigenwedstrijden=JA&aantalregels=200",
+      "plaats": "SOEST",
+      "poule": "A",
+      "rijders": null,
+      "scheidsrechter": "A.P. (Arjan) Snijders",
+      "scheidsrechters": "A.P. (Arjan) Snijders (Scheidsrechter)",
+      "status": "Te spelen",
+      "teamnaam": "ST SO Soest/VVZ'49 O14-1",
+      "teamvolgorde": 2601,
+      "thuisteam": "ST SO Soest/VVZ'49 O14-1",
+      "thuisteamclubrelatiecode": "BBBZ168",
+      "thuisteamid": 289917,
+      "thuisteamlogo": "logos/BBBZ168.png",
+      "uitteam": "CJVV O14-1",
+      "uitteamclubrelatiecode": "BBCB07P",
+      "uitteamid": 292097,
+      "uitteamlogo": "logos/BBCB07P.png",
+      "veld": "veld 2-SO Soest",
+      "vertrektijd": "",
+      "verzameltijd": "",
+      "wedstrijd": "ST SO Soest/VVZ'49 O14-1 - CJVV O14-1",
+      "wedstrijdcode": 20838600,
+      "wedstrijddatum": "2026-10-10T11:30:00+0200",
+      "wedstrijdnummer": 20032
+    }
+  ],
   "slug": "jo14-1",
   "stand": [
     {
@@ -227,5 +266,5 @@
       "wedstrijddatum": "2026-09-05T13:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-04T12:47:02.293030+02:00"
+  "updated_at": "2026-10-04T21:49:43.902747+02:00"
 }
