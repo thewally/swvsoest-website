@@ -26,7 +26,7 @@
       "poule": "A",
       "rijders": null,
       "scheidsrechter": "A.P. (Arjan) Snijders",
-      "scheidsrechters": "A.P. (Arjan) Snijders (Scheidsrechter)",
+      "scheidsrechters": "J. (JaapJan) Boer (Assistent-scheidsrechter), A.P. (Arjan) Snijders (Scheidsrechter)",
       "status": "Te spelen",
       "teamnaam": "ST SO Soest/VVZ'49 O14-1",
       "teamvolgorde": 2601,
@@ -266,5 +266,5 @@
       "wedstrijddatum": "2026-09-05T13:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-09T13:32:14.363620+02:00"
+  "updated_at": "2026-10-09T23:21:09.659075+02:00"
 }
