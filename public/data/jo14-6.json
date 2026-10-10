@@ -29,15 +29,15 @@
     {
       "clublogo": "logos/BBCC09W.png",
       "clubrelatiecode": "BBCC09W",
-      "doelpuntentegen": 26,
-      "doelpuntenvoor": 25,
-      "doelsaldo": -1,
+      "doelpuntentegen": 28,
+      "doelpuntenvoor": 31,
+      "doelsaldo": 3,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 4,
-      "gewonnen": 3,
+      "gespeeldewedstrijden": 5,
+      "gewonnen": 4,
       "positie": 2,
-      "punten": 9,
+      "punten": 12,
       "teamnaam": "KVVA O14-1",
       "verliespunten": 0,
       "verloren": 1
@@ -61,18 +61,18 @@
     {
       "clublogo": "logos/BBBZ41C.png",
       "clubrelatiecode": "BBBZ41C",
-      "doelpuntentegen": 21,
-      "doelpuntenvoor": 24,
-      "doelsaldo": 3,
+      "doelpuntentegen": 27,
+      "doelpuntenvoor": 26,
+      "doelsaldo": -1,
       "eigenteam": "false",
       "gelijk": 1,
-      "gespeeldewedstrijden": 4,
+      "gespeeldewedstrijden": 5,
       "gewonnen": 1,
       "positie": 4,
       "punten": 4,
       "teamnaam": "Hercules O14-5",
       "verliespunten": 0,
-      "verloren": 2
+      "verloren": 3
     },
     {
       "clublogo": "logos/BBBZ179.png",
@@ -119,7 +119,7 @@
       "datumopgemaakt": "3 okt.",
       "eigenteam": "true",
       "first_seen": "2026-10-04T12:47:02.293030+02:00",
-      "last_seen": "2026-10-09T23:21:09.659075+02:00",
+      "last_seen": "2026-10-10T12:50:18.175321+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20832352&teamcode=304987&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -258,5 +258,5 @@
       "wedstrijddatum": "2026-09-05T12:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-09T23:21:09.659075+02:00"
+  "updated_at": "2026-10-10T12:50:18.175321+02:00"
 }

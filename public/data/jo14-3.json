@@ -61,15 +61,15 @@
     {
       "clublogo": "logos/BBCC58G.png",
       "clubrelatiecode": "BBCC58G",
-      "doelpuntentegen": 10,
-      "doelpuntenvoor": 10,
-      "doelsaldo": 0,
+      "doelpuntentegen": 12,
+      "doelpuntenvoor": 17,
+      "doelsaldo": 5,
       "eigenteam": "false",
       "gelijk": 1,
-      "gespeeldewedstrijden": 4,
-      "gewonnen": 1,
+      "gespeeldewedstrijden": 5,
+      "gewonnen": 2,
       "positie": 4,
-      "punten": 4,
+      "punten": 7,
       "teamnaam": "Hees O14-1",
       "verliespunten": 0,
       "verloren": 2
@@ -77,18 +77,18 @@
     {
       "clublogo": "logos/BBBZ179.png",
       "clubrelatiecode": "BBBZ179",
-      "doelpuntentegen": 27,
-      "doelpuntenvoor": 8,
-      "doelsaldo": -19,
+      "doelpuntentegen": 34,
+      "doelpuntenvoor": 10,
+      "doelsaldo": -24,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 4,
+      "gespeeldewedstrijden": 5,
       "gewonnen": 1,
       "positie": 5,
       "punten": 3,
       "teamnaam": "Sporting '70 O14-3",
       "verliespunten": 0,
-      "verloren": 3
+      "verloren": 4
     },
     {
       "clublogo": "logos/BBBZ168.png",
@@ -119,7 +119,7 @@
       "datumopgemaakt": "3 okt.",
       "eigenteam": "true",
       "first_seen": "2026-10-03T14:23:22.376096+02:00",
-      "last_seen": "2026-10-09T23:21:09.659075+02:00",
+      "last_seen": "2026-10-10T12:50:18.175321+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20827561&teamcode=304982&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -258,5 +258,5 @@
       "wedstrijddatum": "2026-09-05T16:45:00+0200"
     }
   ],
-  "updated_at": "2026-10-09T23:21:09.659075+02:00"
+  "updated_at": "2026-10-10T12:50:18.175321+02:00"
 }
