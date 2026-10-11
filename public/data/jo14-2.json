@@ -7,46 +7,7 @@
     "poule": "E",
     "poulecode": 838297
   },
-  "programma": [
-    {
-      "aanvangstijd": "11:15",
-      "accommodatie": "Sportpark Bosstraat-Oost",
-      "competitie": "",
-      "competitiesoort": "Oefenwedstrijd",
-      "datum": "10 okt.",
-      "kaledatum": "2026-10-10 00:00:00.00",
-      "klasse": "",
-      "klassepoule": "",
-      "kleedkamerscheidsrechter": "",
-      "kleedkamerthuisteam": "",
-      "kleedkameruitteam": "",
-      "locatie": "Outdoor",
-      "meer": "wedstrijd-informatie?wedstrijdcode=21114380&aantaldagen=365&teamcode=304979&eigenwedstrijden=JA&aantalregels=200",
-      "plaats": "SOEST",
-      "poule": "",
-      "rijders": null,
-      "scheidsrechter": "",
-      "scheidsrechters": "",
-      "status": "Te spelen",
-      "teamnaam": "ST SO Soest/VVZ'49 O14-2",
-      "teamvolgorde": 999999,
-      "thuisteam": "ST SO Soest/VVZ'49 O14-2",
-      "thuisteamclubrelatiecode": "BBBZ168",
-      "thuisteamid": 106,
-      "thuisteamlogo": "logos/BBBZ168.png",
-      "uitteam": "?",
-      "uitteamclubrelatiecode": "",
-      "uitteamid": -1,
-      "uitteamlogo": null,
-      "veld": "veld 5 SO Soest",
-      "vertrektijd": "",
-      "verzameltijd": "",
-      "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - ?",
-      "wedstrijdcode": 21114380,
-      "wedstrijddatum": "2026-10-10T11:15:00+0200",
-      "wedstrijdnummer": 2
-    }
-  ],
+  "programma": [],
   "slug": "jo14-2",
   "stand": [
     {
@@ -297,5 +258,5 @@
       "wedstrijddatum": "2026-09-05T10:10:00+0200"
     }
   ],
-  "updated_at": "2026-10-10T22:21:15.202175+02:00"
+  "updated_at": "2026-10-11T13:03:06.683088+02:00"
 }
