@@ -47,7 +47,7 @@
       "wedstrijdnummer": 95232
     },
     {
-      "aanvangstijd": "09:45",
+      "aanvangstijd": "11:15",
       "accommodatie": "Sportpark Bosstraat-Oost",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -81,7 +81,7 @@
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - BFC O14-3",
       "wedstrijdcode": 21134691,
-      "wedstrijddatum": "2026-11-07T09:45:00+0100",
+      "wedstrijddatum": "2026-11-07T11:15:00+0100",
       "wedstrijdnummer": 94493
     },
     {
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T10:10:00+0200"
     }
   ],
-  "updated_at": "2026-10-16T11:21:20.773923+02:00"
+  "updated_at": "2026-10-16T21:44:22.448486+02:00"
 }

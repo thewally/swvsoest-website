@@ -76,7 +76,7 @@
       "uitteamclubrelatiecode": "BBBZ168",
       "uitteamid": 304986,
       "uitteamlogo": "logos/BBBZ168.png",
-      "veld": "veld 2-Sporting'70",
+      "veld": "veld 3-Sporting'70",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "Sporting '70 O14-3 - ST SO Soest/VVZ'49 O14-5",
@@ -85,7 +85,7 @@
       "wedstrijdnummer": 94813
     },
     {
-      "aanvangstijd": "09:45",
+      "aanvangstijd": "08:30",
       "accommodatie": "Sportpark Bosstraat-Oost",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -114,12 +114,12 @@
       "uitteamclubrelatiecode": "BBBZ06Z",
       "uitteamid": 308782,
       "uitteamlogo": "logos/BBBZ06Z.png",
-      "veld": "veld 5 SO Soest",
+      "veld": "veld 3-SO Soest",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-5 - Jonathan O14-5JM",
       "wedstrijdcode": 21134838,
-      "wedstrijddatum": "2026-11-14T09:45:00+0100",
+      "wedstrijddatum": "2026-11-14T08:30:00+0100",
       "wedstrijdnummer": 94640
     },
     {
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T08:30:00+0200"
     }
   ],
-  "updated_at": "2026-10-16T11:21:20.773923+02:00"
+  "updated_at": "2026-10-16T21:44:22.448486+02:00"
 }

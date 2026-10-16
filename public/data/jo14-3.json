@@ -9,7 +9,7 @@
   },
   "programma": [
     {
-      "aanvangstijd": "13:00",
+      "aanvangstijd": "13:05",
       "accommodatie": "Sportpark Anna's Hoeve",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -18,8 +18,8 @@
       "klasse": "3e klasse (2e fase)",
       "klassepoule": "3e klasse (2e fase) 11",
       "kleedkamerscheidsrechter": "",
-      "kleedkamerthuisteam": "",
-      "kleedkameruitteam": "",
+      "kleedkamerthuisteam": "11a",
+      "kleedkameruitteam": "12a",
       "locatie": "Veld",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135114&aantaldagen=365&teamcode=304982&eigenwedstrijden=JA&aantalregels=200",
       "plaats": "HILVERSUM",
@@ -38,16 +38,16 @@
       "uitteamclubrelatiecode": "BBBZ168",
       "uitteamid": 304982,
       "uitteamlogo": "logos/BBBZ168.png",
-      "veld": "veld 1",
+      "veld": "veld 2",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "Wasmeer O14-2 - ST SO Soest/VVZ'49 O14-3",
       "wedstrijdcode": 21135114,
-      "wedstrijddatum": "2026-10-31T13:00:00+0100",
+      "wedstrijddatum": "2026-10-31T13:05:00+0100",
       "wedstrijdnummer": 94916
     },
     {
-      "aanvangstijd": "11:15",
+      "aanvangstijd": "09:45",
       "accommodatie": "Sportpark Bosstraat-Oost",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -76,12 +76,12 @@
       "uitteamclubrelatiecode": "BBCC08V",
       "uitteamid": 295332,
       "uitteamlogo": "logos/BBCC08V.png",
-      "veld": "veld 5 SO Soest",
+      "veld": "veld 3-SO Soest",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-3 - DOSC O14-2",
       "wedstrijdcode": 21135601,
-      "wedstrijddatum": "2026-11-07T11:15:00+0100",
+      "wedstrijddatum": "2026-11-07T09:45:00+0100",
       "wedstrijdnummer": 95403
     },
     {
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T16:45:00+0200"
     }
   ],
-  "updated_at": "2026-10-16T11:21:20.773923+02:00"
+  "updated_at": "2026-10-16T21:44:22.448486+02:00"
 }

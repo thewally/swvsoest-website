@@ -38,7 +38,7 @@
       "uitteamclubrelatiecode": "BBCC78M",
       "uitteamid": 311716,
       "uitteamlogo": "logos/BBCC78M.png",
-      "veld": "veld 4-SO Soest",
+      "veld": "veld 5 SO Soest",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-4 - Roda '46 O14-4",
@@ -85,7 +85,7 @@
       "wedstrijdnummer": 95638
     },
     {
-      "aanvangstijd": "12:30",
+      "aanvangstijd": "11:30",
       "accommodatie": "Sportpark Bosstraat-Oost",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -114,12 +114,12 @@
       "uitteamclubrelatiecode": "BBBZ69Q",
       "uitteamid": 304414,
       "uitteamlogo": "logos/BBBZ69Q.png",
-      "veld": "veld 4-SO Soest",
+      "veld": "veld 3-SO Soest",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-4 - Hoogland O14-3",
       "wedstrijdcode": 21135942,
-      "wedstrijddatum": "2026-11-14T12:30:00+0100",
+      "wedstrijddatum": "2026-11-14T11:30:00+0100",
       "wedstrijdnummer": 95744
     },
     {
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T09:45:00+0200"
     }
   ],
-  "updated_at": "2026-10-16T11:21:20.773923+02:00"
+  "updated_at": "2026-10-16T21:44:22.448486+02:00"
 }

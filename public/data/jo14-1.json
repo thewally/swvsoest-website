@@ -25,8 +25,8 @@
       "plaats": "HUIZEN",
       "poule": "B",
       "rijders": "",
-      "scheidsrechter": "",
-      "scheidsrechters": "",
+      "scheidsrechter": "J.A. (Johan) Snijders",
+      "scheidsrechters": "J.A. (Johan) Snijders (Scheidsrechter)",
       "status": "Te spelen",
       "teamnaam": "ST SO Soest/VVZ'49 O14-1",
       "teamvolgorde": 2601,
@@ -123,7 +123,7 @@
       "wedstrijdnummer": 96215
     },
     {
-      "aanvangstijd": "11:15",
+      "aanvangstijd": "10:00",
       "accommodatie": "Sportpark Bosstraat-Oost",
       "competitie": "0362 Onder 14 (2e fase A-cat)",
       "competitiesoort": "regulier",
@@ -157,7 +157,7 @@
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-1 - Wasmeer O14-1",
       "wedstrijdcode": 21136389,
-      "wedstrijddatum": "2026-11-14T11:15:00+0100",
+      "wedstrijddatum": "2026-11-14T10:00:00+0100",
       "wedstrijdnummer": 96191
     },
     {
@@ -418,7 +418,7 @@
       "datumopgemaakt": "10 okt.",
       "eigenteam": "true",
       "first_seen": "2026-10-10T15:29:18.453976+02:00",
-      "last_seen": "2026-10-16T11:21:20.773923+02:00",
+      "last_seen": "2026-10-16T21:44:22.448486+02:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=20838600&teamcode=289917&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T13:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-16T11:21:20.773923+02:00"
+  "updated_at": "2026-10-16T21:44:22.448486+02:00"
 }
