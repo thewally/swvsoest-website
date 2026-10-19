@@ -161,7 +161,7 @@
       "wedstrijdnummer": 95164
     },
     {
-      "aanvangstijd": "12:30",
+      "aanvangstijd": "11:30",
       "accommodatie": "Sportpark Bosstraat-Oost",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -190,12 +190,12 @@
       "uitteamclubrelatiecode": "FJQB25X",
       "uitteamid": 308563,
       "uitteamlogo": "logos/FJQB25X.png",
-      "veld": "veld 4-SO Soest",
+      "veld": "veld 3-SO Soest",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-5 - Bilt De FC O14-3",
       "wedstrijdcode": 21135760,
-      "wedstrijddatum": "2026-12-05T12:30:00+0100",
+      "wedstrijddatum": "2026-12-05T11:30:00+0100",
       "wedstrijdnummer": 95562
     },
     {
@@ -503,5 +503,5 @@
       "wedstrijddatum": "2026-09-05T08:30:00+0200"
     }
   ],
-  "updated_at": "2026-10-19T12:21:00.779213+02:00"
+  "updated_at": "2026-10-19T23:16:47.957090+02:00"
 }

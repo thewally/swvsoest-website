@@ -237,7 +237,7 @@
       "wedstrijdnummer": 96180
     },
     {
-      "aanvangstijd": "11:15",
+      "aanvangstijd": "10:00",
       "accommodatie": "Sportpark Bosstraat-Oost",
       "competitie": "0362 Onder 14 (2e fase A-cat)",
       "competitiesoort": "regulier",
@@ -271,7 +271,7 @@
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-1 - Roda '46 O14-2",
       "wedstrijdcode": 21136317,
-      "wedstrijddatum": "2026-12-05T11:15:00+0100",
+      "wedstrijddatum": "2026-12-05T10:00:00+0100",
       "wedstrijdnummer": 96119
     }
   ],
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T13:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-19T12:21:00.779213+02:00"
+  "updated_at": "2026-10-19T23:16:47.957090+02:00"
 }

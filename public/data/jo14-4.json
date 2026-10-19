@@ -170,8 +170,8 @@
       "klasse": "2e klasse (2e fase)",
       "klassepoule": "2e klasse (2e fase) 12",
       "kleedkamerscheidsrechter": "",
-      "kleedkamerthuisteam": "",
-      "kleedkameruitteam": "",
+      "kleedkamerthuisteam": "S20",
+      "kleedkameruitteam": "S21",
       "locatie": "Veld",
       "meer": "wedstrijd-informatie?wedstrijdcode=21136140&aantaldagen=365&teamcode=304984&eigenwedstrijden=JA&aantalregels=200",
       "plaats": "BUNSCHOTEN-SPAKENBURG",
@@ -199,7 +199,7 @@
       "wedstrijdnummer": 95942
     },
     {
-      "aanvangstijd": "09:45",
+      "aanvangstijd": "08:30",
       "accommodatie": "Sportpark Bosstraat-Oost",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -228,12 +228,12 @@
       "uitteamclubrelatiecode": "BBCC58G",
       "uitteamid": 327590,
       "uitteamlogo": "logos/BBCC58G.png",
-      "veld": "veld 5 SO Soest",
+      "veld": "veld 3-SO Soest",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-4 - Hees O14-1",
       "wedstrijdcode": 21135368,
-      "wedstrijddatum": "2026-12-05T09:45:00+0100",
+      "wedstrijddatum": "2026-12-05T08:30:00+0100",
       "wedstrijdnummer": 95170
     },
     {
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T09:45:00+0200"
     }
   ],
-  "updated_at": "2026-10-19T12:21:00.779213+02:00"
+  "updated_at": "2026-10-19T23:16:47.957090+02:00"
 }

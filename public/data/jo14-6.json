@@ -39,7 +39,7 @@
       "uitteamid": 304987,
       "uitteamlogo": "logos/BBBZ168.png",
       "veld": "veld 5-Victoria",
-      "vertrektijd": "",
+      "vertrektijd": "09:00",
       "verzameltijd": "",
       "wedstrijd": "Victoria O14-4 - ST SO Soest/VVZ'49 O14-6",
       "wedstrijdcode": 21135838,
@@ -78,7 +78,7 @@
       "uitteamlogo": "logos/BBBZ69Q.png",
       "veld": "veld 2",
       "vertrektijd": "",
-      "verzameltijd": "",
+      "verzameltijd": "09:15",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-6 - Hoogland O14-5",
       "wedstrijdcode": 21135061,
       "wedstrijddatum": "2026-11-07T09:45:00+0100",
@@ -115,7 +115,7 @@
       "uitteamid": 304987,
       "uitteamlogo": "logos/BBBZ168.png",
       "veld": "veld 4",
-      "vertrektijd": "",
+      "vertrektijd": "07:30",
       "verzameltijd": "",
       "wedstrijd": "Nieuwland ASC O14-2 - ST SO Soest/VVZ'49 O14-6",
       "wedstrijdcode": 21136053,
@@ -154,7 +154,7 @@
       "uitteamlogo": "logos/BBCC72G.png",
       "veld": "veld 2",
       "vertrektijd": "",
-      "verzameltijd": "",
+      "verzameltijd": "09:15",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-6 - Hooglanderveen O14-3",
       "wedstrijdcode": 21135959,
       "wedstrijddatum": "2026-11-21T09:45:00+0100",
@@ -192,7 +192,7 @@
       "uitteamlogo": "logos/BBCC78M.png",
       "veld": "veld 1",
       "vertrektijd": "",
-      "verzameltijd": "",
+      "verzameltijd": "09:15",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-6 - Roda '46 O14-5",
       "wedstrijdcode": 21135397,
       "wedstrijddatum": "2026-11-28T09:45:00+0100",
@@ -268,7 +268,7 @@
       "uitteamlogo": "logos/BBCC83K.png",
       "veld": "veld 2",
       "vertrektijd": "",
-      "verzameltijd": "",
+      "verzameltijd": "09:15",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-6 - IJsselmeervogels O14-3",
       "wedstrijdcode": 21135583,
       "wedstrijddatum": "2026-12-12T09:45:00+0100",
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T12:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-19T12:21:00.779213+02:00"
+  "updated_at": "2026-10-19T23:16:47.957090+02:00"
 }
