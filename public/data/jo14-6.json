@@ -9,7 +9,7 @@
   },
   "programma": [
     {
-      "aanvangstijd": "10:00",
+      "aanvangstijd": "13:10",
       "accommodatie": "Sportpark Loosdrecht",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -17,9 +17,9 @@
       "kaledatum": "2026-10-31 00:00:00.00",
       "klasse": "3e klasse (2e fase)",
       "klassepoule": "3e klasse (2e fase) 12",
-      "kleedkamerscheidsrechter": "",
-      "kleedkamerthuisteam": "",
-      "kleedkameruitteam": "",
+      "kleedkamerscheidsrechter": null,
+      "kleedkamerthuisteam": null,
+      "kleedkameruitteam": null,
       "locatie": "Veld",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135838&aantaldagen=365&teamcode=304987&eigenwedstrijden=JA&aantalregels=200",
       "plaats": "LOOSDRECHT",
@@ -38,12 +38,12 @@
       "uitteamclubrelatiecode": "BBBZ168",
       "uitteamid": 304987,
       "uitteamlogo": "logos/BBBZ168.png",
-      "veld": "veld 5-Victoria",
+      "veld": null,
       "vertrektijd": "09:00",
       "verzameltijd": "",
       "wedstrijd": "Victoria O14-4 - ST SO Soest/VVZ'49 O14-6",
       "wedstrijdcode": 21135838,
-      "wedstrijddatum": "2026-10-31T10:00:00+0100",
+      "wedstrijddatum": "2026-10-31T13:10:00+0100",
       "wedstrijdnummer": 95640
     },
     {
@@ -199,7 +199,7 @@
       "wedstrijdnummer": 95199
     },
     {
-      "aanvangstijd": "16:15",
+      "aanvangstijd": "13:00",
       "accommodatie": "Sportpark Ter Eem",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -207,9 +207,9 @@
       "kaledatum": "2026-12-05 00:00:00.00",
       "klasse": "3e klasse (2e fase)",
       "klassepoule": "3e klasse (2e fase) 12",
-      "kleedkamerscheidsrechter": "",
-      "kleedkamerthuisteam": "",
-      "kleedkameruitteam": "",
+      "kleedkamerscheidsrechter": null,
+      "kleedkamerthuisteam": null,
+      "kleedkameruitteam": null,
       "locatie": "Veld",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135569&aantaldagen=365&teamcode=304987&eigenwedstrijden=JA&aantalregels=200",
       "plaats": "BAARN",
@@ -228,12 +228,12 @@
       "uitteamclubrelatiecode": "BBBZ168",
       "uitteamid": 304987,
       "uitteamlogo": "logos/BBBZ168.png",
-      "veld": "veld 5 hoofdv Eemboys /Baarn/TOV",
+      "veld": null,
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "Baarn sv O14-2 - ST SO Soest/VVZ'49 O14-6",
       "wedstrijdcode": 21135569,
-      "wedstrijddatum": "2026-12-05T16:15:00+0100",
+      "wedstrijddatum": "2026-12-05T13:00:00+0100",
       "wedstrijdnummer": 95371
     },
     {
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T12:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-19T23:16:47.957090+02:00"
+  "updated_at": "2026-10-20T22:10:56.436677+02:00"
 }

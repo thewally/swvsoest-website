@@ -237,7 +237,7 @@
       "wedstrijdnummer": 95170
     },
     {
-      "aanvangstijd": "11:00",
+      "aanvangstijd": "14:00",
       "accommodatie": "Sportpark Vermeerkwartier",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -245,9 +245,9 @@
       "kaledatum": "2026-12-12 00:00:00.00",
       "klasse": "2e klasse (2e fase)",
       "klassepoule": "2e klasse (2e fase) 12",
-      "kleedkamerscheidsrechter": "",
-      "kleedkamerthuisteam": "",
-      "kleedkameruitteam": "",
+      "kleedkamerscheidsrechter": null,
+      "kleedkamerthuisteam": null,
+      "kleedkameruitteam": null,
       "locatie": "Veld",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135176&aantaldagen=365&teamcode=304984&eigenwedstrijden=JA&aantalregels=200",
       "plaats": "AMERSFOORT",
@@ -266,12 +266,12 @@
       "uitteamclubrelatiecode": "BBBZ168",
       "uitteamid": 304984,
       "uitteamlogo": "logos/BBBZ168.png",
-      "veld": "veld 4",
+      "veld": null,
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "CJVV O14-3 - ST SO Soest/VVZ'49 O14-4",
       "wedstrijdcode": 21135176,
-      "wedstrijddatum": "2026-12-12T11:00:00+0100",
+      "wedstrijddatum": "2026-12-12T14:00:00+0100",
       "wedstrijdnummer": 94978
     }
   ],
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T09:45:00+0200"
     }
   ],
-  "updated_at": "2026-10-19T23:16:47.957090+02:00"
+  "updated_at": "2026-10-20T22:10:56.436677+02:00"
 }
