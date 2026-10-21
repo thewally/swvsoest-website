@@ -47,7 +47,7 @@
       "wedstrijdnummer": 94839
     },
     {
-      "aanvangstijd": "12:15",
+      "aanvangstijd": "11:00",
       "accommodatie": "Sportpark Kerklaan",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -55,9 +55,9 @@
       "kaledatum": "2026-11-07 00:00:00.00",
       "klasse": "2e klasse (2e fase)",
       "klassepoule": "2e klasse (2e fase) 12",
-      "kleedkamerscheidsrechter": "",
-      "kleedkamerthuisteam": "",
-      "kleedkameruitteam": "",
+      "kleedkamerscheidsrechter": null,
+      "kleedkamerthuisteam": null,
+      "kleedkameruitteam": null,
       "locatie": "Veld",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135836&aantaldagen=365&teamcode=304984&eigenwedstrijden=JA&aantalregels=200",
       "plaats": "HUIS TER HEIDE UT",
@@ -76,12 +76,12 @@
       "uitteamclubrelatiecode": "BBBZ168",
       "uitteamid": 304984,
       "uitteamlogo": "logos/BBBZ168.png",
-      "veld": "veld 2",
+      "veld": null,
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "Vliegdorp 't vv O14-1 - ST SO Soest/VVZ'49 O14-4",
       "wedstrijdcode": 21135836,
-      "wedstrijddatum": "2026-11-07T12:15:00+0100",
+      "wedstrijddatum": "2026-11-07T11:00:00+0100",
       "wedstrijdnummer": 95638
     },
     {
@@ -245,9 +245,9 @@
       "kaledatum": "2026-12-12 00:00:00.00",
       "klasse": "2e klasse (2e fase)",
       "klassepoule": "2e klasse (2e fase) 12",
-      "kleedkamerscheidsrechter": null,
-      "kleedkamerthuisteam": null,
-      "kleedkameruitteam": null,
+      "kleedkamerscheidsrechter": "",
+      "kleedkamerthuisteam": "",
+      "kleedkameruitteam": "",
       "locatie": "Veld",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135176&aantaldagen=365&teamcode=304984&eigenwedstrijden=JA&aantalregels=200",
       "plaats": "AMERSFOORT",
@@ -266,7 +266,7 @@
       "uitteamclubrelatiecode": "BBBZ168",
       "uitteamid": 304984,
       "uitteamlogo": "logos/BBBZ168.png",
-      "veld": null,
+      "veld": "veld 3",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "CJVV O14-3 - ST SO Soest/VVZ'49 O14-4",
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T09:45:00+0200"
     }
   ],
-  "updated_at": "2026-10-20T22:10:56.436677+02:00"
+  "updated_at": "2026-10-21T11:42:34.595109+02:00"
 }

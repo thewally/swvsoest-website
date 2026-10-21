@@ -17,9 +17,9 @@
       "kaledatum": "2026-10-31 00:00:00.00",
       "klasse": "3e klasse (2e fase)",
       "klassepoule": "3e klasse (2e fase) 12",
-      "kleedkamerscheidsrechter": null,
-      "kleedkamerthuisteam": null,
-      "kleedkameruitteam": null,
+      "kleedkamerscheidsrechter": "",
+      "kleedkamerthuisteam": "",
+      "kleedkameruitteam": "",
       "locatie": "Veld",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135838&aantaldagen=365&teamcode=304987&eigenwedstrijden=JA&aantalregels=200",
       "plaats": "LOOSDRECHT",
@@ -38,7 +38,7 @@
       "uitteamclubrelatiecode": "BBBZ168",
       "uitteamid": 304987,
       "uitteamlogo": "logos/BBBZ168.png",
-      "veld": null,
+      "veld": "veld 4-Victoria",
       "vertrektijd": "09:00",
       "verzameltijd": "",
       "wedstrijd": "Victoria O14-4 - ST SO Soest/VVZ'49 O14-6",
@@ -207,9 +207,9 @@
       "kaledatum": "2026-12-05 00:00:00.00",
       "klasse": "3e klasse (2e fase)",
       "klassepoule": "3e klasse (2e fase) 12",
-      "kleedkamerscheidsrechter": null,
-      "kleedkamerthuisteam": null,
-      "kleedkameruitteam": null,
+      "kleedkamerscheidsrechter": "",
+      "kleedkamerthuisteam": "",
+      "kleedkameruitteam": "",
       "locatie": "Veld",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135569&aantaldagen=365&teamcode=304987&eigenwedstrijden=JA&aantalregels=200",
       "plaats": "BAARN",
@@ -228,7 +228,7 @@
       "uitteamclubrelatiecode": "BBBZ168",
       "uitteamid": 304987,
       "uitteamlogo": "logos/BBBZ168.png",
-      "veld": null,
+      "veld": "veld 3 BAARN SV / TOV",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "Baarn sv O14-2 - ST SO Soest/VVZ'49 O14-6",
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T12:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-20T22:10:56.436677+02:00"
+  "updated_at": "2026-10-21T11:42:34.595109+02:00"
 }
