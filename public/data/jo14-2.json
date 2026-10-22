@@ -39,7 +39,7 @@
       "uitteamid": 304979,
       "uitteamlogo": "logos/BBBZ168.png",
       "veld": "veld 4",
-      "vertrektijd": "",
+      "vertrektijd": "09:00",
       "verzameltijd": "",
       "wedstrijd": "Hoogland O14-2 - ST SO Soest/VVZ'49 O14-2",
       "wedstrijdcode": 21135430,
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T10:10:00+0200"
     }
   ],
-  "updated_at": "2026-10-22T11:42:03.221162+02:00"
+  "updated_at": "2026-10-22T22:20:00.246798+02:00"
 }
