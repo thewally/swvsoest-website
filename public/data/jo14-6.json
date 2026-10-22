@@ -39,7 +39,7 @@
       "uitteamid": 304987,
       "uitteamlogo": "logos/BBBZ168.png",
       "veld": "veld 4-Victoria",
-      "vertrektijd": "09:00",
+      "vertrektijd": "12:00",
       "verzameltijd": "",
       "wedstrijd": "Victoria O14-4 - ST SO Soest/VVZ'49 O14-6",
       "wedstrijdcode": 21135838,
@@ -229,7 +229,7 @@
       "uitteamid": 304987,
       "uitteamlogo": "logos/BBBZ168.png",
       "veld": "veld 3 BAARN SV / TOV",
-      "vertrektijd": "",
+      "vertrektijd": "12:00",
       "verzameltijd": "",
       "wedstrijd": "Baarn sv O14-2 - ST SO Soest/VVZ'49 O14-6",
       "wedstrijdcode": 21135569,
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T12:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-21T22:23:30.370608+02:00"
+  "updated_at": "2026-10-22T11:42:03.221162+02:00"
 }

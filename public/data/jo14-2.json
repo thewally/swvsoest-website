@@ -237,8 +237,8 @@
       "wedstrijdnummer": 94853
     },
     {
-      "aanvangstijd": "09:45",
-      "accommodatie": "Sportpark Bosstraat-Oost",
+      "aanvangstijd": "11:30",
+      "accommodatie": "Sportpark Zonnegloren",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
       "datum": "12 dec.",
@@ -266,12 +266,12 @@
       "uitteamclubrelatiecode": "BBCC40F",
       "uitteamid": 316464,
       "uitteamlogo": "logos/BBCC40F.png",
-      "veld": "veld 2-SO Soest",
+      "veld": "veld 2",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - Baarn sv O14-1",
       "wedstrijdcode": 21134853,
-      "wedstrijddatum": "2026-12-12T09:45:00+0100",
+      "wedstrijddatum": "2026-12-12T11:30:00+0100",
       "wedstrijdnummer": 94655
     }
   ],
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T10:10:00+0200"
     }
   ],
-  "updated_at": "2026-10-21T22:23:30.370608+02:00"
+  "updated_at": "2026-10-22T11:42:03.221162+02:00"
 }

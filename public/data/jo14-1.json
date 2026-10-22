@@ -47,8 +47,8 @@
       "wedstrijdnummer": 96176
     },
     {
-      "aanvangstijd": "11:15",
-      "accommodatie": "Sportpark Bosstraat-Oost",
+      "aanvangstijd": "10:00",
+      "accommodatie": "Sportpark Zonnegloren",
       "competitie": "0362 Onder 14 (2e fase A-cat)",
       "competitiesoort": "regulier",
       "datum": "31 okt.",
@@ -76,12 +76,12 @@
       "uitteamclubrelatiecode": "BBCB07P",
       "uitteamid": 292097,
       "uitteamlogo": "logos/BBCB07P.png",
-      "veld": "veld 3-SO Soest",
+      "veld": "veld 1",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-1 - CJVV O14-1",
       "wedstrijdcode": 21136192,
-      "wedstrijddatum": "2026-10-31T11:15:00+0100",
+      "wedstrijddatum": "2026-10-31T10:00:00+0100",
       "wedstrijdnummer": 95994
     },
     {
@@ -161,8 +161,8 @@
       "wedstrijdnummer": 96191
     },
     {
-      "aanvangstijd": "09:45",
-      "accommodatie": "Sportpark Bosstraat-Oost",
+      "aanvangstijd": "10:00",
+      "accommodatie": "Sportpark Zonnegloren",
       "competitie": "0362 Onder 14 (2e fase A-cat)",
       "competitiesoort": "regulier",
       "datum": "21 nov.",
@@ -190,12 +190,12 @@
       "uitteamclubrelatiecode": "BBCC184",
       "uitteamid": 289586,
       "uitteamlogo": "logos/BBCC184.png",
-      "veld": "veld 3-SO Soest",
+      "veld": "veld 1",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-1 - Altius O14-1",
       "wedstrijdcode": 21136194,
-      "wedstrijddatum": "2026-11-21T09:45:00+0100",
+      "wedstrijddatum": "2026-11-21T10:00:00+0100",
       "wedstrijdnummer": 95996
     },
     {
@@ -237,7 +237,7 @@
       "wedstrijdnummer": 96180
     },
     {
-      "aanvangstijd": "10:00",
+      "aanvangstijd": "11:45",
       "accommodatie": "Sportpark Bosstraat-Oost",
       "competitie": "0362 Onder 14 (2e fase A-cat)",
       "competitiesoort": "regulier",
@@ -271,7 +271,7 @@
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-1 - Roda '46 O14-2",
       "wedstrijdcode": 21136317,
-      "wedstrijddatum": "2026-12-05T10:00:00+0100",
+      "wedstrijddatum": "2026-12-05T11:45:00+0100",
       "wedstrijdnummer": 96119
     }
   ],
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T13:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-21T22:23:30.370608+02:00"
+  "updated_at": "2026-10-22T11:42:03.221162+02:00"
 }
