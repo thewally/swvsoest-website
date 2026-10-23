@@ -199,7 +199,7 @@
       "wedstrijdnummer": 95011
     },
     {
-      "aanvangstijd": "11:00",
+      "aanvangstijd": "11:30",
       "accommodatie": "Sportpark De Westmaat",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -228,12 +228,12 @@
       "uitteamclubrelatiecode": "BBBZ168",
       "uitteamid": 304979,
       "uitteamlogo": "logos/BBBZ168.png",
-      "veld": "veld 4-IJsselmeervogels",
+      "veld": "veld 2-IJsselmeervogels",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "IJsselmeervogels O14-2 - ST SO Soest/VVZ'49 O14-2",
       "wedstrijdcode": 21135051,
-      "wedstrijddatum": "2026-12-05T11:00:00+0100",
+      "wedstrijddatum": "2026-12-05T11:30:00+0100",
       "wedstrijdnummer": 94853
     },
     {
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T10:10:00+0200"
     }
   ],
-  "updated_at": "2026-10-23T11:38:11.018298+02:00"
+  "updated_at": "2026-10-23T22:07:48.088702+02:00"
 }

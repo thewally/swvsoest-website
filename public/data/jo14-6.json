@@ -9,7 +9,7 @@
   },
   "programma": [
     {
-      "aanvangstijd": "13:10",
+      "aanvangstijd": "13:25",
       "accommodatie": "Sportpark Loosdrecht",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -43,7 +43,7 @@
       "verzameltijd": "",
       "wedstrijd": "Victoria O14-4 - ST SO Soest/VVZ'49 O14-6",
       "wedstrijdcode": 21135838,
-      "wedstrijddatum": "2026-10-31T13:10:00+0100",
+      "wedstrijddatum": "2026-10-31T13:25:00+0100",
       "wedstrijdnummer": 95640
     },
     {
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T12:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-23T11:38:11.018298+02:00"
+  "updated_at": "2026-10-23T22:07:48.088702+02:00"
 }

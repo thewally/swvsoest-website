@@ -9,7 +9,7 @@
   },
   "programma": [
     {
-      "aanvangstijd": "13:00",
+      "aanvangstijd": "08:30",
       "accommodatie": "Sportpark Bosstraat-Oost",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -38,12 +38,12 @@
       "uitteamclubrelatiecode": "BBCC78M",
       "uitteamid": 311716,
       "uitteamlogo": "logos/BBCC78M.png",
-      "veld": "veld 5 SO Soest",
+      "veld": "veld 1-SEC",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-4 - Roda '46 O14-4",
       "wedstrijdcode": 21135037,
-      "wedstrijddatum": "2026-10-31T13:00:00+0100",
+      "wedstrijddatum": "2026-10-31T08:30:00+0100",
       "wedstrijdnummer": 94839
     },
     {
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T09:45:00+0200"
     }
   ],
-  "updated_at": "2026-10-23T11:38:11.018298+02:00"
+  "updated_at": "2026-10-23T22:07:48.088702+02:00"
 }
