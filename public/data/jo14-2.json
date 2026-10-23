@@ -9,7 +9,7 @@
   },
   "programma": [
     {
-      "aanvangstijd": "10:00",
+      "aanvangstijd": "11:30",
       "accommodatie": "Sportpark Langenoord",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -43,7 +43,7 @@
       "verzameltijd": "",
       "wedstrijd": "Hoogland O14-2 - ST SO Soest/VVZ'49 O14-2",
       "wedstrijdcode": 21135430,
-      "wedstrijddatum": "2026-10-31T10:00:00+0100",
+      "wedstrijddatum": "2026-10-31T11:30:00+0100",
       "wedstrijdnummer": 95232
     },
     {
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T10:10:00+0200"
     }
   ],
-  "updated_at": "2026-10-22T22:20:00.246798+02:00"
+  "updated_at": "2026-10-23T11:38:11.018298+02:00"
 }
