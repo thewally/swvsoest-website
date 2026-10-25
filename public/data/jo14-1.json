@@ -25,8 +25,8 @@
       "plaats": "SOEST",
       "poule": "B",
       "rijders": null,
-      "scheidsrechter": "",
-      "scheidsrechters": "",
+      "scheidsrechter": "RJ (Robert Jan) Boers",
+      "scheidsrechters": "RJ (Robert Jan) Boers (Scheidsrechter)",
       "status": "Te spelen",
       "teamnaam": "ST SO Soest/VVZ'49 O14-1",
       "teamvolgorde": 2601,
@@ -380,7 +380,7 @@
       "datumopgemaakt": "24 okt.",
       "eigenteam": "true",
       "first_seen": "2026-10-24T13:55:10.461947+02:00",
-      "last_seen": "2026-10-25T10:27:43.320493+01:00",
+      "last_seen": "2026-10-25T20:21:21.186535+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21136374&teamcode=289917&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -550,5 +550,5 @@
       "wedstrijddatum": "2026-09-05T13:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-25T10:27:43.320493+01:00"
+  "updated_at": "2026-10-25T20:21:21.186535+01:00"
 }

@@ -139,8 +139,8 @@
       "plaats": "ZEIST",
       "poule": "13",
       "rijders": "",
-      "scheidsrechter": "",
-      "scheidsrechters": "",
+      "scheidsrechter": "M. (Marith) Post",
+      "scheidsrechters": "M. (Marith) Post (Scheidsrechter)",
       "status": "Te spelen",
       "teamnaam": "ST SO Soest/VVZ'49 O14-5",
       "teamvolgorde": 2605,
@@ -503,5 +503,5 @@
       "wedstrijddatum": "2026-09-05T08:30:00+0200"
     }
   ],
-  "updated_at": "2026-10-25T10:27:43.320493+01:00"
+  "updated_at": "2026-10-25T20:21:21.186535+01:00"
 }
