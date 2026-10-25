@@ -39,7 +39,7 @@
       "uitteamid": 304987,
       "uitteamlogo": "logos/BBBZ168.png",
       "veld": "veld 4-Victoria",
-      "vertrektijd": "12:00",
+      "vertrektijd": "12:15",
       "verzameltijd": "",
       "wedstrijd": "Victoria O14-4 - ST SO Soest/VVZ'49 O14-6",
       "wedstrijdcode": 21135838,
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T12:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-24T21:05:57.428919+02:00"
+  "updated_at": "2026-10-25T10:27:43.320493+01:00"
 }
