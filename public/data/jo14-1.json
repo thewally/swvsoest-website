@@ -47,7 +47,7 @@
       "wedstrijdnummer": 95994
     },
     {
-      "aanvangstijd": "09:30",
+      "aanvangstijd": "10:00",
       "accommodatie": "Sportpark Nieuwland",
       "competitie": "0362 Onder 14 (2e fase A-cat)",
       "competitiesoort": "regulier",
@@ -81,7 +81,7 @@
       "verzameltijd": "",
       "wedstrijd": "Nieuwland ASC O14-1 - ST SO Soest/VVZ'49 O14-1",
       "wedstrijdcode": 21136413,
-      "wedstrijddatum": "2026-11-07T09:30:00+0100",
+      "wedstrijddatum": "2026-11-07T10:00:00+0100",
       "wedstrijdnummer": 96215
     },
     {
@@ -380,7 +380,7 @@
       "datumopgemaakt": "24 okt.",
       "eigenteam": "true",
       "first_seen": "2026-10-24T13:55:10.461947+02:00",
-      "last_seen": "2026-10-25T20:21:21.186535+01:00",
+      "last_seen": "2026-10-26T11:35:24.366027+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21136374&teamcode=289917&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -550,5 +550,5 @@
       "wedstrijddatum": "2026-09-05T13:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-25T20:21:21.186535+01:00"
+  "updated_at": "2026-10-26T11:35:24.366027+01:00"
 }
