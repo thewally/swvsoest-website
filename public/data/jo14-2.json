@@ -25,8 +25,8 @@
       "plaats": "HOOGLAND",
       "poule": "06",
       "rijders": "",
-      "scheidsrechter": "",
-      "scheidsrechters": "",
+      "scheidsrechter": "J.F. (Jermaine) Gaskin",
+      "scheidsrechters": "J.F. (Jermaine) Gaskin (Scheidsrechter)",
       "status": "Te spelen",
       "teamnaam": "ST SO Soest/VVZ'49 O14-2",
       "teamvolgorde": 2602,
@@ -123,8 +123,8 @@
       "wedstrijdnummer": 95806
     },
     {
-      "aanvangstijd": "09:45",
-      "accommodatie": "Sportpark Bosstraat-Oost",
+      "aanvangstijd": "11:30",
+      "accommodatie": "Sportpark Zonnegloren",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
       "datum": "21 nov.",
@@ -152,12 +152,12 @@
       "uitteamclubrelatiecode": "BBDB44B",
       "uitteamid": 393379,
       "uitteamlogo": "logos/BBDB44B.png",
-      "veld": "veld 2-SO Soest",
+      "veld": "veld 1",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - AS'80 O14-5",
       "wedstrijdcode": 21136046,
-      "wedstrijddatum": "2026-11-21T09:45:00+0100",
+      "wedstrijddatum": "2026-11-21T11:30:00+0100",
       "wedstrijdnummer": 95848
     },
     {
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T10:10:00+0200"
     }
   ],
-  "updated_at": "2026-10-26T11:35:24.366027+01:00"
+  "updated_at": "2026-10-26T22:14:41.490839+01:00"
 }

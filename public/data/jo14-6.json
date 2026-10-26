@@ -76,7 +76,7 @@
       "uitteamclubrelatiecode": "BBBZ69Q",
       "uitteamid": 320764,
       "uitteamlogo": "logos/BBBZ69Q.png",
-      "veld": "veld 2",
+      "veld": "veld 1",
       "vertrektijd": "",
       "verzameltijd": "09:15",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-6 - Hoogland O14-5",
@@ -190,7 +190,7 @@
       "uitteamclubrelatiecode": "BBCC78M",
       "uitteamid": 311717,
       "uitteamlogo": "logos/BBCC78M.png",
-      "veld": "veld 1",
+      "veld": "veld 2",
       "vertrektijd": "",
       "verzameltijd": "09:15",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-6 - Roda '46 O14-5",
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T12:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-26T11:35:24.366027+01:00"
+  "updated_at": "2026-10-26T22:14:41.490839+01:00"
 }
