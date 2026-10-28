@@ -63,8 +63,8 @@
       "plaats": "HUIS TER HEIDE UT",
       "poule": "12",
       "rijders": "",
-      "scheidsrechter": "",
-      "scheidsrechters": "",
+      "scheidsrechter": "Afgeschermd",
+      "scheidsrechters": "Afgeschermd (Scheidsrechter)",
       "status": "Te spelen",
       "teamnaam": "ST SO Soest/VVZ'49 O14-4",
       "teamvolgorde": 2604,
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T09:45:00+0200"
     }
   ],
-  "updated_at": "2026-10-28T11:52:25.786257+01:00"
+  "updated_at": "2026-10-28T22:23:25.681776+01:00"
 }
