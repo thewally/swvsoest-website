@@ -94,8 +94,8 @@
       "klasse": "3e klasse (2e fase)",
       "klassepoule": "3e klasse (2e fase) 12",
       "kleedkamerscheidsrechter": "",
-      "kleedkamerthuisteam": "",
-      "kleedkameruitteam": "",
+      "kleedkamerthuisteam": "8",
+      "kleedkameruitteam": "4",
       "locatie": "Veld",
       "meer": "wedstrijd-informatie?wedstrijdcode=21136053&aantaldagen=365&teamcode=304987&eigenwedstrijden=JA&aantalregels=200",
       "plaats": "AMERSFOORT",
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T12:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-29T12:08:38.529682+01:00"
+  "updated_at": "2026-10-29T22:28:00.939621+01:00"
 }

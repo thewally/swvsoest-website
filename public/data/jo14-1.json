@@ -56,8 +56,8 @@
       "klasse": "Hoofdklasse (2e fase A-cat)",
       "klassepoule": "Hoofdklasse (2e fase A-cat) B",
       "kleedkamerscheidsrechter": "",
-      "kleedkamerthuisteam": "",
-      "kleedkameruitteam": "",
+      "kleedkamerthuisteam": "5",
+      "kleedkameruitteam": "1",
       "locatie": "Veld",
       "meer": "wedstrijd-informatie?wedstrijdcode=21136413&aantaldagen=365&teamcode=289917&eigenwedstrijden=JA&aantalregels=200",
       "plaats": "AMERSFOORT",
@@ -380,7 +380,7 @@
       "datumopgemaakt": "24 okt.",
       "eigenteam": "true",
       "first_seen": "2026-10-24T13:55:10.461947+02:00",
-      "last_seen": "2026-10-29T12:08:38.529682+01:00",
+      "last_seen": "2026-10-29T22:28:00.939621+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21136374&teamcode=289917&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -550,5 +550,5 @@
       "wedstrijddatum": "2026-09-05T13:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-29T12:08:38.529682+01:00"
+  "updated_at": "2026-10-29T22:28:00.939621+01:00"
 }

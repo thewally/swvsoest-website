@@ -18,8 +18,8 @@
       "klasse": "1e klasse (2e fase)",
       "klassepoule": "1e klasse (2e fase) 06",
       "kleedkamerscheidsrechter": "",
-      "kleedkamerthuisteam": "",
-      "kleedkameruitteam": "",
+      "kleedkamerthuisteam": "12",
+      "kleedkameruitteam": "13",
       "locatie": "Veld",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135430&aantaldagen=365&teamcode=304979&eigenwedstrijden=JA&aantalregels=200",
       "plaats": "HOOGLAND",
@@ -39,7 +39,7 @@
       "uitteamid": 304979,
       "uitteamlogo": "logos/BBBZ168.png",
       "veld": "veld 4",
-      "vertrektijd": "09:00",
+      "vertrektijd": "10:15",
       "verzameltijd": "",
       "wedstrijd": "Hoogland O14-2 - ST SO Soest/VVZ'49 O14-2",
       "wedstrijdcode": 21135430,
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T10:10:00+0200"
     }
   ],
-  "updated_at": "2026-10-29T12:08:38.529682+01:00"
+  "updated_at": "2026-10-29T22:28:00.939621+01:00"
 }
