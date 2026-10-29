@@ -25,8 +25,8 @@
       "plaats": "LOOSDRECHT",
       "poule": "12",
       "rijders": "",
-      "scheidsrechter": "",
-      "scheidsrechters": "",
+      "scheidsrechter": "M.T.C. (Thijn) Laurentius",
+      "scheidsrechters": "M.T.C. (Thijn) Laurentius (Scheidsrechter)",
       "status": "Te spelen",
       "teamnaam": "ST SO Soest/VVZ'49 O14-6",
       "teamvolgorde": 2606,
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T12:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-28T22:23:25.681776+01:00"
+  "updated_at": "2026-10-29T12:08:38.529682+01:00"
 }
