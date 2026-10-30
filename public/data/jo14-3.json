@@ -18,15 +18,15 @@
       "klasse": "3e klasse (2e fase)",
       "klassepoule": "3e klasse (2e fase) 11",
       "kleedkamerscheidsrechter": "",
-      "kleedkamerthuisteam": "11b",
-      "kleedkameruitteam": "12b",
+      "kleedkamerthuisteam": "07a",
+      "kleedkameruitteam": "08a",
       "locatie": "Veld",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135114&aantaldagen=365&teamcode=304982&eigenwedstrijden=JA&aantalregels=200",
       "plaats": "HILVERSUM",
       "poule": "11",
       "rijders": "",
-      "scheidsrechter": "",
-      "scheidsrechters": "",
+      "scheidsrechter": "A.A. (Alper) Aydogdu",
+      "scheidsrechters": "A.A. (Alper) Aydogdu (Scheidsrechter)",
       "status": "Te spelen",
       "teamnaam": "ST SO Soest/VVZ'49 O14-3",
       "teamvolgorde": 2603,
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T16:45:00+0200"
     }
   ],
-  "updated_at": "2026-10-29T22:28:00.939621+01:00"
+  "updated_at": "2026-10-30T12:03:31.070180+01:00"
 }
