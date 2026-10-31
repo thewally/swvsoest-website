@@ -39,7 +39,7 @@
       "uitteamid": 304982,
       "uitteamlogo": "logos/BBBZ168.png",
       "veld": "veld 2",
-      "vertrektijd": "",
+      "vertrektijd": "10:30",
       "verzameltijd": "",
       "wedstrijd": "Wasmeer O14-2 - ST SO Soest/VVZ'49 O14-3",
       "wedstrijdcode": 21135114,
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T16:45:00+0200"
     }
   ],
-  "updated_at": "2026-10-30T22:09:59.810754+01:00"
+  "updated_at": "2026-10-31T11:38:03.919112+01:00"
 }
