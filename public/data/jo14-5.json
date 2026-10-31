@@ -218,6 +218,22 @@
       "verloren": 0
     },
     {
+      "clublogo": "logos/BBBZ179.png",
+      "clubrelatiecode": "BBBZ179",
+      "doelpuntentegen": 2,
+      "doelpuntenvoor": 5,
+      "doelsaldo": 3,
+      "eigenteam": "false",
+      "gelijk": 0,
+      "gespeeldewedstrijden": 1,
+      "gewonnen": 1,
+      "positie": 2,
+      "punten": 3,
+      "teamnaam": "Sporting '70 O14-3",
+      "verliespunten": 0,
+      "verloren": 0
+    },
+    {
       "clublogo": "logos/FJQB25X.png",
       "clubrelatiecode": "FJQB25X",
       "doelpuntentegen": 1,
@@ -227,25 +243,9 @@
       "gelijk": 0,
       "gespeeldewedstrijden": 1,
       "gewonnen": 1,
-      "positie": 2,
+      "positie": 3,
       "punten": 3,
       "teamnaam": "Bilt De FC O14-3",
-      "verliespunten": 0,
-      "verloren": 0
-    },
-    {
-      "clublogo": "logos/BBCC46B.png",
-      "clubrelatiecode": "BBCC46B",
-      "doelpuntentegen": 0,
-      "doelpuntenvoor": 0,
-      "doelsaldo": 0,
-      "eigenteam": "false",
-      "gelijk": 0,
-      "gespeeldewedstrijden": 0,
-      "gewonnen": 0,
-      "positie": 3,
-      "punten": 0,
-      "teamnaam": "FZO O14-1",
       "verliespunten": 0,
       "verloren": 0
     },
@@ -266,22 +266,6 @@
       "verloren": 0
     },
     {
-      "clublogo": "logos/BBBZ179.png",
-      "clubrelatiecode": "BBBZ179",
-      "doelpuntentegen": 0,
-      "doelpuntenvoor": 0,
-      "doelsaldo": 0,
-      "eigenteam": "false",
-      "gelijk": 0,
-      "gespeeldewedstrijden": 0,
-      "gewonnen": 0,
-      "positie": 5,
-      "punten": 0,
-      "teamnaam": "Sporting '70 O14-3",
-      "verliespunten": 0,
-      "verloren": 0
-    },
-    {
       "clublogo": "logos/BBBZ41C.png",
       "clubrelatiecode": "BBBZ41C",
       "doelpuntentegen": 2,
@@ -291,9 +275,25 @@
       "gelijk": 0,
       "gespeeldewedstrijden": 1,
       "gewonnen": 0,
-      "positie": 6,
+      "positie": 5,
       "punten": 0,
       "teamnaam": "Hercules O14-3",
+      "verliespunten": 0,
+      "verloren": 1
+    },
+    {
+      "clublogo": "logos/BBCC46B.png",
+      "clubrelatiecode": "BBCC46B",
+      "doelpuntentegen": 5,
+      "doelpuntenvoor": 2,
+      "doelsaldo": -3,
+      "eigenteam": "false",
+      "gelijk": 0,
+      "gespeeldewedstrijden": 1,
+      "gewonnen": 0,
+      "positie": 6,
+      "punten": 0,
+      "teamnaam": "FZO O14-1",
       "verliespunten": 0,
       "verloren": 1
     },
@@ -326,7 +326,7 @@
       "datumopgemaakt": "31 okt.",
       "eigenteam": "true",
       "first_seen": "2026-10-31T14:29:41.414949+01:00",
-      "last_seen": "2026-10-31T14:29:41.414949+01:00",
+      "last_seen": "2026-10-31T19:23:12.882480+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135457&teamcode=304986&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -496,5 +496,5 @@
       "wedstrijddatum": "2026-09-05T08:30:00+0200"
     }
   ],
-  "updated_at": "2026-10-31T14:29:41.414949+01:00"
+  "updated_at": "2026-10-31T19:23:12.882480+01:00"
 }
