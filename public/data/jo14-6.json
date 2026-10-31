@@ -310,33 +310,17 @@
       "verloren": 0
     },
     {
-      "clublogo": "logos/BBBZ69Q.png",
-      "clubrelatiecode": "BBBZ69Q",
-      "doelpuntentegen": 0,
-      "doelpuntenvoor": 0,
-      "doelsaldo": 0,
-      "eigenteam": "false",
-      "gelijk": 0,
-      "gespeeldewedstrijden": 0,
-      "gewonnen": 0,
-      "positie": 3,
-      "punten": 0,
-      "teamnaam": "Hoogland O14-5",
-      "verliespunten": 0,
-      "verloren": 0
-    },
-    {
       "clublogo": "logos/BBCC83K.png",
       "clubrelatiecode": "BBCC83K",
-      "doelpuntentegen": 0,
-      "doelpuntenvoor": 0,
-      "doelsaldo": 0,
+      "doelpuntentegen": 3,
+      "doelpuntenvoor": 4,
+      "doelsaldo": 1,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 0,
-      "gewonnen": 0,
-      "positie": 4,
-      "punten": 0,
+      "gespeeldewedstrijden": 1,
+      "gewonnen": 1,
+      "positie": 3,
+      "punten": 3,
       "teamnaam": "IJsselmeervogels O14-3",
       "verliespunten": 0,
       "verloren": 0
@@ -351,7 +335,7 @@
       "gelijk": 0,
       "gespeeldewedstrijden": 0,
       "gewonnen": 0,
-      "positie": 5,
+      "positie": 4,
       "punten": 0,
       "teamnaam": "ST SO Soest/VVZ'49 O14-6",
       "verliespunten": 0,
@@ -367,7 +351,7 @@
       "gelijk": 0,
       "gespeeldewedstrijden": 0,
       "gewonnen": 0,
-      "positie": 6,
+      "positie": 5,
       "punten": 0,
       "teamnaam": "Victoria O14-4",
       "verliespunten": 0,
@@ -383,9 +367,25 @@
       "gelijk": 0,
       "gespeeldewedstrijden": 1,
       "gewonnen": 0,
-      "positie": 7,
+      "positie": 6,
       "punten": 0,
       "teamnaam": "Nieuwland ASC O14-2",
+      "verliespunten": 0,
+      "verloren": 1
+    },
+    {
+      "clublogo": "logos/BBBZ69Q.png",
+      "clubrelatiecode": "BBBZ69Q",
+      "doelpuntentegen": 4,
+      "doelpuntenvoor": 3,
+      "doelsaldo": -1,
+      "eigenteam": "false",
+      "gelijk": 0,
+      "gespeeldewedstrijden": 1,
+      "gewonnen": 0,
+      "positie": 7,
+      "punten": 0,
+      "teamnaam": "Hoogland O14-5",
       "verliespunten": 0,
       "verloren": 1
     },
@@ -557,5 +557,5 @@
       "wedstrijddatum": "2026-09-05T12:00:00+0200"
     }
   ],
-  "updated_at": "2026-10-31T11:38:03.919112+01:00"
+  "updated_at": "2026-10-31T14:29:41.414949+01:00"
 }
