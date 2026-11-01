@@ -123,7 +123,7 @@
       "wedstrijdnummer": 94922
     },
     {
-      "aanvangstijd": "11:30",
+      "aanvangstijd": "11:00",
       "accommodatie": "Sportpark De Westmaat",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -157,7 +157,7 @@
       "verzameltijd": "",
       "wedstrijd": "Spakenburg O14-2 - ST SO Soest/VVZ'49 O14-4",
       "wedstrijdcode": 21136140,
-      "wedstrijddatum": "2026-11-28T11:30:00+0100",
+      "wedstrijddatum": "2026-11-28T11:00:00+0100",
       "wedstrijdnummer": 95942
     },
     {
@@ -380,7 +380,7 @@
       "datumopgemaakt": "31 okt.",
       "eigenteam": "true",
       "first_seen": "2026-10-31T14:29:41.414949+01:00",
-      "last_seen": "2026-11-01T12:31:50.742845+01:00",
+      "last_seen": "2026-11-01T21:52:55.394528+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135037&teamcode=304984&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -550,5 +550,5 @@
       "wedstrijddatum": "2026-09-05T09:45:00+0200"
     }
   ],
-  "updated_at": "2026-11-01T12:31:50.742845+01:00"
+  "updated_at": "2026-11-01T21:52:55.394528+01:00"
 }
