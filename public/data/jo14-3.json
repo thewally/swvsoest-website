@@ -47,7 +47,7 @@
       "wedstrijdnummer": 95403
     },
     {
-      "aanvangstijd": "10:55",
+      "aanvangstijd": "12:50",
       "accommodatie": "Sportpark De Kuil",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -81,7 +81,7 @@
       "verzameltijd": "",
       "wedstrijd": "SDO O14-3 - ST SO Soest/VVZ'49 O14-3",
       "wedstrijdcode": 21135398,
-      "wedstrijddatum": "2026-11-14T10:55:00+0100",
+      "wedstrijddatum": "2026-11-14T12:50:00+0100",
       "wedstrijdnummer": 95200
     },
     {
@@ -380,7 +380,7 @@
       "datumopgemaakt": "31 okt.",
       "eigenteam": "true",
       "first_seen": "2026-11-01T12:31:50.742845+01:00",
-      "last_seen": "2026-11-03T13:26:04.309350+01:00",
+      "last_seen": "2026-11-03T23:05:25.520385+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135114&teamcode=304982&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -550,5 +550,5 @@
       "wedstrijddatum": "2026-09-05T16:45:00+0200"
     }
   ],
-  "updated_at": "2026-11-03T13:26:04.309350+01:00"
+  "updated_at": "2026-11-03T23:05:25.520385+01:00"
 }

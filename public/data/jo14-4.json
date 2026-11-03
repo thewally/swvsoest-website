@@ -76,7 +76,7 @@
       "uitteamclubrelatiecode": "BBBZ69Q",
       "uitteamid": 304414,
       "uitteamlogo": "logos/BBBZ69Q.png",
-      "veld": "veld 1-SEC",
+      "veld": "veld 3-SO Soest",
       "vertrektijd": "",
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-4 - Hoogland O14-3",
@@ -380,7 +380,7 @@
       "datumopgemaakt": "31 okt.",
       "eigenteam": "true",
       "first_seen": "2026-10-31T14:29:41.414949+01:00",
-      "last_seen": "2026-11-03T13:26:04.309350+01:00",
+      "last_seen": "2026-11-03T23:05:25.520385+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135037&teamcode=304984&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -550,5 +550,5 @@
       "wedstrijddatum": "2026-09-05T09:45:00+0200"
     }
   ],
-  "updated_at": "2026-11-03T13:26:04.309350+01:00"
+  "updated_at": "2026-11-03T23:05:25.520385+01:00"
 }

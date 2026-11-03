@@ -161,7 +161,7 @@
       "wedstrijdnummer": 95199
     },
     {
-      "aanvangstijd": "13:00",
+      "aanvangstijd": "14:45",
       "accommodatie": "Sportpark Ter Eem",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -195,7 +195,7 @@
       "verzameltijd": "",
       "wedstrijd": "Baarn sv O14-2 - ST SO Soest/VVZ'49 O14-6",
       "wedstrijdcode": 21135569,
-      "wedstrijddatum": "2026-12-05T13:00:00+0100",
+      "wedstrijddatum": "2026-12-05T14:45:00+0100",
       "wedstrijdnummer": 95371
     },
     {
@@ -380,7 +380,7 @@
       "datumopgemaakt": "31 okt.",
       "eigenteam": "true",
       "first_seen": "2026-11-01T12:31:50.742845+01:00",
-      "last_seen": "2026-11-03T13:26:04.309350+01:00",
+      "last_seen": "2026-11-03T23:05:25.520385+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135838&teamcode=304987&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -550,5 +550,5 @@
       "wedstrijddatum": "2026-09-05T12:00:00+0200"
     }
   ],
-  "updated_at": "2026-11-03T13:26:04.309350+01:00"
+  "updated_at": "2026-11-03T23:05:25.520385+01:00"
 }
