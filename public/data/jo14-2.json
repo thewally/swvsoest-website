@@ -27,7 +27,7 @@
       "rijders": null,
       "scheidsrechter": "",
       "scheidsrechters": "",
-      "status": "Te spelen",
+      "status": "Afgelast",
       "teamnaam": "ST SO Soest/VVZ'49 O14-2",
       "teamvolgorde": 2602,
       "thuisteam": "ST SO Soest/VVZ'49 O14-2",
@@ -242,15 +242,15 @@
     {
       "clublogo": "logos/BBBZ69Q.png",
       "clubrelatiecode": "BBBZ69Q",
-      "doelpuntentegen": 3,
-      "doelpuntenvoor": 12,
-      "doelsaldo": 9,
+      "doelpuntentegen": 6,
+      "doelpuntenvoor": 16,
+      "doelsaldo": 10,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 1,
-      "gewonnen": 1,
+      "gespeeldewedstrijden": 2,
+      "gewonnen": 2,
       "positie": 1,
-      "punten": 3,
+      "punten": 6,
       "teamnaam": "Hoogland O14-2",
       "verliespunten": 0,
       "verloren": 0
@@ -290,18 +290,18 @@
     {
       "clublogo": "logos/BBCC08V.png",
       "clubrelatiecode": "BBCC08V",
-      "doelpuntentegen": 2,
-      "doelpuntenvoor": 5,
-      "doelsaldo": 3,
+      "doelpuntentegen": 6,
+      "doelpuntenvoor": 8,
+      "doelsaldo": 2,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 1,
+      "gespeeldewedstrijden": 2,
       "gewonnen": 1,
       "positie": 4,
       "punten": 3,
       "teamnaam": "DOSC O14-1",
       "verliespunten": 0,
-      "verloren": 0
+      "verloren": 1
     },
     {
       "clublogo": "logos/BBCC83K.png",
@@ -380,7 +380,7 @@
       "datumopgemaakt": "31 okt.",
       "eigenteam": "true",
       "first_seen": "2026-10-31T14:29:41.414949+01:00",
-      "last_seen": "2026-11-06T22:48:06.120845+01:00",
+      "last_seen": "2026-11-07T12:22:14.799928+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135430&teamcode=304979&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -550,5 +550,5 @@
       "wedstrijddatum": "2026-09-05T10:10:00+0200"
     }
   ],
-  "updated_at": "2026-11-06T22:48:06.120845+01:00"
+  "updated_at": "2026-11-07T12:22:14.799928+01:00"
 }
