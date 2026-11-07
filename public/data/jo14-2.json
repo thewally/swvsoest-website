@@ -274,18 +274,18 @@
     {
       "clublogo": "logos/BBCC40F.png",
       "clubrelatiecode": "BBCC40F",
-      "doelpuntentegen": 0,
-      "doelpuntenvoor": 4,
-      "doelsaldo": 4,
+      "doelpuntentegen": 4,
+      "doelpuntenvoor": 7,
+      "doelsaldo": 3,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 1,
+      "gespeeldewedstrijden": 2,
       "gewonnen": 1,
       "positie": 3,
       "punten": 3,
       "teamnaam": "Baarn sv O14-1",
       "verliespunten": 0,
-      "verloren": 0
+      "verloren": 1
     },
     {
       "clublogo": "logos/BBCC08V.png",
@@ -304,6 +304,22 @@
       "verloren": 1
     },
     {
+      "clublogo": "logos/BBDB44B.png",
+      "clubrelatiecode": "BBDB44B",
+      "doelpuntentegen": 10,
+      "doelpuntenvoor": 6,
+      "doelsaldo": -4,
+      "eigenteam": "false",
+      "gelijk": 0,
+      "gespeeldewedstrijden": 2,
+      "gewonnen": 1,
+      "positie": 5,
+      "punten": 3,
+      "teamnaam": "AS'80 O14-5",
+      "verliespunten": 0,
+      "verloren": 1
+    },
+    {
       "clublogo": "logos/BBBZ81O.png",
       "clubrelatiecode": "BBBZ81O",
       "doelpuntentegen": 4,
@@ -313,25 +329,9 @@
       "gelijk": 0,
       "gespeeldewedstrijden": 1,
       "gewonnen": 0,
-      "positie": 5,
-      "punten": 0,
-      "teamnaam": "BFC O14-3",
-      "verliespunten": 0,
-      "verloren": 1
-    },
-    {
-      "clublogo": "logos/BBDB44B.png",
-      "clubrelatiecode": "BBDB44B",
-      "doelpuntentegen": 7,
-      "doelpuntenvoor": 2,
-      "doelsaldo": -5,
-      "eigenteam": "false",
-      "gelijk": 0,
-      "gespeeldewedstrijden": 1,
-      "gewonnen": 0,
       "positie": 6,
       "punten": 0,
-      "teamnaam": "AS'80 O14-5",
+      "teamnaam": "BFC O14-3",
       "verliespunten": 0,
       "verloren": 1
     },
@@ -380,7 +380,7 @@
       "datumopgemaakt": "7 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-07T14:50:36.335074+01:00",
-      "last_seen": "2026-11-07T14:50:36.335074+01:00",
+      "last_seen": "2026-11-07T19:36:18.137696+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21134691&teamcode=304979&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Afgelast",
@@ -411,7 +411,7 @@
       "datumopgemaakt": "31 okt.",
       "eigenteam": "true",
       "first_seen": "2026-10-31T14:29:41.414949+01:00",
-      "last_seen": "2026-11-07T14:50:36.335074+01:00",
+      "last_seen": "2026-11-07T19:36:18.137696+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135430&teamcode=304979&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -581,5 +581,5 @@
       "wedstrijddatum": "2026-09-05T10:10:00+0200"
     }
   ],
-  "updated_at": "2026-11-07T14:50:36.335074+01:00"
+  "updated_at": "2026-11-07T19:36:18.137696+01:00"
 }
