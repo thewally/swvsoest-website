@@ -250,6 +250,22 @@
       "verloren": 1
     },
     {
+      "clublogo": "logos/BBBZ06Z.png",
+      "clubrelatiecode": "BBBZ06Z",
+      "doelpuntentegen": 7,
+      "doelpuntenvoor": 7,
+      "doelsaldo": 0,
+      "eigenteam": "false",
+      "gelijk": 0,
+      "gespeeldewedstrijden": 2,
+      "gewonnen": 1,
+      "positie": 4,
+      "punten": 3,
+      "teamnaam": "Jonathan O14-4",
+      "verliespunten": 0,
+      "verloren": 1
+    },
+    {
       "clublogo": "logos/BBCC08V.png",
       "clubrelatiecode": "BBCC08V",
       "doelpuntentegen": 5,
@@ -259,7 +275,7 @@
       "gelijk": 0,
       "gespeeldewedstrijden": 2,
       "gewonnen": 1,
-      "positie": 4,
+      "positie": 5,
       "punten": 3,
       "teamnaam": "DOSC O14-2",
       "verliespunten": 0,
@@ -275,7 +291,7 @@
       "gelijk": 0,
       "gespeeldewedstrijden": 2,
       "gewonnen": 1,
-      "positie": 5,
+      "positie": 6,
       "punten": 3,
       "teamnaam": "Wasmeer O14-2",
       "verliespunten": 0,
@@ -291,43 +307,27 @@
       "gelijk": 0,
       "gespeeldewedstrijden": 2,
       "gewonnen": 1,
-      "positie": 6,
+      "positie": 7,
       "punten": 3,
       "teamnaam": "Bilt De FC O14-4",
       "verliespunten": 0,
       "verloren": 1
     },
     {
-      "clublogo": "logos/BBBZ06Z.png",
-      "clubrelatiecode": "BBBZ06Z",
-      "doelpuntentegen": 3,
-      "doelpuntenvoor": 1,
-      "doelsaldo": -2,
-      "eigenteam": "false",
-      "gelijk": 0,
-      "gespeeldewedstrijden": 1,
-      "gewonnen": 0,
-      "positie": 7,
-      "punten": 0,
-      "teamnaam": "Jonathan O14-4",
-      "verliespunten": 0,
-      "verloren": 1
-    },
-    {
       "clublogo": "logos/BBCC86N.png",
       "clubrelatiecode": "BBCC86N",
-      "doelpuntentegen": 6,
-      "doelpuntenvoor": 3,
-      "doelsaldo": -3,
+      "doelpuntentegen": 12,
+      "doelpuntenvoor": 7,
+      "doelsaldo": -5,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 1,
+      "gespeeldewedstrijden": 2,
       "gewonnen": 0,
       "positie": 8,
       "punten": 0,
       "teamnaam": "Victoria O14-6",
       "verliespunten": 0,
-      "verloren": 1
+      "verloren": 2
     }
   ],
   "teamcode": 304982,
@@ -342,7 +342,7 @@
       "datumopgemaakt": "7 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-07T12:22:14.799928+01:00",
-      "last_seen": "2026-11-07T21:34:39.057213+01:00",
+      "last_seen": "2026-11-08T12:34:33.683608+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135601&teamcode=304982&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -543,5 +543,5 @@
       "wedstrijddatum": "2026-09-05T16:45:00+0200"
     }
   ],
-  "updated_at": "2026-11-07T21:34:39.057213+01:00"
+  "updated_at": "2026-11-08T12:34:33.683608+01:00"
 }
