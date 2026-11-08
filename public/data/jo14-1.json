@@ -204,15 +204,15 @@
     {
       "clublogo": "logos/BBCC78M.png",
       "clubrelatiecode": "BBCC78M",
-      "doelpuntentegen": 1,
-      "doelpuntenvoor": 8,
-      "doelsaldo": 7,
+      "doelpuntentegen": 2,
+      "doelpuntenvoor": 12,
+      "doelsaldo": 10,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 2,
-      "gewonnen": 2,
+      "gespeeldewedstrijden": 3,
+      "gewonnen": 3,
       "positie": 1,
-      "punten": 6,
+      "punten": 9,
       "teamnaam": "Roda '46 O14-2",
       "verliespunten": 0,
       "verloren": 0
@@ -282,22 +282,6 @@
       "verloren": 1
     },
     {
-      "clublogo": "logos/BBCC346.png",
-      "clubrelatiecode": "BBCC346",
-      "doelpuntentegen": 6,
-      "doelpuntenvoor": 0,
-      "doelsaldo": -6,
-      "eigenteam": "false",
-      "gelijk": 0,
-      "gespeeldewedstrijden": 1,
-      "gewonnen": 0,
-      "positie": 6,
-      "punten": 0,
-      "teamnaam": "Wasmeer O14-1",
-      "verliespunten": 0,
-      "verloren": 1
-    },
-    {
       "clublogo": "logos/BBBZ61I.png",
       "clubrelatiecode": "BBBZ61I",
       "doelpuntentegen": 4,
@@ -307,9 +291,25 @@
       "gelijk": 0,
       "gespeeldewedstrijden": 2,
       "gewonnen": 0,
-      "positie": 7,
+      "positie": 6,
       "punten": 0,
       "teamnaam": "Zuidvogels HSV De O14-1",
+      "verliespunten": 0,
+      "verloren": 2
+    },
+    {
+      "clublogo": "logos/BBCC346.png",
+      "clubrelatiecode": "BBCC346",
+      "doelpuntentegen": 10,
+      "doelpuntenvoor": 1,
+      "doelsaldo": -9,
+      "eigenteam": "false",
+      "gelijk": 0,
+      "gespeeldewedstrijden": 2,
+      "gewonnen": 0,
+      "positie": 7,
+      "punten": 0,
+      "teamnaam": "Wasmeer O14-1",
       "verliespunten": 0,
       "verloren": 2
     },
@@ -342,7 +342,7 @@
       "datumopgemaakt": "7 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-07T12:22:14.799928+01:00",
-      "last_seen": "2026-11-08T12:34:33.683608+01:00",
+      "last_seen": "2026-11-08T21:48:37.199637+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21136413&teamcode=289917&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -574,5 +574,5 @@
       "wedstrijddatum": "2026-09-05T13:00:00+0200"
     }
   ],
-  "updated_at": "2026-11-08T12:34:33.683608+01:00"
+  "updated_at": "2026-11-08T21:48:37.199637+01:00"
 }
