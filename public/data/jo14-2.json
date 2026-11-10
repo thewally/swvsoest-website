@@ -197,6 +197,44 @@
       "wedstrijdcode": 21134853,
       "wedstrijddatum": "2026-12-12T11:30:00+0100",
       "wedstrijdnummer": 94655
+    },
+    {
+      "aanvangstijd": "09:45",
+      "accommodatie": "Sportpark Bosstraat-Oost",
+      "competitie": "0390 Onder 14 (2e fase)",
+      "competitiesoort": "regulier",
+      "datum": "19 dec.",
+      "kaledatum": "2026-12-19 00:00:00.00",
+      "klasse": "1e klasse (2e fase)",
+      "klassepoule": "1e klasse (2e fase) 06",
+      "kleedkamerscheidsrechter": "",
+      "kleedkamerthuisteam": "",
+      "kleedkameruitteam": "",
+      "locatie": "Veld",
+      "meer": "wedstrijd-informatie?wedstrijdcode=21134691&aantaldagen=365&teamcode=304979&eigenwedstrijden=JA&aantalregels=200",
+      "plaats": "SOEST",
+      "poule": "06",
+      "rijders": null,
+      "scheidsrechter": "",
+      "scheidsrechters": "",
+      "status": "Te spelen",
+      "teamnaam": "ST SO Soest/VVZ'49 O14-2",
+      "teamvolgorde": 2602,
+      "thuisteam": "ST SO Soest/VVZ'49 O14-2",
+      "thuisteamclubrelatiecode": "BBBZ168",
+      "thuisteamid": 304979,
+      "thuisteamlogo": "logos/BBBZ168.png",
+      "uitteam": "BFC O14-3",
+      "uitteamclubrelatiecode": "BBBZ81O",
+      "uitteamid": 307087,
+      "uitteamlogo": "logos/BBBZ81O.png",
+      "veld": "veld 1-SO Soest",
+      "vertrektijd": "",
+      "verzameltijd": "12:15",
+      "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - BFC O14-3",
+      "wedstrijdcode": 21134691,
+      "wedstrijddatum": "2026-12-19T09:45:00+0100",
+      "wedstrijdnummer": 94493
     }
   ],
   "slug": "jo14-2",
@@ -543,5 +581,5 @@
       "wedstrijddatum": "2026-09-05T10:10:00+0200"
     }
   ],
-  "updated_at": "2026-11-09T14:26:24.126899+01:00"
+  "updated_at": "2026-11-10T01:28:02.084069+01:00"
 }
