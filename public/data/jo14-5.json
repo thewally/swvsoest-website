@@ -123,7 +123,7 @@
       "wedstrijdnummer": 95562
     },
     {
-      "aanvangstijd": "10:30",
+      "aanvangstijd": "11:30",
       "accommodatie": "Sportpark Voordorp",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -157,7 +157,7 @@
       "verzameltijd": "",
       "wedstrijd": "Hercules O14-3 - ST SO Soest/VVZ'49 O14-5",
       "wedstrijdcode": 21135381,
-      "wedstrijddatum": "2026-12-12T10:30:00+0100",
+      "wedstrijddatum": "2026-12-12T11:30:00+0100",
       "wedstrijdnummer": 95183
     }
   ],
@@ -288,7 +288,7 @@
       "datumopgemaakt": "7 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-07T14:50:36.335074+01:00",
-      "last_seen": "2026-11-10T14:04:57.040255+01:00",
+      "last_seen": "2026-11-10T22:59:28.990351+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135011&teamcode=304986&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -489,5 +489,5 @@
       "wedstrijddatum": "2026-09-05T08:30:00+0200"
     }
   ],
-  "updated_at": "2026-11-10T14:04:57.040255+01:00"
+  "updated_at": "2026-11-10T22:59:28.990351+01:00"
 }

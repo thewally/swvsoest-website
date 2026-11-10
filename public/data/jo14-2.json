@@ -39,7 +39,7 @@
       "uitteamid": 304979,
       "uitteamlogo": "logos/BBBZ168.png",
       "veld": "veld 2",
-      "vertrektijd": "",
+      "vertrektijd": "10:15",
       "verzameltijd": "",
       "wedstrijd": "DOSC O14-1 - ST SO Soest/VVZ'49 O14-2",
       "wedstrijdcode": 21136004,
@@ -78,7 +78,7 @@
       "uitteamlogo": "logos/BBDB44B.png",
       "veld": "veld 1",
       "vertrektijd": "",
-      "verzameltijd": "",
+      "verzameltijd": "10:30",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - AS'80 O14-5",
       "wedstrijdcode": 21136046,
       "wedstrijddatum": "2026-11-21T11:30:00+0100",
@@ -123,7 +123,7 @@
       "wedstrijdnummer": 95011
     },
     {
-      "aanvangstijd": "11:30",
+      "aanvangstijd": "12:15",
       "accommodatie": "Sportpark De Westmaat",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -157,7 +157,7 @@
       "verzameltijd": "",
       "wedstrijd": "IJsselmeervogels O14-2 - ST SO Soest/VVZ'49 O14-2",
       "wedstrijdcode": 21135051,
-      "wedstrijddatum": "2026-12-05T11:30:00+0100",
+      "wedstrijddatum": "2026-12-05T12:15:00+0100",
       "wedstrijdnummer": 94853
     },
     {
@@ -581,5 +581,5 @@
       "wedstrijddatum": "2026-09-05T10:10:00+0200"
     }
   ],
-  "updated_at": "2026-11-10T14:04:57.040255+01:00"
+  "updated_at": "2026-11-10T22:59:28.990351+01:00"
 }
