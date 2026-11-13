@@ -85,7 +85,7 @@
       "wedstrijdnummer": 95996
     },
     {
-      "aanvangstijd": "11:30",
+      "aanvangstijd": "13:30",
       "accommodatie": "Sportpark Wolfskamer",
       "competitie": "0362 Onder 14 (2e fase A-cat)",
       "competitiesoort": "regulier",
@@ -119,7 +119,7 @@
       "verzameltijd": "",
       "wedstrijd": "Zuidvogels HSV De O14-1 - ST SO Soest/VVZ'49 O14-1",
       "wedstrijdcode": 21136378,
-      "wedstrijddatum": "2026-11-28T11:30:00+0100",
+      "wedstrijddatum": "2026-11-28T13:30:00+0100",
       "wedstrijdnummer": 96180
     },
     {
@@ -342,7 +342,7 @@
       "datumopgemaakt": "7 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-07T12:22:14.799928+01:00",
-      "last_seen": "2026-11-12T23:28:12.605169+01:00",
+      "last_seen": "2026-11-13T13:40:45.265757+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21136413&teamcode=289917&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -574,5 +574,5 @@
       "wedstrijddatum": "2026-09-05T13:00:00+0200"
     }
   ],
-  "updated_at": "2026-11-12T23:28:12.605169+01:00"
+  "updated_at": "2026-11-13T13:40:45.265757+01:00"
 }
