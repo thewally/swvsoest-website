@@ -196,6 +196,22 @@
       "verloren": 1
     },
     {
+      "clublogo": "logos/BBCC346.png",
+      "clubrelatiecode": "BBCC346",
+      "doelpuntentegen": 17,
+      "doelpuntenvoor": 20,
+      "doelsaldo": 3,
+      "eigenteam": "false",
+      "gelijk": 0,
+      "gespeeldewedstrijden": 3,
+      "gewonnen": 2,
+      "positie": 3,
+      "punten": 6,
+      "teamnaam": "Wasmeer O14-2",
+      "verliespunten": 0,
+      "verloren": 1
+    },
+    {
       "clublogo": "logos/BBCC08V.png",
       "clubrelatiecode": "BBCC08V",
       "doelpuntentegen": 5,
@@ -205,7 +221,7 @@
       "gelijk": 1,
       "gespeeldewedstrijden": 3,
       "gewonnen": 1,
-      "positie": 3,
+      "positie": 4,
       "punten": 4,
       "teamnaam": "DOSC O14-2",
       "verliespunten": 0,
@@ -221,7 +237,7 @@
       "gelijk": 1,
       "gespeeldewedstrijden": 3,
       "gewonnen": 1,
-      "positie": 4,
+      "positie": 5,
       "punten": 4,
       "teamnaam": "Bilt De FC O14-4",
       "verliespunten": 0,
@@ -230,34 +246,18 @@
     {
       "clublogo": "logos/BBBZ06Z.png",
       "clubrelatiecode": "BBBZ06Z",
-      "doelpuntentegen": 7,
-      "doelpuntenvoor": 7,
-      "doelsaldo": 0,
+      "doelpuntentegen": 15,
+      "doelpuntenvoor": 10,
+      "doelsaldo": -5,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 2,
-      "gewonnen": 1,
-      "positie": 5,
-      "punten": 3,
-      "teamnaam": "Jonathan O14-4",
-      "verliespunten": 0,
-      "verloren": 1
-    },
-    {
-      "clublogo": "logos/BBCC346.png",
-      "clubrelatiecode": "BBCC346",
-      "doelpuntentegen": 14,
-      "doelpuntenvoor": 12,
-      "doelsaldo": -2,
-      "eigenteam": "false",
-      "gelijk": 0,
-      "gespeeldewedstrijden": 2,
+      "gespeeldewedstrijden": 3,
       "gewonnen": 1,
       "positie": 6,
       "punten": 3,
-      "teamnaam": "Wasmeer O14-2",
+      "teamnaam": "Jonathan O14-4",
       "verliespunten": 0,
-      "verloren": 1
+      "verloren": 2
     },
     {
       "clublogo": "logos/BBCC54C.png",
@@ -304,7 +304,7 @@
       "datumopgemaakt": "14 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-14T15:01:39.983795+01:00",
-      "last_seen": "2026-11-14T15:01:39.983795+01:00",
+      "last_seen": "2026-11-14T21:59:12.156254+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135398&teamcode=304982&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -335,7 +335,7 @@
       "datumopgemaakt": "7 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-07T12:22:14.799928+01:00",
-      "last_seen": "2026-11-14T15:01:39.983795+01:00",
+      "last_seen": "2026-11-14T21:59:12.156254+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135601&teamcode=304982&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -536,5 +536,5 @@
       "wedstrijddatum": "2026-09-05T16:45:00+0200"
     }
   ],
-  "updated_at": "2026-11-14T15:01:39.983795+01:00"
+  "updated_at": "2026-11-14T21:59:12.156254+01:00"
 }
