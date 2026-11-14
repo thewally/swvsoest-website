@@ -274,15 +274,15 @@
     {
       "clublogo": "logos/BBCC40F.png",
       "clubrelatiecode": "BBCC40F",
-      "doelpuntentegen": 4,
-      "doelpuntenvoor": 7,
-      "doelsaldo": 3,
+      "doelpuntentegen": 7,
+      "doelpuntenvoor": 11,
+      "doelsaldo": 4,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 2,
-      "gewonnen": 1,
+      "gespeeldewedstrijden": 3,
+      "gewonnen": 2,
       "positie": 3,
-      "punten": 3,
+      "punten": 6,
       "teamnaam": "Baarn sv O14-1",
       "verliespunten": 0,
       "verloren": 1
@@ -354,18 +354,18 @@
     {
       "clublogo": "logos/BBCC83K.png",
       "clubrelatiecode": "BBCC83K",
-      "doelpuntentegen": 8,
-      "doelpuntenvoor": 4,
-      "doelsaldo": -4,
+      "doelpuntentegen": 12,
+      "doelpuntenvoor": 7,
+      "doelsaldo": -5,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 2,
+      "gespeeldewedstrijden": 3,
       "gewonnen": 0,
       "positie": 8,
       "punten": 0,
       "teamnaam": "IJsselmeervogels O14-2",
       "verliespunten": 0,
-      "verloren": 2
+      "verloren": 3
     }
   ],
   "teamcode": 304979,
@@ -581,5 +581,5 @@
       "wedstrijddatum": "2026-09-05T10:10:00+0200"
     }
   ],
-  "updated_at": "2026-11-13T23:15:56.056618+01:00"
+  "updated_at": "2026-11-14T12:48:36.075780+01:00"
 }

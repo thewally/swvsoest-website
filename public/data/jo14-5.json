@@ -228,20 +228,20 @@
       "verloren": 1
     },
     {
-      "clublogo": "logos/BBBZ41C.png",
-      "clubrelatiecode": "BBBZ41C",
-      "doelpuntentegen": 2,
-      "doelpuntenvoor": 1,
-      "doelsaldo": -1,
+      "clublogo": "logos/BBCC08V.png",
+      "clubrelatiecode": "BBCC08V",
+      "doelpuntentegen": 14,
+      "doelpuntenvoor": 10,
+      "doelsaldo": -4,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 1,
-      "gewonnen": 0,
+      "gespeeldewedstrijden": 3,
+      "gewonnen": 1,
       "positie": 5,
-      "punten": 0,
-      "teamnaam": "Hercules O14-3",
+      "punten": 3,
+      "teamnaam": "DOSC O14-3",
       "verliespunten": 0,
-      "verloren": 1
+      "verloren": 2
     },
     {
       "clublogo": "logos/BBBZ06Z.png",
@@ -260,18 +260,18 @@
       "verloren": 1
     },
     {
-      "clublogo": "logos/BBCC08V.png",
-      "clubrelatiecode": "BBCC08V",
-      "doelpuntentegen": 11,
+      "clublogo": "logos/BBBZ41C.png",
+      "clubrelatiecode": "BBBZ41C",
+      "doelpuntentegen": 8,
       "doelpuntenvoor": 4,
-      "doelsaldo": -7,
+      "doelsaldo": -4,
       "eigenteam": "false",
       "gelijk": 0,
       "gespeeldewedstrijden": 2,
       "gewonnen": 0,
       "positie": 7,
       "punten": 0,
-      "teamnaam": "DOSC O14-3",
+      "teamnaam": "Hercules O14-3",
       "verliespunten": 0,
       "verloren": 2
     }
@@ -288,7 +288,7 @@
       "datumopgemaakt": "7 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-07T14:50:36.335074+01:00",
-      "last_seen": "2026-11-13T23:15:56.056618+01:00",
+      "last_seen": "2026-11-14T12:48:36.075780+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135011&teamcode=304986&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -489,5 +489,5 @@
       "wedstrijddatum": "2026-09-05T08:30:00+0200"
     }
   ],
-  "updated_at": "2026-11-13T23:15:56.056618+01:00"
+  "updated_at": "2026-11-14T12:48:36.075780+01:00"
 }
