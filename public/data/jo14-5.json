@@ -25,8 +25,8 @@
       "plaats": "SOEST",
       "poule": "13",
       "rijders": null,
-      "scheidsrechter": "",
-      "scheidsrechters": "",
+      "scheidsrechter": "M.M. (Michiel) Heijmans",
+      "scheidsrechters": "R.J. (Rene) Kaats (Assistent-scheidsrechter), Afgeschermd (Assistent-scheidsrechter), M.M. (Michiel) Heijmans (Scheidsrechter)",
       "status": "Te spelen",
       "teamnaam": "ST SO Soest/VVZ'49 O14-5",
       "teamvolgorde": 2605,
@@ -288,7 +288,7 @@
       "datumopgemaakt": "7 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-07T14:50:36.335074+01:00",
-      "last_seen": "2026-11-14T12:48:36.075780+01:00",
+      "last_seen": "2026-11-14T15:01:39.983795+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135011&teamcode=304986&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -489,5 +489,5 @@
       "wedstrijddatum": "2026-09-05T08:30:00+0200"
     }
   ],
-  "updated_at": "2026-11-14T12:48:36.075780+01:00"
+  "updated_at": "2026-11-14T15:01:39.983795+01:00"
 }
