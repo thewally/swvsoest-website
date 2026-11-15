@@ -202,36 +202,36 @@
   "slug": "jo14-2",
   "stand": [
     {
-      "clublogo": "logos/BBBZ69Q.png",
-      "clubrelatiecode": "BBBZ69Q",
-      "doelpuntentegen": 6,
-      "doelpuntenvoor": 16,
-      "doelsaldo": 10,
+      "clublogo": "logos/BBCC86N.png",
+      "clubrelatiecode": "BBCC86N",
+      "doelpuntentegen": 5,
+      "doelpuntenvoor": 13,
+      "doelsaldo": 8,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 2,
-      "gewonnen": 2,
+      "gespeeldewedstrijden": 3,
+      "gewonnen": 3,
       "positie": 1,
-      "punten": 6,
-      "teamnaam": "Hoogland O14-2",
+      "punten": 9,
+      "teamnaam": "Victoria O14-3",
       "verliespunten": 0,
       "verloren": 0
     },
     {
-      "clublogo": "logos/BBCC86N.png",
-      "clubrelatiecode": "BBCC86N",
-      "doelpuntentegen": 4,
-      "doelpuntenvoor": 10,
-      "doelsaldo": 6,
+      "clublogo": "logos/BBBZ69Q.png",
+      "clubrelatiecode": "BBBZ69Q",
+      "doelpuntentegen": 9,
+      "doelpuntenvoor": 17,
+      "doelsaldo": 8,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 2,
+      "gespeeldewedstrijden": 3,
       "gewonnen": 2,
       "positie": 2,
       "punten": 6,
-      "teamnaam": "Victoria O14-3",
+      "teamnaam": "Hoogland O14-2",
       "verliespunten": 0,
-      "verloren": 0
+      "verloren": 1
     },
     {
       "clublogo": "logos/BBCC08V.png",
@@ -342,7 +342,7 @@
       "datumopgemaakt": "14 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-14T15:01:39.983795+01:00",
-      "last_seen": "2026-11-15T13:19:33.370981+01:00",
+      "last_seen": "2026-11-15T22:22:33.170606+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21136004&teamcode=304979&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -574,5 +574,5 @@
       "wedstrijddatum": "2026-09-05T10:10:00+0200"
     }
   ],
-  "updated_at": "2026-11-15T13:19:33.370981+01:00"
+  "updated_at": "2026-11-15T22:22:33.170606+01:00"
 }
