@@ -114,7 +114,7 @@
       "uitteamclubrelatiecode": "BBBZ168",
       "uitteamid": 304987,
       "uitteamlogo": "logos/BBBZ168.png",
-      "veld": "veld 5 hoofdv Eemboys /Baarn/TOV",
+      "veld": "veld 3 BAARN SV / TOV",
       "vertrektijd": "13:15",
       "verzameltijd": "",
       "wedstrijd": "Baarn sv O14-2 - ST SO Soest/VVZ'49 O14-6",
@@ -304,7 +304,7 @@
       "datumopgemaakt": "14 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-14T12:48:36.075780+01:00",
-      "last_seen": "2026-11-19T14:58:26.237959+01:00",
+      "last_seen": "2026-11-20T00:17:39.306877+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21136053&teamcode=304987&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -536,5 +536,5 @@
       "wedstrijddatum": "2026-09-05T12:00:00+0200"
     }
   ],
-  "updated_at": "2026-11-19T14:58:26.237959+01:00"
+  "updated_at": "2026-11-20T00:17:39.306877+01:00"
 }
