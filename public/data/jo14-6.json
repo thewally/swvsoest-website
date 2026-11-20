@@ -85,7 +85,7 @@
       "wedstrijdnummer": 95199
     },
     {
-      "aanvangstijd": "15:15",
+      "aanvangstijd": "15:00",
       "accommodatie": "Sportpark Ter Eem",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -119,7 +119,7 @@
       "verzameltijd": "",
       "wedstrijd": "Baarn sv O14-2 - ST SO Soest/VVZ'49 O14-6",
       "wedstrijdcode": 21135569,
-      "wedstrijddatum": "2026-12-05T15:15:00+0100",
+      "wedstrijddatum": "2026-12-05T15:00:00+0100",
       "wedstrijdnummer": 95371
     },
     {
@@ -159,6 +159,44 @@
       "wedstrijdcode": 21135583,
       "wedstrijddatum": "2026-12-12T09:45:00+0100",
       "wedstrijdnummer": 95385
+    },
+    {
+      "aanvangstijd": "09:45",
+      "accommodatie": "Sportpark Zonnegloren",
+      "competitie": "B9420 Zwaluwen Jeugd Beker Onder 14 2e ronde",
+      "competitiesoort": "beker",
+      "datum": "23 jan.",
+      "kaledatum": "2027-01-23 00:00:00.00",
+      "klasse": "Zwaluwen Jeugd Beker O14 2e ronde Groep 3",
+      "klassepoule": "Zwaluwen Jeugd Beker O14 2e ronde Groep 3 2e ronde",
+      "kleedkamerscheidsrechter": "",
+      "kleedkamerthuisteam": "",
+      "kleedkameruitteam": "",
+      "locatie": "Veld",
+      "meer": "wedstrijd-informatie?wedstrijdcode=21298777&aantaldagen=365&teamcode=304987&eigenwedstrijden=JA&aantalregels=200",
+      "plaats": "SOEST",
+      "poule": "2e ronde",
+      "rijders": null,
+      "scheidsrechter": "",
+      "scheidsrechters": "",
+      "status": "Te spelen",
+      "teamnaam": "ST SO Soest/VVZ'49 O14-6",
+      "teamvolgorde": 2606,
+      "thuisteam": "ST SO Soest/VVZ'49 O14-6",
+      "thuisteamclubrelatiecode": "BBBZ168",
+      "thuisteamid": 304987,
+      "thuisteamlogo": "logos/BBBZ168.png",
+      "uitteam": "DESTO O14-6",
+      "uitteamclubrelatiecode": "BBBZ54I",
+      "uitteamid": 400801,
+      "uitteamlogo": "logos/BBBZ54I.png",
+      "veld": "veld 1",
+      "vertrektijd": "",
+      "verzameltijd": "",
+      "wedstrijd": "ST SO Soest/VVZ'49 O14-6 - DESTO O14-6",
+      "wedstrijdcode": 21298777,
+      "wedstrijddatum": "2027-01-23T09:45:00+0100",
+      "wedstrijdnummer": 124672
     }
   ],
   "slug": "jo14-6",
@@ -304,7 +342,7 @@
       "datumopgemaakt": "14 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-14T12:48:36.075780+01:00",
-      "last_seen": "2026-11-20T14:39:38.574127+01:00",
+      "last_seen": "2026-11-20T23:50:43.408749+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21136053&teamcode=304987&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -536,5 +574,5 @@
       "wedstrijddatum": "2026-09-05T12:00:00+0200"
     }
   ],
-  "updated_at": "2026-11-20T14:39:38.574127+01:00"
+  "updated_at": "2026-11-20T23:50:43.408749+01:00"
 }

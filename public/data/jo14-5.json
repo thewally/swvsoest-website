@@ -121,6 +121,44 @@
       "wedstrijdcode": 21135381,
       "wedstrijddatum": "2026-12-12T11:30:00+0100",
       "wedstrijdnummer": 95183
+    },
+    {
+      "aanvangstijd": "09:45",
+      "accommodatie": "Sportpark Bosstraat-Oost",
+      "competitie": "B9420 Zwaluwen Jeugd Beker Onder 14 2e ronde",
+      "competitiesoort": "beker",
+      "datum": "23 jan.",
+      "kaledatum": "2027-01-23 00:00:00.00",
+      "klasse": "Zwaluwen Jeugd Beker O14 2e ronde Groep 2",
+      "klassepoule": "Zwaluwen Jeugd Beker O14 2e ronde Groep 2 2e ronde",
+      "kleedkamerscheidsrechter": "",
+      "kleedkamerthuisteam": "",
+      "kleedkameruitteam": "",
+      "locatie": "Veld",
+      "meer": "wedstrijd-informatie?wedstrijdcode=21298747&aantaldagen=365&teamcode=304986&eigenwedstrijden=JA&aantalregels=200",
+      "plaats": "SOEST",
+      "poule": "2e ronde",
+      "rijders": null,
+      "scheidsrechter": "",
+      "scheidsrechters": "",
+      "status": "Te spelen",
+      "teamnaam": "ST SO Soest/VVZ'49 O14-5",
+      "teamvolgorde": 2605,
+      "thuisteam": "ST SO Soest/VVZ'49 O14-5",
+      "thuisteamclubrelatiecode": "BBBZ168",
+      "thuisteamid": 304986,
+      "thuisteamlogo": "logos/BBBZ168.png",
+      "uitteam": "AS'80 O14-4",
+      "uitteamclubrelatiecode": "BBDB44B",
+      "uitteamid": 312584,
+      "uitteamlogo": "logos/BBDB44B.png",
+      "veld": "veld 2-SO Soest",
+      "vertrektijd": "",
+      "verzameltijd": "",
+      "wedstrijd": "ST SO Soest/VVZ'49 O14-5 - AS'80 O14-4",
+      "wedstrijdcode": 21298747,
+      "wedstrijddatum": "2027-01-23T09:45:00+0100",
+      "wedstrijdnummer": 124645
     }
   ],
   "slug": "jo14-5",
@@ -250,7 +288,7 @@
       "datumopgemaakt": "14 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-14T21:59:12.156254+01:00",
-      "last_seen": "2026-11-20T14:39:38.574127+01:00",
+      "last_seen": "2026-11-20T23:50:43.408749+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21134838&teamcode=304986&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -482,5 +520,5 @@
       "wedstrijddatum": "2026-09-05T08:30:00+0200"
     }
   ],
-  "updated_at": "2026-11-20T14:39:38.574127+01:00"
+  "updated_at": "2026-11-20T23:50:43.408749+01:00"
 }

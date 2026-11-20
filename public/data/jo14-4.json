@@ -164,6 +164,22 @@
   "slug": "jo14-4",
   "stand": [
     {
+      "clublogo": "logos/BBBZ43E.png",
+      "clubrelatiecode": "BBBZ43E",
+      "doelpuntentegen": 9,
+      "doelpuntenvoor": 34,
+      "doelsaldo": 25,
+      "eigenteam": "false",
+      "gelijk": 0,
+      "gespeeldewedstrijden": 3,
+      "gewonnen": 3,
+      "positie": 1,
+      "punten": 9,
+      "teamnaam": "Spakenburg O14-2",
+      "verliespunten": 0,
+      "verloren": 0
+    },
+    {
       "clublogo": "logos/FZXX85C.png",
       "clubrelatiecode": "FZXX85C",
       "doelpuntentegen": 2,
@@ -173,25 +189,9 @@
       "gelijk": 0,
       "gespeeldewedstrijden": 3,
       "gewonnen": 3,
-      "positie": 1,
+      "positie": 2,
       "punten": 9,
       "teamnaam": "Vliegdorp 't vv O14-1",
-      "verliespunten": 0,
-      "verloren": 0
-    },
-    {
-      "clublogo": "logos/BBBZ43E.png",
-      "clubrelatiecode": "BBBZ43E",
-      "doelpuntentegen": 7,
-      "doelpuntenvoor": 20,
-      "doelsaldo": 13,
-      "eigenteam": "false",
-      "gelijk": 0,
-      "gespeeldewedstrijden": 2,
-      "gewonnen": 2,
-      "positie": 2,
-      "punten": 6,
-      "teamnaam": "Spakenburg O14-2",
       "verliespunten": 0,
       "verloren": 0
     },
@@ -260,22 +260,6 @@
       "verloren": 2
     },
     {
-      "clublogo": "logos/BBCC72G.png",
-      "clubrelatiecode": "BBCC72G",
-      "doelpuntentegen": 14,
-      "doelpuntenvoor": 2,
-      "doelsaldo": -12,
-      "eigenteam": "false",
-      "gelijk": 0,
-      "gespeeldewedstrijden": 2,
-      "gewonnen": 0,
-      "positie": 7,
-      "punten": 0,
-      "teamnaam": "Hooglanderveen O14-2",
-      "verliespunten": 0,
-      "verloren": 2
-    },
-    {
       "clublogo": "logos/BBBZ168.png",
       "clubrelatiecode": "BBBZ168",
       "doelpuntentegen": 18,
@@ -285,9 +269,25 @@
       "gelijk": 0,
       "gespeeldewedstrijden": 3,
       "gewonnen": 0,
-      "positie": 8,
+      "positie": 7,
       "punten": 0,
       "teamnaam": "ST SO Soest/VVZ'49 O14-4",
+      "verliespunten": 0,
+      "verloren": 3
+    },
+    {
+      "clublogo": "logos/BBCC72G.png",
+      "clubrelatiecode": "BBCC72G",
+      "doelpuntentegen": 28,
+      "doelpuntenvoor": 4,
+      "doelsaldo": -24,
+      "eigenteam": "false",
+      "gelijk": 0,
+      "gespeeldewedstrijden": 3,
+      "gewonnen": 0,
+      "positie": 8,
+      "punten": 0,
+      "teamnaam": "Hooglanderveen O14-2",
       "verliespunten": 0,
       "verloren": 3
     }
@@ -304,7 +304,7 @@
       "datumopgemaakt": "14 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-14T15:01:39.983795+01:00",
-      "last_seen": "2026-11-20T14:39:38.574127+01:00",
+      "last_seen": "2026-11-20T23:50:43.408749+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135942&teamcode=304984&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -536,5 +536,5 @@
       "wedstrijddatum": "2026-09-05T09:45:00+0200"
     }
   ],
-  "updated_at": "2026-11-20T14:39:38.574127+01:00"
+  "updated_at": "2026-11-20T23:50:43.408749+01:00"
 }
