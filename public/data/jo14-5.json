@@ -166,15 +166,15 @@
     {
       "clublogo": "logos/BBBZ179.png",
       "clubrelatiecode": "BBBZ179",
-      "doelpuntentegen": 6,
-      "doelpuntenvoor": 27,
-      "doelsaldo": 21,
+      "doelpuntentegen": 7,
+      "doelpuntenvoor": 33,
+      "doelsaldo": 26,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 3,
-      "gewonnen": 3,
+      "gespeeldewedstrijden": 4,
+      "gewonnen": 4,
       "positie": 1,
-      "punten": 9,
+      "punten": 12,
       "teamnaam": "Sporting '70 O14-3",
       "verliespunten": 0,
       "verloren": 0
@@ -262,18 +262,18 @@
     {
       "clublogo": "logos/BBBZ41C.png",
       "clubrelatiecode": "BBBZ41C",
-      "doelpuntentegen": 8,
-      "doelpuntenvoor": 4,
-      "doelsaldo": -4,
+      "doelpuntentegen": 14,
+      "doelpuntenvoor": 5,
+      "doelsaldo": -9,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 2,
+      "gespeeldewedstrijden": 3,
       "gewonnen": 0,
       "positie": 7,
       "punten": 0,
       "teamnaam": "Hercules O14-3",
       "verliespunten": 0,
-      "verloren": 2
+      "verloren": 3
     }
   ],
   "teamcode": 304986,
@@ -288,7 +288,7 @@
       "datumopgemaakt": "14 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-14T21:59:12.156254+01:00",
-      "last_seen": "2026-11-21T16:13:03.302338+01:00",
+      "last_seen": "2026-11-21T22:56:17.667597+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21134838&teamcode=304986&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -520,5 +520,5 @@
       "wedstrijddatum": "2026-09-05T08:30:00+0200"
     }
   ],
-  "updated_at": "2026-11-21T16:13:03.302338+01:00"
+  "updated_at": "2026-11-21T22:56:17.667597+01:00"
 }

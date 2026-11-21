@@ -145,14 +145,14 @@
       "clublogo": "logos/FZXX85C.png",
       "clubrelatiecode": "FZXX85C",
       "doelpuntentegen": 2,
-      "doelpuntenvoor": 24,
-      "doelsaldo": 22,
+      "doelpuntenvoor": 32,
+      "doelsaldo": 30,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 3,
-      "gewonnen": 3,
+      "gespeeldewedstrijden": 4,
+      "gewonnen": 4,
       "positie": 2,
-      "punten": 9,
+      "punten": 12,
       "teamnaam": "Vliegdorp 't vv O14-1",
       "verliespunten": 0,
       "verloren": 0
@@ -190,22 +190,6 @@
       "verloren": 2
     },
     {
-      "clublogo": "logos/BBCB07P.png",
-      "clubrelatiecode": "BBCB07P",
-      "doelpuntentegen": 20,
-      "doelpuntenvoor": 4,
-      "doelsaldo": -16,
-      "eigenteam": "false",
-      "gelijk": 0,
-      "gespeeldewedstrijden": 3,
-      "gewonnen": 1,
-      "positie": 5,
-      "punten": 3,
-      "teamnaam": "CJVV O14-3",
-      "verliespunten": 0,
-      "verloren": 2
-    },
-    {
       "clublogo": "logos/BBCC78M.png",
       "clubrelatiecode": "BBCC78M",
       "doelpuntentegen": 12,
@@ -215,7 +199,7 @@
       "gelijk": 0,
       "gespeeldewedstrijden": 4,
       "gewonnen": 1,
-      "positie": 6,
+      "positie": 5,
       "punten": 3,
       "teamnaam": "Roda '46 O14-4",
       "verliespunten": 0,
@@ -231,9 +215,25 @@
       "gelijk": 0,
       "gespeeldewedstrijden": 4,
       "gewonnen": 1,
-      "positie": 7,
+      "positie": 6,
       "punten": 3,
       "teamnaam": "Hooglanderveen O14-2",
+      "verliespunten": 0,
+      "verloren": 3
+    },
+    {
+      "clublogo": "logos/BBCB07P.png",
+      "clubrelatiecode": "BBCB07P",
+      "doelpuntentegen": 28,
+      "doelpuntenvoor": 4,
+      "doelsaldo": -24,
+      "eigenteam": "false",
+      "gelijk": 0,
+      "gespeeldewedstrijden": 4,
+      "gewonnen": 1,
+      "positie": 7,
+      "punten": 3,
+      "teamnaam": "CJVV O14-3",
       "verliespunten": 0,
       "verloren": 3
     },
@@ -266,7 +266,7 @@
       "datumopgemaakt": "21 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-21T16:13:03.302338+01:00",
-      "last_seen": "2026-11-21T16:13:03.302338+01:00",
+      "last_seen": "2026-11-21T22:56:17.667597+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135120&teamcode=304984&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -297,7 +297,7 @@
       "datumopgemaakt": "14 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-14T15:01:39.983795+01:00",
-      "last_seen": "2026-11-21T16:13:03.302338+01:00",
+      "last_seen": "2026-11-21T22:56:17.667597+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135942&teamcode=304984&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -529,5 +529,5 @@
       "wedstrijddatum": "2026-09-05T09:45:00+0200"
     }
   ],
-  "updated_at": "2026-11-21T16:13:03.302338+01:00"
+  "updated_at": "2026-11-21T22:56:17.667597+01:00"
 }
