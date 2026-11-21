@@ -180,36 +180,36 @@
       "verloren": 0
     },
     {
-      "clublogo": "logos/FJQB25X.png",
-      "clubrelatiecode": "FJQB25X",
-      "doelpuntentegen": 15,
-      "doelpuntenvoor": 9,
-      "doelsaldo": -6,
+      "clublogo": "logos/BBBZ06Z.png",
+      "clubrelatiecode": "BBBZ06Z",
+      "doelpuntentegen": 10,
+      "doelpuntenvoor": 19,
+      "doelsaldo": 9,
       "eigenteam": "false",
       "gelijk": 0,
       "gespeeldewedstrijden": 3,
       "gewonnen": 2,
       "positie": 2,
       "punten": 6,
-      "teamnaam": "Bilt De FC O14-3",
+      "teamnaam": "Jonathan O14-5JM",
       "verliespunten": 0,
       "verloren": 1
     },
     {
-      "clublogo": "logos/BBBZ06Z.png",
-      "clubrelatiecode": "BBBZ06Z",
-      "doelpuntentegen": 6,
+      "clublogo": "logos/FJQB25X.png",
+      "clubrelatiecode": "FJQB25X",
+      "doelpuntentegen": 21,
       "doelpuntenvoor": 13,
-      "doelsaldo": 7,
+      "doelsaldo": -8,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 2,
-      "gewonnen": 1,
+      "gespeeldewedstrijden": 4,
+      "gewonnen": 2,
       "positie": 3,
-      "punten": 3,
-      "teamnaam": "Jonathan O14-5JM",
+      "punten": 6,
+      "teamnaam": "Bilt De FC O14-3",
       "verliespunten": 0,
-      "verloren": 1
+      "verloren": 2
     },
     {
       "clublogo": "logos/BBCC46B.png",
@@ -288,7 +288,7 @@
       "datumopgemaakt": "14 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-14T21:59:12.156254+01:00",
-      "last_seen": "2026-11-20T23:50:43.408749+01:00",
+      "last_seen": "2026-11-21T16:13:03.302338+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21134838&teamcode=304986&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -520,5 +520,5 @@
       "wedstrijddatum": "2026-09-05T08:30:00+0200"
     }
   ],
-  "updated_at": "2026-11-20T23:50:43.408749+01:00"
+  "updated_at": "2026-11-21T16:13:03.302338+01:00"
 }
