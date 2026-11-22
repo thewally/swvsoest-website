@@ -174,6 +174,22 @@
       "verloren": 1
     },
     {
+      "clublogo": "logos/BBCC08V.png",
+      "clubrelatiecode": "BBCC08V",
+      "doelpuntentegen": 6,
+      "doelpuntenvoor": 10,
+      "doelsaldo": 4,
+      "eigenteam": "false",
+      "gelijk": 1,
+      "gespeeldewedstrijden": 4,
+      "gewonnen": 2,
+      "positie": 4,
+      "punten": 7,
+      "teamnaam": "DOSC O14-2",
+      "verliespunten": 0,
+      "verloren": 1
+    },
+    {
       "clublogo": "logos/BBBZ06Z.png",
       "clubrelatiecode": "BBBZ06Z",
       "doelpuntentegen": 16,
@@ -183,27 +199,11 @@
       "gelijk": 0,
       "gespeeldewedstrijden": 4,
       "gewonnen": 2,
-      "positie": 4,
+      "positie": 5,
       "punten": 6,
       "teamnaam": "Jonathan O14-4",
       "verliespunten": 0,
       "verloren": 2
-    },
-    {
-      "clublogo": "logos/BBCC08V.png",
-      "clubrelatiecode": "BBCC08V",
-      "doelpuntentegen": 5,
-      "doelpuntenvoor": 5,
-      "doelsaldo": 0,
-      "eigenteam": "false",
-      "gelijk": 1,
-      "gespeeldewedstrijden": 3,
-      "gewonnen": 1,
-      "positie": 5,
-      "punten": 4,
-      "teamnaam": "DOSC O14-2",
-      "verliespunten": 0,
-      "verloren": 1
     },
     {
       "clublogo": "logos/FJQB25X.png",
@@ -240,18 +240,18 @@
     {
       "clublogo": "logos/BBCC86N.png",
       "clubrelatiecode": "BBCC86N",
-      "doelpuntentegen": 25,
-      "doelpuntenvoor": 7,
-      "doelsaldo": -18,
+      "doelpuntentegen": 30,
+      "doelpuntenvoor": 8,
+      "doelsaldo": -22,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 3,
+      "gespeeldewedstrijden": 4,
       "gewonnen": 0,
       "positie": 8,
       "punten": 0,
       "teamnaam": "Victoria O14-6",
       "verliespunten": 0,
-      "verloren": 3
+      "verloren": 4
     }
   ],
   "teamcode": 304982,
@@ -266,7 +266,7 @@
       "datumopgemaakt": "21 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-21T16:13:03.302338+01:00",
-      "last_seen": "2026-11-21T22:56:17.667597+01:00",
+      "last_seen": "2026-11-22T13:54:12.395656+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135781&teamcode=304982&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -529,5 +529,5 @@
       "wedstrijddatum": "2026-09-05T16:45:00+0200"
     }
   ],
-  "updated_at": "2026-11-21T22:56:17.667597+01:00"
+  "updated_at": "2026-11-22T13:54:12.395656+01:00"
 }
