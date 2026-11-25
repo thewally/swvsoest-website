@@ -25,8 +25,8 @@
       "plaats": "HUIZEN",
       "poule": "B",
       "rijders": "",
-      "scheidsrechter": "",
-      "scheidsrechters": "R.J. (Remmer) Meijer (Assistent-scheidsrechter)",
+      "scheidsrechter": "J.P. (Jasper) Everaarts",
+      "scheidsrechters": "R.J. (Remmer) Meijer (Assistent-scheidsrechter), J.P. (Jasper) Everaarts (Scheidsrechter)",
       "status": "Te spelen",
       "teamnaam": "ST SO Soest/VVZ'49 O14-1",
       "teamvolgorde": 2601,
@@ -266,7 +266,7 @@
       "datumopgemaakt": "21 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-21T16:13:03.302338+01:00",
-      "last_seen": "2026-11-24T16:21:52.129042+01:00",
+      "last_seen": "2026-11-25T02:08:18.883070+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21136194&teamcode=289917&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -560,5 +560,5 @@
       "wedstrijddatum": "2026-09-05T13:00:00+0200"
     }
   ],
-  "updated_at": "2026-11-24T16:21:52.129042+01:00"
+  "updated_at": "2026-11-25T02:08:18.883070+01:00"
 }
