@@ -85,7 +85,7 @@
       "wedstrijdnummer": 94853
     },
     {
-      "aanvangstijd": "11:30",
+      "aanvangstijd": "09:45",
       "accommodatie": "Sportpark Zonnegloren",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -119,7 +119,7 @@
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-2 - Baarn sv O14-1",
       "wedstrijdcode": 21134853,
-      "wedstrijddatum": "2026-12-12T11:30:00+0100",
+      "wedstrijddatum": "2026-12-12T09:45:00+0100",
       "wedstrijdnummer": 94655
     },
     {
@@ -304,7 +304,7 @@
       "datumopgemaakt": "21 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-21T16:13:03.302338+01:00",
-      "last_seen": "2026-11-25T02:08:18.883070+01:00",
+      "last_seen": "2026-11-25T16:03:05.639639+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21136046&teamcode=304979&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -567,5 +567,5 @@
       "wedstrijddatum": "2026-09-05T10:10:00+0200"
     }
   ],
-  "updated_at": "2026-11-25T02:08:18.883070+01:00"
+  "updated_at": "2026-11-25T16:03:05.639639+01:00"
 }
