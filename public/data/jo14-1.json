@@ -26,7 +26,7 @@
       "poule": "B",
       "rijders": "",
       "scheidsrechter": "J.P. (Jasper) Everaarts",
-      "scheidsrechters": "R.J. (Remmer) Meijer (Assistent-scheidsrechter), J.P. (Jasper) Everaarts (Scheidsrechter)",
+      "scheidsrechters": "Afgeschermd (Assistent-scheidsrechter), R.J. (Remmer) Meijer (Assistent-scheidsrechter), J.P. (Jasper) Everaarts (Scheidsrechter)",
       "status": "Te spelen",
       "teamnaam": "ST SO Soest/VVZ'49 O14-1",
       "teamvolgorde": 2601,
@@ -128,15 +128,15 @@
     {
       "clublogo": "logos/BBCC78M.png",
       "clubrelatiecode": "BBCC78M",
-      "doelpuntentegen": 4,
-      "doelpuntenvoor": 19,
-      "doelsaldo": 15,
+      "doelpuntentegen": 6,
+      "doelpuntenvoor": 22,
+      "doelsaldo": 16,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 5,
-      "gewonnen": 5,
+      "gespeeldewedstrijden": 6,
+      "gewonnen": 6,
       "positie": 1,
-      "punten": 15,
+      "punten": 18,
       "teamnaam": "Roda '46 O14-2",
       "verliespunten": 0,
       "verloren": 0
@@ -160,15 +160,15 @@
     {
       "clublogo": "logos/BBBZ98Y.png",
       "clubrelatiecode": "BBBZ98Y",
-      "doelpuntentegen": 9,
-      "doelpuntenvoor": 18,
-      "doelsaldo": 9,
+      "doelpuntentegen": 10,
+      "doelpuntenvoor": 26,
+      "doelsaldo": 16,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 5,
-      "gewonnen": 3,
+      "gespeeldewedstrijden": 6,
+      "gewonnen": 4,
       "positie": 3,
-      "punten": 9,
+      "punten": 12,
       "teamnaam": "Huizen O14-1",
       "verliespunten": 0,
       "verloren": 2
@@ -176,34 +176,34 @@
     {
       "clublogo": "logos/FJQB27Z.png",
       "clubrelatiecode": "FJQB27Z",
-      "doelpuntentegen": 9,
-      "doelpuntenvoor": 13,
-      "doelsaldo": 4,
+      "doelpuntentegen": 12,
+      "doelpuntenvoor": 15,
+      "doelsaldo": 3,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 5,
+      "gespeeldewedstrijden": 6,
       "gewonnen": 3,
       "positie": 4,
       "punten": 9,
       "teamnaam": "Nieuwland ASC O14-1",
       "verliespunten": 0,
-      "verloren": 2
+      "verloren": 3
     },
     {
       "clublogo": "logos/BBCB07P.png",
       "clubrelatiecode": "BBCB07P",
-      "doelpuntentegen": 13,
-      "doelpuntenvoor": 12,
-      "doelsaldo": -1,
+      "doelpuntentegen": 21,
+      "doelpuntenvoor": 13,
+      "doelsaldo": -8,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 5,
+      "gespeeldewedstrijden": 6,
       "gewonnen": 3,
       "positie": 5,
       "punten": 9,
       "teamnaam": "CJVV O14-1",
       "verliespunten": 0,
-      "verloren": 2
+      "verloren": 3
     },
     {
       "clublogo": "logos/BBBZ61I.png",
@@ -266,7 +266,7 @@
       "datumopgemaakt": "21 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-21T16:13:03.302338+01:00",
-      "last_seen": "2026-11-28T01:16:06.810220+01:00",
+      "last_seen": "2026-11-28T14:43:50.505468+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21136194&teamcode=289917&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -560,5 +560,5 @@
       "wedstrijddatum": "2026-09-05T13:00:00+0200"
     }
   ],
-  "updated_at": "2026-11-28T01:16:06.810220+01:00"
+  "updated_at": "2026-11-28T14:43:50.505468+01:00"
 }
