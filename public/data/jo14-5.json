@@ -128,15 +128,15 @@
     {
       "clublogo": "logos/BBBZ179.png",
       "clubrelatiecode": "BBBZ179",
-      "doelpuntentegen": 7,
-      "doelpuntenvoor": 33,
-      "doelsaldo": 26,
+      "doelpuntentegen": 9,
+      "doelpuntenvoor": 39,
+      "doelsaldo": 30,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 4,
-      "gewonnen": 4,
+      "gespeeldewedstrijden": 5,
+      "gewonnen": 5,
       "positie": 1,
-      "punten": 12,
+      "punten": 15,
       "teamnaam": "Sporting '70 O14-3",
       "verliespunten": 0,
       "verloren": 0
@@ -192,18 +192,18 @@
     {
       "clublogo": "logos/BBCC08V.png",
       "clubrelatiecode": "BBCC08V",
-      "doelpuntentegen": 14,
-      "doelpuntenvoor": 10,
-      "doelsaldo": -4,
+      "doelpuntentegen": 20,
+      "doelpuntenvoor": 12,
+      "doelsaldo": -8,
       "eigenteam": "false",
       "gelijk": 0,
-      "gespeeldewedstrijden": 3,
+      "gespeeldewedstrijden": 4,
       "gewonnen": 1,
       "positie": 5,
       "punten": 3,
       "teamnaam": "DOSC O14-3",
       "verliespunten": 0,
-      "verloren": 2
+      "verloren": 3
     },
     {
       "clublogo": "logos/BBBZ168.png",
@@ -250,7 +250,7 @@
       "datumopgemaakt": "21 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-22T13:54:12.395656+01:00",
-      "last_seen": "2026-11-28T14:43:50.505468+01:00",
+      "last_seen": "2026-11-28T17:04:13.210953+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135362&teamcode=304986&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -513,5 +513,5 @@
       "wedstrijddatum": "2026-09-05T08:30:00+0200"
     }
   ],
-  "updated_at": "2026-11-28T14:43:50.505468+01:00"
+  "updated_at": "2026-11-28T17:04:13.210953+01:00"
 }
