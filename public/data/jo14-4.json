@@ -47,7 +47,7 @@
       "wedstrijdnummer": 95942
     },
     {
-      "aanvangstijd": "08:30",
+      "aanvangstijd": "15:00",
       "accommodatie": "Sportpark Bosstraat-Oost",
       "competitie": "0390 Onder 14 (2e fase)",
       "competitiesoort": "regulier",
@@ -81,7 +81,7 @@
       "verzameltijd": "",
       "wedstrijd": "ST SO Soest/VVZ'49 O14-4 - Hees O14-1",
       "wedstrijdcode": 21135368,
-      "wedstrijddatum": "2026-12-05T08:30:00+0100",
+      "wedstrijddatum": "2026-12-05T15:00:00+0100",
       "wedstrijdnummer": 95170
     },
     {
@@ -266,7 +266,7 @@
       "datumopgemaakt": "21 nov.",
       "eigenteam": "true",
       "first_seen": "2026-11-21T16:13:03.302338+01:00",
-      "last_seen": "2026-11-27T15:27:31.103020+01:00",
+      "last_seen": "2026-11-28T01:16:06.810220+01:00",
       "meer": "wedstrijd-informatie?wedstrijdcode=21135120&teamcode=304984&eigenwedstrijden=JA",
       "sportomschrijving": "Veld Algemeen/Zaterdag",
       "status": "Uitgespeeld",
@@ -529,5 +529,5 @@
       "wedstrijddatum": "2026-09-05T09:45:00+0200"
     }
   ],
-  "updated_at": "2026-11-27T15:27:31.103020+01:00"
+  "updated_at": "2026-11-28T01:16:06.810220+01:00"
 }
